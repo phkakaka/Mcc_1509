@@ -1634,12 +1634,12 @@
          <value>0</value>
       </entry>
       <entry>
-         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Module" name="IVT_NAME"/>
-         <value>IVT1</value>
-      </entry>
-      <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="System Module" registerAlias="CONFIG1" settingAlias="CP" alias="OFF"/>
          <value>128</value>
+      </entry>
+      <entry>
+         <key class="com.microchip.mcc.core.tokenManager.CustomKey" moduleName="Interrupt Module" name="IVT_NAME"/>
+         <value>IVT1</value>
       </entry>
       <entry>
          <key class="com.microchip.mcc.core.tokenManager.OptionKey" moduleName="MSSP" registerAlias="SSPCON3" settingAlias="SBCDE" alias="enabled"/>
@@ -3600,16 +3600,16 @@
    </tokenMap>
    <generatedFileHashHistoryMap class="java.util.HashMap">
       <entry>
-         <file>mcc_generated_files\interrupt_manager.h</file>
-         <hash>2ee0b9a8e2cde14b3a0038a00404e5dceb08dbd9981349983db5cbcbe0a90057</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\mcc.h</file>
          <hash>b3372cdf9b123d05d47eab3a982877f72dc7a0b3324f1c996657eb4d3183ee1c</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\device_config.h</file>
          <hash>7af8eb9efbdd958480f414c98f501abdc797b3f12441c2e61b907b6b48184ba1</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.h</file>
+         <hash>2ee0b9a8e2cde14b3a0038a00404e5dceb08dbd9981349983db5cbcbe0a90057</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\i2c_master.c</file>
@@ -3620,12 +3620,12 @@
          <hash>c0bc4c456e762ad3eb98a3ef610b6ec5364a99944b3a69b998a79c541fe5d7f0</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\tmr2.h</file>
-         <hash>3bd1670d3f2f453bc2ae793aa6608562a738e5d12fba85fd654c4badea4140ae</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\device_config.c</file>
          <hash>0bf8686faa7196b16ce7aeb30b604abcbbfd45a4b6c7eaa50429326230069738</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\tmr2.h</file>
+         <hash>3bd1670d3f2f453bc2ae793aa6608562a738e5d12fba85fd654c4badea4140ae</hash>
       </entry>
       <entry>
          <file>mcc_generated_files\tmr2.c</file>
@@ -3668,12 +3668,12 @@
          <hash>43c89c2ff36ec0378fb5ecf3eb8031a845e114b9fbc2aed17fad32e8abc3596e</hash>
       </entry>
       <entry>
-         <file>mcc_generated_files\interrupt_manager.c</file>
-         <hash>4e42cf73e00230e2d27383532b7e0fc47fc9c794bcb63e56d5caeb8624573da6</hash>
-      </entry>
-      <entry>
          <file>mcc_generated_files\mcc.c</file>
          <hash>454fe096b78d357dc6946f2c650573fd23d40f84ab3c6d03f46e896018fac5a9</hash>
+      </entry>
+      <entry>
+         <file>mcc_generated_files\interrupt_manager.c</file>
+         <hash>4e42cf73e00230e2d27383532b7e0fc47fc9c794bcb63e56d5caeb8624573da6</hash>
       </entry>
    </generatedFileHashHistoryMap>
    <mc3libFileHashHistoryMap class="java.util.HashMap"/>

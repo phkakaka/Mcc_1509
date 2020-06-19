@@ -12,6 +12,7 @@
 #include "COS_UserTskList.h"
 #include "../SunSensor/Led.h"
 #include "../SunSensor/UART_Display.h"
+#include "../SunSensor/SHT25.h"
 
 /** @var const task COS_tsk[NUM_TSKS]
  * 
@@ -38,6 +39,7 @@ const task COS_tsk[NUM_TSKS] = /* Task array for task manager */
 ////////////////////////////////////////////////////////////////////////////////
 
 	{UartDisplay, TSK_EIGHTHSPEED_S1 }
+    {UartDisplay, TSK_EIGHTHSPEED_S2 }
 
 
 ////////////////////////////////////////////////////////////////////////////////

@@ -21,7 +21,7 @@
 
 /*********** Task Setup ***********/
 /* MUST be equal to number of user-defined tasks in COS_tsk[] */
-#define USER_TSK_COUNT          2   /* Number of user-defined tasks called by the task manager */
+#define USER_TSK_COUNT          3   /* Number of user-defined tasks called by the task manager */
 									/* DO NOT COUNT LIN RELATED TASKS */
 
 #define SLOT_TIME               10  /* Basic task slot time in milliseconds (8 and 10 work well) */

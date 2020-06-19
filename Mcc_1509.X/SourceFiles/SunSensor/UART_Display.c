@@ -11,24 +11,20 @@
 #include "UART_Display.h"
 
 static uint8_t U8Message = 0x55;
-static uint8_t counter;
+static uint8_t NewMessageFlag = 0;
 
 void SendByUart(uint8_t Txt)
 {
     U8Message = Txt;
+    NewMessageFlag = 1;
 }
 
 void UartDisplay(void)
 {
-//    if (EUSART_is_tx_ready())
-//    {
-//        EUSART_Write(U8Message);
-//    }
-    counter++;
-    TXREG = counter;
-    if (counter > 200)
+    if (NewMessageFlag)
     {
-        counter = 0;
+        EUSART_Write(U8Message);
+        NewMessageFlag = 0;
     }
 }
 

@@ -68,6 +68,10 @@ I2C_NULL 5
 [v _main main `(v  1 e 1 0 ]
 "66 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
+"94
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 "144
 [v _EUSART_DefaultFramingErrorHandler EUSART_DefaultFramingErrorHandler `(v  1 e 1 0 ]
 "146
@@ -504,8 +508,6 @@ I2C_NULL 5
 [v _dutyValue dutyValue `us  1 s 2 dutyValue ]
 "13 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _U8Message U8Message `uc  1 s 1 U8Message ]
-"14
-[v _counter@UART_Display$F1224 counter `uc  1 s 1 counter ]
 "52 E:\GitHub\Mcc_1509\Mcc_1509.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
@@ -594,6 +596,19 @@ I2C_NULL 5
 [v _UartDisplay UartDisplay `(v  1 e 1 0 ]
 {
 "33
+} 0
+"94 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
+[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
+{
+"97
+} 0
+"132
+[v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
+{
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 wreg ]
+[v EUSART_Write@txData txData `uc  1 a 1 0 ]
+"139
 } 0
 "92 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_Main.c
 [v _COS_TmrHandler COS_TmrHandler `(v  1 e 1 0 ]

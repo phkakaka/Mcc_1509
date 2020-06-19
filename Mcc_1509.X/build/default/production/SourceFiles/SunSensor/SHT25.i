@@ -1,4 +1,4 @@
-# 1 "SourceFiles/SunSensor/UART_Display.c"
+# 1 "SourceFiles/SunSensor/SHT25.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,8 +6,8 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "SourceFiles/SunSensor/UART_Display.c" 2
-# 10 "SourceFiles/SunSensor/UART_Display.c"
+# 1 "SourceFiles/SunSensor/SHT25.c" 2
+# 10 "SourceFiles/SunSensor/SHT25.c"
 # 1 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 1
 # 49 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h"
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
@@ -6355,33 +6355,11 @@ void SYSTEM_Initialize(void);
 void OSCILLATOR_Initialize(void);
 # 99 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 10 "SourceFiles/SunSensor/UART_Display.c" 2
+# 10 "SourceFiles/SunSensor/SHT25.c" 2
 
-# 1 "SourceFiles/SunSensor/UART_Display.h" 1
-# 15 "SourceFiles/SunSensor/UART_Display.h"
-extern void SendByUart(uint8_t Txt);
-extern void UartDisplay(void);
-# 11 "SourceFiles/SunSensor/UART_Display.c" 2
+# 1 "SourceFiles/SunSensor/SHT25.h" 1
+# 14 "SourceFiles/SunSensor/SHT25.h"
+extern void Led2_PWM(void);
+extern void LedBreathControl(void);
+# 11 "SourceFiles/SunSensor/SHT25.c" 2
 
-
-static uint8_t U8Message = 0x55;
-static uint8_t counter;
-
-void SendByUart(uint8_t Txt)
-{
-    U8Message = Txt;
-}
-
-void UartDisplay(void)
-{
-    if (EUSART_is_tx_ready())
-    {
-        EUSART_Write(U8Message);
-    }
-
-
-
-
-
-
-}
