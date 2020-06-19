@@ -1,4 +1,4 @@
-# 1 "mcc_generated_files/interrupt_manager.c"
+# 1 "SourceFiles/SunSensor/UART_Display.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,13 +6,10 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "mcc_generated_files/interrupt_manager.c" 2
-# 49 "mcc_generated_files/interrupt_manager.c"
-# 1 "mcc_generated_files/interrupt_manager.h" 1
-# 49 "mcc_generated_files/interrupt_manager.c" 2
-
-# 1 "mcc_generated_files/mcc.h" 1
-# 49 "mcc_generated_files/mcc.h"
+# 1 "SourceFiles/SunSensor/UART_Display.c" 2
+# 10 "SourceFiles/SunSensor/UART_Display.c"
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 1
+# 49 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h"
 # 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -5943,17 +5940,17 @@ extern __bank0 unsigned char __resetbits;
 extern __bank0 __bit __powerdown;
 extern __bank0 __bit __timeout;
 # 28 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\xc.h" 2 3
-# 49 "mcc_generated_files/mcc.h" 2
+# 49 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/device_config.h" 1
-# 50 "mcc_generated_files/mcc.h" 2
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/device_config.h" 1
+# 50 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/pin_manager.h" 1
-# 158 "mcc_generated_files/pin_manager.h"
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/pin_manager.h" 1
+# 158 "SourceFiles/SunSensor/../../mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_Initialize (void);
-# 170 "mcc_generated_files/pin_manager.h"
+# 170 "SourceFiles/SunSensor/../../mcc_generated_files/pin_manager.h"
 void PIN_MANAGER_IOC(void);
-# 51 "mcc_generated_files/mcc.h" 2
+# 51 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 1 3
 # 22 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
@@ -6038,10 +6035,10 @@ typedef int32_t int_fast32_t;
 typedef uint32_t uint_fast16_t;
 typedef uint32_t uint_fast32_t;
 # 139 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
-# 52 "mcc_generated_files/mcc.h" 2
+# 52 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdbool.h" 1 3
-# 53 "mcc_generated_files/mcc.h" 2
+# 53 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 1 3
 
@@ -6074,11 +6071,13 @@ extern __bit kbhit(void);
 
 extern char * cgets(char *);
 extern void cputs(const char *);
-# 54 "mcc_generated_files/mcc.h" 2
+# 54 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/interrupt_manager.h" 1
+# 55 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/i2c_master.h" 1
-# 54 "mcc_generated_files/i2c_master.h"
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h" 1
+# 54 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdio.h" 1 3
 # 24 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdio.h" 3
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
@@ -6217,7 +6216,7 @@ char *ctermid(char *);
 
 
 char *tempnam(const char *, const char *);
-# 54 "mcc_generated_files/i2c_master.h" 2
+# 54 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h" 2
 
 
 
@@ -6254,11 +6253,11 @@ i2c_operations_t I2C_CallbackRestartRead(void *funPtr);
 
 
 void I2C_Initialize(void);
-# 101 "mcc_generated_files/i2c_master.h"
+# 101 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 i2c_error_t I2C_Open(i2c_address_t address);
-# 111 "mcc_generated_files/i2c_master.h"
+# 111 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 i2c_error_t I2C_Close(void);
-# 123 "mcc_generated_files/i2c_master.h"
+# 123 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 i2c_error_t I2C_MasterOperation(_Bool read);
 
 
@@ -6270,56 +6269,56 @@ i2c_error_t I2C_MasterWrite(void);
 
 
 i2c_error_t I2C_MasterRead(void);
-# 142 "mcc_generated_files/i2c_master.h"
+# 142 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetTimeout(uint8_t timeOut);
-# 152 "mcc_generated_files/i2c_master.h"
+# 152 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetBuffer(void *buffer, size_t bufferSize);
-# 164 "mcc_generated_files/i2c_master.h"
+# 164 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetDataCompleteCallback(i2c_callback_t cb, void *ptr);
-# 174 "mcc_generated_files/i2c_master.h"
+# 174 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetWriteCollisionCallback(i2c_callback_t cb, void *ptr);
-# 184 "mcc_generated_files/i2c_master.h"
+# 184 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetAddressNackCallback(i2c_callback_t cb, void *ptr);
-# 194 "mcc_generated_files/i2c_master.h"
+# 194 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetDataNackCallback(i2c_callback_t cb, void *ptr);
-# 204 "mcc_generated_files/i2c_master.h"
+# 204 "SourceFiles/SunSensor/../../mcc_generated_files/i2c_master.h"
 void I2C_SetTimeoutCallback(i2c_callback_t cb, void *ptr);
-# 56 "mcc_generated_files/mcc.h" 2
+# 56 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/pwm1.h" 1
-# 102 "mcc_generated_files/pwm1.h"
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/pwm1.h" 1
+# 102 "SourceFiles/SunSensor/../../mcc_generated_files/pwm1.h"
  void PWM1_Initialize(void);
-# 129 "mcc_generated_files/pwm1.h"
+# 129 "SourceFiles/SunSensor/../../mcc_generated_files/pwm1.h"
  void PWM1_LoadDutyValue(uint16_t dutyValue);
-# 57 "mcc_generated_files/mcc.h" 2
+# 57 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/tmr2.h" 1
-# 104 "mcc_generated_files/tmr2.h"
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h" 1
+# 104 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_Initialize(void);
-# 133 "mcc_generated_files/tmr2.h"
+# 133 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_StartTimer(void);
-# 165 "mcc_generated_files/tmr2.h"
+# 165 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_StopTimer(void);
-# 200 "mcc_generated_files/tmr2.h"
+# 200 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 uint8_t TMR2_ReadTimer(void);
-# 239 "mcc_generated_files/tmr2.h"
+# 239 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_WriteTimer(uint8_t timerVal);
-# 291 "mcc_generated_files/tmr2.h"
+# 291 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_LoadPeriodRegister(uint8_t periodVal);
-# 309 "mcc_generated_files/tmr2.h"
+# 309 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_ISR(void);
-# 327 "mcc_generated_files/tmr2.h"
+# 327 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
  void TMR2_CallBack(void);
-# 344 "mcc_generated_files/tmr2.h"
+# 344 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
-# 362 "mcc_generated_files/tmr2.h"
+# 362 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 extern void (*TMR2_InterruptHandler)(void);
-# 380 "mcc_generated_files/tmr2.h"
+# 380 "SourceFiles/SunSensor/../../mcc_generated_files/tmr2.h"
 void TMR2_DefaultInterruptHandler(void);
-# 58 "mcc_generated_files/mcc.h" 2
+# 58 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
 
-# 1 "mcc_generated_files/eusart.h" 1
-# 75 "mcc_generated_files/eusart.h"
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h" 1
+# 75 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 typedef union {
     struct {
         unsigned perr : 1;
@@ -6329,52 +6328,60 @@ typedef union {
     };
     uint8_t status;
 }eusart_status_t;
-# 110 "mcc_generated_files/eusart.h"
+# 110 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 void EUSART_Initialize(void);
-# 158 "mcc_generated_files/eusart.h"
+# 158 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_ready(void);
-# 206 "mcc_generated_files/eusart.h"
+# 206 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 _Bool EUSART_is_rx_ready(void);
-# 253 "mcc_generated_files/eusart.h"
+# 253 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 _Bool EUSART_is_tx_done(void);
-# 301 "mcc_generated_files/eusart.h"
+# 301 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 eusart_status_t EUSART_get_last_status(void);
-# 321 "mcc_generated_files/eusart.h"
+# 321 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 uint8_t EUSART_Read(void);
-# 341 "mcc_generated_files/eusart.h"
+# 341 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 void EUSART_Write(uint8_t txData);
-# 361 "mcc_generated_files/eusart.h"
+# 361 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
-# 379 "mcc_generated_files/eusart.h"
+# 379 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
-# 397 "mcc_generated_files/eusart.h"
+# 397 "SourceFiles/SunSensor/../../mcc_generated_files/eusart.h"
 void EUSART_SetErrorHandler(void (* interruptHandler)(void));
-# 59 "mcc_generated_files/mcc.h" 2
-# 74 "mcc_generated_files/mcc.h"
+# 59 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h" 2
+# 74 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h"
 void SYSTEM_Initialize(void);
-# 87 "mcc_generated_files/mcc.h"
+# 87 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h"
 void OSCILLATOR_Initialize(void);
-# 99 "mcc_generated_files/mcc.h"
+# 99 "SourceFiles/SunSensor/../../mcc_generated_files/mcc.h"
 void WDT_Initialize(void);
-# 50 "mcc_generated_files/interrupt_manager.c" 2
+# 10 "SourceFiles/SunSensor/UART_Display.c" 2
+
+# 1 "SourceFiles/SunSensor/UART_Display.h" 1
+# 15 "SourceFiles/SunSensor/UART_Display.h"
+extern void SendByUart(uint8_t Txt);
+extern void UartDisplay(void);
+# 11 "SourceFiles/SunSensor/UART_Display.c" 2
 
 
-void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
+static uint8_t U8Message = 0x55;
+static uint8_t counter;
+
+void SendByUart(uint8_t Txt)
+{
+    U8Message = Txt;
+}
+
+void UartDisplay(void)
 {
 
-    if(INTCONbits.PEIE == 1)
-    {
-        if(PIE1bits.TMR2IE == 1 && PIR1bits.TMR2IF == 1)
-        {
-            TMR2_ISR();
-        }
-        else
-        {
 
-        }
-    }
-    else
-    {
 
+
+    counter++;
+    TXREG = counter;
+    if (counter > 200)
+    {
+        counter = 0;
     }
 }

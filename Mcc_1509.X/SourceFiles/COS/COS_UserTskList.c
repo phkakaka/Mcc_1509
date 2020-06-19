@@ -11,6 +11,7 @@
 #include "GlobalDef.h"
 #include "COS_UserTskList.h"
 #include "../SunSensor/Led.h"
+#include "../SunSensor/UART_Display.h"
 
 /** @var const task COS_tsk[NUM_TSKS]
  * 
@@ -36,7 +37,7 @@ const task COS_tsk[NUM_TSKS] = /* Task array for task manager */
 /////////////////////////// Start User Setup ///////////////////////////////////
 ////////////////////////////////////////////////////////////////////////////////
 
-	{LedBreathControl, TSK_EVERYSLOT }
+	{UartDisplay, TSK_EIGHTHSPEED_S1 }
 
 
 ////////////////////////////////////////////////////////////////////////////////

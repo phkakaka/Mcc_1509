@@ -68,11 +68,26 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="695" x="409" flags="00008001" y="485" h="459" pid="0" iid="12">
+   <POPUP w="695" x="240" flags="00000001" y="539" h="459" pid="0" iid="12">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="610" x="68" flags="00000000" y="180" h="472" pid="0" iid="13">
-    <PROPERTIES/>
+   <POPUP w="610" x="370" flags="00008023" y="408" h="472" pid="0" iid="13">
+    <PROPERTIES>
+     <ITEM name="AutoEcho">0</ITEM>
+     <ITEM name="ComboBox1000">S</ITEM>
+     <ITEM name="ComboBox1001">Sr</ITEM>
+     <ITEM name="ComboBox1002">P</ITEM>
+     <ITEM name="ComboBox1003">A</ITEM>
+     <ITEM name="ComboBox1004">N</ITEM>
+     <ITEM name="ComboBox1005">S</ITEM>
+     <ITEM name="ComboBox1006">Sr</ITEM>
+     <ITEM name="ComboBox1007">P</ITEM>
+     <ITEM name="ComboBox1008">A</ITEM>
+     <ITEM name="ComboBox1009">N</ITEM>
+     <ITEM name="HSplitter1Pos">125</ITEM>
+     <ITEM name="HexMode">0</ITEM>
+     <ITEM name="VSplitter1Pos">298</ITEM>
+    </PROPERTIES>
    </POPUP>
   </PWI>
  </MODULE>

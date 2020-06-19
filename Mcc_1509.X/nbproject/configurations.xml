@@ -14,15 +14,21 @@
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
+        <logicalFolder name="examples" displayName="examples" projectFiles="true">
+          <itemPath>mcc_generated_files/examples/i2c_master_example.h</itemPath>
+        </logicalFolder>
         <itemPath>mcc_generated_files/interrupt_manager.h</itemPath>
         <itemPath>mcc_generated_files/pin_manager.h</itemPath>
         <itemPath>mcc_generated_files/tmr2.h</itemPath>
         <itemPath>mcc_generated_files/device_config.h</itemPath>
         <itemPath>mcc_generated_files/mcc.h</itemPath>
         <itemPath>mcc_generated_files/pwm1.h</itemPath>
+        <itemPath>mcc_generated_files/i2c_master.h</itemPath>
+        <itemPath>mcc_generated_files/eusart.h</itemPath>
       </logicalFolder>
       <logicalFolder name="SunSensor" displayName="SunSensor" projectFiles="true">
         <itemPath>SourceFiles/SunSensor/Led.h</itemPath>
+        <itemPath>SourceFiles/SunSensor/UART_Display.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
@@ -39,15 +45,21 @@
       <logicalFolder name="MCC Generated Files"
                      displayName="MCC Generated Files"
                      projectFiles="true">
+        <logicalFolder name="examples" displayName="examples" projectFiles="true">
+          <itemPath>mcc_generated_files/examples/i2c_master_example.c</itemPath>
+        </logicalFolder>
         <itemPath>mcc_generated_files/tmr2.c</itemPath>
         <itemPath>mcc_generated_files/device_config.c</itemPath>
         <itemPath>mcc_generated_files/interrupt_manager.c</itemPath>
         <itemPath>mcc_generated_files/mcc.c</itemPath>
         <itemPath>mcc_generated_files/pin_manager.c</itemPath>
         <itemPath>mcc_generated_files/pwm1.c</itemPath>
+        <itemPath>mcc_generated_files/i2c_master.c</itemPath>
+        <itemPath>mcc_generated_files/eusart.c</itemPath>
       </logicalFolder>
       <logicalFolder name="SunSensor" displayName="SunSensor" projectFiles="true">
         <itemPath>SourceFiles/SunSensor/Led.c</itemPath>
+        <itemPath>SourceFiles/SunSensor/UART_Display.c</itemPath>
       </logicalFolder>
       <itemPath>main.c</itemPath>
     </logicalFolder>
@@ -110,7 +122,7 @@
         <property key="default-bitfield-type" value="true"/>
         <property key="default-char-type" value="true"/>
         <property key="define-macros" value=""/>
-        <property key="disable-optimizations" value="true"/>
+        <property key="disable-optimizations" value="false"/>
         <property key="extra-include-directories" value=""/>
         <property key="favor-optimization-for" value="-speed,+space"/>
         <property key="garbage-collect-data" value="true"/>
@@ -124,7 +136,7 @@
         <property key="optimization-debug" value="false"/>
         <property key="optimization-invariant-enable" value="false"/>
         <property key="optimization-invariant-value" value="16"/>
-        <property key="optimization-level" value="-O0"/>
+        <property key="optimization-level" value="-O1"/>
         <property key="optimization-speed" value="false"/>
         <property key="optimization-stable-enable" value="false"/>
         <property key="pack-struct" value="true"/>

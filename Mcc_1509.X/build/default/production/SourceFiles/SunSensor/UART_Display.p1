@@ -1,34 +1,7 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"89 mcc_generated_files/i2c_master.h
-[; ;mcc_generated_files/i2c_master.h: 89: void I2C_Initialize(void);
-[v _I2C_Initialize `(v ~T0 @X0 0 ef ]
-"158 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 158: void PIN_MANAGER_Initialize (void);
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"87 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 87: void OSCILLATOR_Initialize(void);
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"99
-[; ;mcc_generated_files/mcc.h: 99: void WDT_Initialize(void);
-[v _WDT_Initialize `(v ~T0 @X0 0 ef ]
-"102 mcc_generated_files/pwm1.h
-[; ;mcc_generated_files/pwm1.h: 102:  void PWM1_Initialize(void);
-[v _PWM1_Initialize `(v ~T0 @X0 0 ef ]
-"104 mcc_generated_files/tmr2.h
-[; ;mcc_generated_files/tmr2.h: 104: void TMR2_Initialize(void);
-[v _TMR2_Initialize `(v ~T0 @X0 0 ef ]
-"110 mcc_generated_files/eusart.h
-[; ;mcc_generated_files/eusart.h: 110: void EUSART_Initialize(void);
-[v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
-"1532 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1532: extern volatile unsigned char OSCCON __attribute__((address(0x099)));
-[v _OSCCON `Vuc ~T0 @X0 0 e@153 ]
-"2296
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 2296: extern volatile unsigned char BORCON __attribute__((address(0x116)));
-[v _BORCON `Vuc ~T0 @X0 0 e@278 ]
-"1473
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1473: extern volatile unsigned char WDTCON __attribute__((address(0x097)));
-[v _WDTCON `Vuc ~T0 @X0 0 e@151 ]
+"2898 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 2898: extern volatile unsigned char TXREG __attribute__((address(0x19A)));
+[v _TXREG `Vuc ~T0 @X0 0 e@410 ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -584,69 +557,63 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9812
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 9812: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"50 mcc_generated_files/mcc.c
-[; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
-[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
-"51
-[; ;mcc_generated_files/mcc.c: 51: {
+"13 SourceFiles/SunSensor/UART_Display.c
+[; ;SourceFiles/SunSensor/UART_Display.c: 13: static uint8_t U8Message = 0x55;
+[v _U8Message `uc ~T0 @X0 1 s ]
+[i _U8Message
+-> -> 85 `i `uc
+]
+"14
+[; ;SourceFiles/SunSensor/UART_Display.c: 14: static uint8_t counter;
+[v _counter `uc ~T0 @X0 1 s ]
+"16
+[; ;SourceFiles/SunSensor/UART_Display.c: 16: void SendByUart(uint8_t Txt)
+[v _SendByUart `(v ~T0 @X0 1 ef1`uc ]
+"17
+[; ;SourceFiles/SunSensor/UART_Display.c: 17: {
 {
-[e :U _SYSTEM_Initialize ]
+[e :U _SendByUart ]
+"16
+[; ;SourceFiles/SunSensor/UART_Display.c: 16: void SendByUart(uint8_t Txt)
+[v _Txt `uc ~T0 @X0 1 r1 ]
+"17
+[; ;SourceFiles/SunSensor/UART_Display.c: 17: {
 [f ]
-"53
-[; ;mcc_generated_files/mcc.c: 53:     I2C_Initialize();
-[e ( _I2C_Initialize ..  ]
-"54
-[; ;mcc_generated_files/mcc.c: 54:     PIN_MANAGER_Initialize();
-[e ( _PIN_MANAGER_Initialize ..  ]
-"55
-[; ;mcc_generated_files/mcc.c: 55:     OSCILLATOR_Initialize();
-[e ( _OSCILLATOR_Initialize ..  ]
-"56
-[; ;mcc_generated_files/mcc.c: 56:     WDT_Initialize();
-[e ( _WDT_Initialize ..  ]
-"57
-[; ;mcc_generated_files/mcc.c: 57:     PWM1_Initialize();
-[e ( _PWM1_Initialize ..  ]
-"58
-[; ;mcc_generated_files/mcc.c: 58:     TMR2_Initialize();
-[e ( _TMR2_Initialize ..  ]
-"59
-[; ;mcc_generated_files/mcc.c: 59:     EUSART_Initialize();
-[e ( _EUSART_Initialize ..  ]
-"60
-[; ;mcc_generated_files/mcc.c: 60: }
+"18
+[; ;SourceFiles/SunSensor/UART_Display.c: 18:     U8Message = Txt;
+[e = _U8Message _Txt ]
+"19
+[; ;SourceFiles/SunSensor/UART_Display.c: 19: }
 [e :UE 453 ]
 }
-"62
-[; ;mcc_generated_files/mcc.c: 62: void OSCILLATOR_Initialize(void)
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
-"63
-[; ;mcc_generated_files/mcc.c: 63: {
+"21
+[; ;SourceFiles/SunSensor/UART_Display.c: 21: void UartDisplay(void)
+[v _UartDisplay `(v ~T0 @X0 1 ef ]
+"22
+[; ;SourceFiles/SunSensor/UART_Display.c: 22: {
 {
-[e :U _OSCILLATOR_Initialize ]
+[e :U _UartDisplay ]
 [f ]
-"65
-[; ;mcc_generated_files/mcc.c: 65:     OSCCON = 0x78;
-[e = _OSCCON -> -> 120 `i `uc ]
-"67
-[; ;mcc_generated_files/mcc.c: 67:     BORCON = 0x00;
-[e = _BORCON -> -> 0 `i `uc ]
-"68
-[; ;mcc_generated_files/mcc.c: 68: }
-[e :UE 454 ]
+"27
+[; ;SourceFiles/SunSensor/UART_Display.c: 27:     counter++;
+[e ++ _counter -> -> 1 `i `uc ]
+"28
+[; ;SourceFiles/SunSensor/UART_Display.c: 28:     TXREG = counter;
+[e = _TXREG _counter ]
+"29
+[; ;SourceFiles/SunSensor/UART_Display.c: 29:     if (counter > 200)
+[e $ ! > -> _counter `i -> 200 `i 455  ]
+"30
+[; ;SourceFiles/SunSensor/UART_Display.c: 30:     {
+{
+"31
+[; ;SourceFiles/SunSensor/UART_Display.c: 31:         counter = 0;
+[e = _counter -> -> 0 `i `uc ]
+"32
+[; ;SourceFiles/SunSensor/UART_Display.c: 32:     }
 }
-"70
-[; ;mcc_generated_files/mcc.c: 70: void WDT_Initialize(void)
-[v _WDT_Initialize `(v ~T0 @X0 1 ef ]
-"71
-[; ;mcc_generated_files/mcc.c: 71: {
-{
-[e :U _WDT_Initialize ]
-[f ]
-"73
-[; ;mcc_generated_files/mcc.c: 73:     WDTCON = 0x16;
-[e = _WDTCON -> -> 22 `i `uc ]
-"74
-[; ;mcc_generated_files/mcc.c: 74: }
-[e :UE 455 ]
+[e :U 455 ]
+"33
+[; ;SourceFiles/SunSensor/UART_Display.c: 33: }
+[e :UE 454 ]
 }
