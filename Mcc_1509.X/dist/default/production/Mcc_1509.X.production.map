@@ -5,7 +5,7 @@ Linker command line:
 -W-3 --edf=C:\Program Files\Microchip\xc8\v2.20\pic\dat\en_msgs.txt -cn \
   -h+dist/default/production\Mcc_1509.X.production.sym \
   --cmf=dist/default/production\Mcc_1509.X.production.cmf -z -Q16F1509 \
-  -oC:\Users\zkata\AppData\Local\Temp\shtg.2 --defsym=__MPLAB_BUILD=1 \
+  -oC:\Users\zkata\AppData\Local\Temp\sgu0.2 --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Mcc_1509.X.production.map -E1 -ver=XC8 Compiler \
   --acfsm=1493 -ASTACK=02040h-021EFh -pstack=STACK -ACODE=00h-07FFhx4 \
   -ASTRCODE=00h-01FFFh -ASTRING=00h-0FFhx32 -ACONST=00h-0FFhx32 \
@@ -29,7 +29,7 @@ Linker command line:
   -AIDLOC=08000h-08003h -DIDLOC=2 \
   -preset_vec=00h,intentry=04h,init,end_init -ppowerup=CODE -pcinit=CODE \
   -pfunctab=ENTRY -DCODE=2 -DSTRCODE=2 -DSTRING=2 -DCONST=2 -DENTRY=2 -k \
-  C:\Users\zkata\AppData\Local\Temp\shtg.o \
+  C:\Users\zkata\AppData\Local\Temp\sgu0.o \
   dist/default/production\Mcc_1509.X.production.o 
 
 Object code version is 3.11
@@ -39,7 +39,7 @@ Machine type is 16F1509
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\zkata\AppData\Local\Temp\shtg.o
+C:\Users\zkata\AppData\Local\Temp\sgu0.o
                 end_init                             12       12        2        8       0
                 reset_vec                             0        0        2        0       0
                 config                             8007     8007        2        0       4
