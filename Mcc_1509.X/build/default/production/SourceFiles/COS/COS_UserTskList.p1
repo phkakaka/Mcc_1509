@@ -4,9 +4,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;SourceFiles/COS/COS_UserTskList.h: 36: {
 [s S449 `*F3465 1 `uc 1 ]
 [n S449 . tptr sched ]
-"15 SourceFiles/COS/../SunSensor/Led.h
-[; ;SourceFiles/COS/../SunSensor/Led.h: 15: extern void LedBreathControl(void);
-[v _LedBreathControl `(v ~T0 @X0 0 ef ]
+"16 SourceFiles/COS/../SunSensor/UART_Display.h
+[; ;SourceFiles/COS/../SunSensor/UART_Display.h: 16: extern void UartDisplay(void);
+[v _UartDisplay `(v ~T0 @X0 0 ef ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -562,14 +562,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9812
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 9812: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"33 SourceFiles/COS/COS_UserTskList.c
-[; ;SourceFiles/COS/COS_UserTskList.c: 33: const task COS_tsk[(2 +2)] =
+"34 SourceFiles/COS/COS_UserTskList.c
+[; ;SourceFiles/COS/COS_UserTskList.c: 34: const task COS_tsk[(2 +2)] =
 [v _COS_tsk `CS449 ~T0 @X0 -> 4 `i e ]
 [i _COS_tsk
 :U ..
 :U ..
-&U _LedBreathControl
--> -> 255 `i `uc
+&U _UartDisplay
+-> -> 128 `i `uc
 ..
 ..
 ]

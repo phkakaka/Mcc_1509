@@ -596,19 +596,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "32
 [; ;SourceFiles/SunSensor/Led.c: 32:     switch (BreathState)
-[e $U 451  ]
+[e $U 455  ]
 "33
 [; ;SourceFiles/SunSensor/Led.c: 33:     {
 {
 "34
 [; ;SourceFiles/SunSensor/Led.c: 34:         case 1:
-[e :U 452 ]
+[e :U 456 ]
 "35
 [; ;SourceFiles/SunSensor/Led.c: 35:             counter++;
 [e ++ _counter -> -> 1 `i `us ]
 "36
 [; ;SourceFiles/SunSensor/Led.c: 36:             if(counter > 100)
-[e $ ! > -> _counter `ui -> -> 100 `i `ui 453  ]
+[e $ ! > -> _counter `ui -> -> 100 `i `ui 457  ]
 "37
 [; ;SourceFiles/SunSensor/Led.c: 37:             {
 {
@@ -618,10 +618,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "39
 [; ;SourceFiles/SunSensor/Led.c: 39:             }
 }
-[e $U 454  ]
+[e $U 458  ]
 "40
 [; ;SourceFiles/SunSensor/Led.c: 40:             else
-[e :U 453 ]
+[e :U 457 ]
 "41
 [; ;SourceFiles/SunSensor/Led.c: 41:             {
 {
@@ -631,19 +631,19 @@ Version 4.0 HI-TECH Software Intermediate Code
 "43
 [; ;SourceFiles/SunSensor/Led.c: 43:             }
 }
-[e :U 454 ]
+[e :U 458 ]
 "44
 [; ;SourceFiles/SunSensor/Led.c: 44:             break;
-[e $U 450  ]
+[e $U 454  ]
 "45
 [; ;SourceFiles/SunSensor/Led.c: 45:         case 2:
-[e :U 455 ]
+[e :U 459 ]
 "46
 [; ;SourceFiles/SunSensor/Led.c: 46:             counter++;
 [e ++ _counter -> -> 1 `i `us ]
 "47
 [; ;SourceFiles/SunSensor/Led.c: 47:             if (counter >= (100 + 200))
-[e $ ! >= -> _counter `ui -> + -> 100 `i -> 200 `i `ui 456  ]
+[e $ ! >= -> _counter `ui -> + -> 100 `i -> 200 `i `ui 460  ]
 "48
 [; ;SourceFiles/SunSensor/Led.c: 48:             {
 {
@@ -656,22 +656,22 @@ Version 4.0 HI-TECH Software Intermediate Code
 "53
 [; ;SourceFiles/SunSensor/Led.c: 53:             }
 }
-[e $U 457  ]
+[e $U 461  ]
 "54
 [; ;SourceFiles/SunSensor/Led.c: 54:             else
-[e :U 456 ]
+[e :U 460 ]
 "55
 [; ;SourceFiles/SunSensor/Led.c: 55:             {
 {
 "56
 [; ;SourceFiles/SunSensor/Led.c: 56:                 if (dutyValue > 0)
-[e $ ! > -> _dutyValue `ui -> -> 0 `i `ui 458  ]
+[e $ ! > -> _dutyValue `ui -> -> 0 `i `ui 462  ]
 "57
 [; ;SourceFiles/SunSensor/Led.c: 57:                 {
 {
 "58
 [; ;SourceFiles/SunSensor/Led.c: 58:                     if (dutyValue > 4)
-[e $ ! > -> _dutyValue `ui -> -> 4 `i `ui 459  ]
+[e $ ! > -> _dutyValue `ui -> -> 4 `i `ui 463  ]
 "59
 [; ;SourceFiles/SunSensor/Led.c: 59:                     {
 {
@@ -681,10 +681,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 "61
 [; ;SourceFiles/SunSensor/Led.c: 61:                     }
 }
-[e $U 460  ]
+[e $U 464  ]
 "62
 [; ;SourceFiles/SunSensor/Led.c: 62:                     else
-[e :U 459 ]
+[e :U 463 ]
 "63
 [; ;SourceFiles/SunSensor/Led.c: 63:                     {
 {
@@ -694,27 +694,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "65
 [; ;SourceFiles/SunSensor/Led.c: 65:                     }
 }
-[e :U 460 ]
+[e :U 464 ]
 "67
 [; ;SourceFiles/SunSensor/Led.c: 67:                 }
 }
-[e :U 458 ]
+[e :U 462 ]
 "68
 [; ;SourceFiles/SunSensor/Led.c: 68:             }
 }
-[e :U 457 ]
+[e :U 461 ]
 "69
 [; ;SourceFiles/SunSensor/Led.c: 69:             break;
-[e $U 450  ]
+[e $U 454  ]
 "70
 [; ;SourceFiles/SunSensor/Led.c: 70:         case 3:
-[e :U 461 ]
+[e :U 465 ]
 "71
 [; ;SourceFiles/SunSensor/Led.c: 71:             counter++;
 [e ++ _counter -> -> 1 `i `us ]
 "72
 [; ;SourceFiles/SunSensor/Led.c: 72:             if (counter > (100 + 200 + 100))
-[e $ ! > -> _counter `ui -> + + -> 100 `i -> 200 `i -> 100 `i `ui 462  ]
+[e $ ! > -> _counter `ui -> + + -> 100 `i -> 200 `i -> 100 `i `ui 466  ]
 "73
 [; ;SourceFiles/SunSensor/Led.c: 73:             {
 {
@@ -727,32 +727,32 @@ Version 4.0 HI-TECH Software Intermediate Code
 "76
 [; ;SourceFiles/SunSensor/Led.c: 76:             }
 }
-[e :U 462 ]
+[e :U 466 ]
 "77
 [; ;SourceFiles/SunSensor/Led.c: 77:             break;
-[e $U 450  ]
+[e $U 454  ]
 "78
 [; ;SourceFiles/SunSensor/Led.c: 78:         default:
-[e :U 463 ]
+[e :U 467 ]
 "79
 [; ;SourceFiles/SunSensor/Led.c: 79:             break;
-[e $U 450  ]
+[e $U 454  ]
 "80
 [; ;SourceFiles/SunSensor/Led.c: 80:     }
 }
-[e $U 450  ]
-[e :U 451 ]
-[e [\ -> _BreathState `i , $ -> 1 `i 452
- , $ -> 2 `i 455
- , $ -> 3 `i 461
- 463 ]
-[e :U 450 ]
+[e $U 454  ]
+[e :U 455 ]
+[e [\ -> _BreathState `i , $ -> 1 `i 456
+ , $ -> 2 `i 459
+ , $ -> 3 `i 465
+ 467 ]
+[e :U 454 ]
 "82
 [; ;SourceFiles/SunSensor/Led.c: 82:     PWM1_LoadDutyValue(dutyValue);
 [e ( _PWM1_LoadDutyValue (1 _dutyValue ]
 "84
 [; ;SourceFiles/SunSensor/Led.c: 84: }
-[e :UE 449 ]
+[e :UE 453 ]
 }
 "86
 [; ;SourceFiles/SunSensor/Led.c: 86: void LedBreathControl(void)
@@ -764,12 +764,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 [f ]
 "88
 [; ;SourceFiles/SunSensor/Led.c: 88:     do { LATCbits.LATC2 = ~LATCbits.LATC2; } while(0);
-[e :U 467 ]
+[e :U 471 ]
 {
 [e = . . _LATCbits 0 2 -> ~ -> . . _LATCbits 0 2 `i `uc ]
 }
-[e :U 466 ]
+[e :U 470 ]
 "89
 [; ;SourceFiles/SunSensor/Led.c: 89: }
-[e :UE 464 ]
+[e :UE 468 ]
 }

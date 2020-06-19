@@ -6002,13 +6002,437 @@ void COS_TskMan(void);
 extern void Led2_PWM(void);
 extern void LedBreathControl(void);
 # 13 "SourceFiles/COS/COS_UserTskList.c" 2
-# 33 "SourceFiles/COS/COS_UserTskList.c"
+
+# 1 "SourceFiles/COS/../SunSensor/UART_Display.h" 1
+# 13 "SourceFiles/COS/../SunSensor/UART_Display.h"
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 1
+# 50 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h"
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/device_config.h" 1
+# 50 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/pin_manager.h" 1
+# 158 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_Initialize (void);
+# 170 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/pin_manager.h"
+void PIN_MANAGER_IOC(void);
+# 51 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 1 3
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
+# 127 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uintptr_t;
+# 142 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long intptr_t;
+# 158 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef signed char int8_t;
+
+
+
+
+typedef short int16_t;
+# 173 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long int32_t;
+
+
+
+
+
+typedef long long int64_t;
+# 188 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long intmax_t;
+
+
+
+
+
+typedef unsigned char uint8_t;
+
+
+
+
+typedef unsigned short uint16_t;
+# 209 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long uint32_t;
+
+
+
+
+
+typedef unsigned long long uint64_t;
+# 229 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef unsigned long long uintmax_t;
+# 22 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
+
+
+typedef int8_t int_fast8_t;
+
+typedef int64_t int_fast64_t;
+
+
+typedef int8_t int_least8_t;
+typedef int16_t int_least16_t;
+
+typedef int24_t int_least24_t;
+
+typedef int32_t int_least32_t;
+
+typedef int64_t int_least64_t;
+
+
+typedef uint8_t uint_fast8_t;
+
+typedef uint64_t uint_fast64_t;
+
+
+typedef uint8_t uint_least8_t;
+typedef uint16_t uint_least16_t;
+
+typedef uint24_t uint_least24_t;
+
+typedef uint32_t uint_least32_t;
+
+typedef uint64_t uint_least64_t;
+# 139 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/stdint.h" 1 3
+typedef int32_t int_fast16_t;
+typedef int32_t int_fast32_t;
+typedef uint32_t uint_fast16_t;
+typedef uint32_t uint_fast32_t;
+# 139 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdint.h" 2 3
+# 52 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdbool.h" 1 3
+# 53 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 1 3
+
+
+
+
+
+
+
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\errno.h" 1 3
+# 10 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\errno.h" 3
+extern int errno;
+# 8 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 2 3
+
+# 1 "C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\\pic\\include\\__null.h" 1 3
+# 9 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\conio.h" 2 3
+
+
+
+extern void init_uart(void);
+
+extern char getch(void);
+extern char getche(void);
+extern void putch(char);
+extern void ungetch(char);
+
+extern __bit kbhit(void);
+
+
+
+extern char * cgets(char *);
+extern void cputs(const char *);
+# 54 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/interrupt_manager.h" 1
+# 55 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h" 1
+# 54 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdio.h" 1 3
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdio.h" 3
+# 1 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 1 3
+
+
+
+
+
+typedef void * va_list[1];
+
+
+
+
+typedef void * __isoc_va_list[1];
+# 137 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long ssize_t;
+# 246 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef long long off_t;
+# 399 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\bits/alltypes.h" 3
+typedef struct _IO_FILE FILE;
+# 24 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdio.h" 2 3
+# 52 "C:\\Program Files\\Microchip\\xc8\\v2.20\\pic\\include\\c99\\stdio.h" 3
+typedef union _G_fpos64_t {
+ char __opaque[16];
+ double __align;
+} fpos_t;
+
+extern FILE *const stdin;
+extern FILE *const stdout;
+extern FILE *const stderr;
+
+
+
+
+
+FILE *fopen(const char *restrict, const char *restrict);
+FILE *freopen(const char *restrict, const char *restrict, FILE *restrict);
+int fclose(FILE *);
+
+int remove(const char *);
+int rename(const char *, const char *);
+
+int feof(FILE *);
+int ferror(FILE *);
+int fflush(FILE *);
+void clearerr(FILE *);
+
+int fseek(FILE *, long, int);
+long ftell(FILE *);
+void rewind(FILE *);
+
+int fgetpos(FILE *restrict, fpos_t *restrict);
+int fsetpos(FILE *, const fpos_t *);
+
+size_t fread(void *restrict, size_t, size_t, FILE *restrict);
+size_t fwrite(const void *restrict, size_t, size_t, FILE *restrict);
+
+int fgetc(FILE *);
+int getc(FILE *);
+int getchar(void);
+int ungetc(int, FILE *);
+
+int fputc(int, FILE *);
+int putc(int, FILE *);
+int putchar(int);
+
+char *fgets(char *restrict, int, FILE *restrict);
+
+char *gets(char *);
+
+
+int fputs(const char *restrict, FILE *restrict);
+int puts(const char *);
+
+#pragma printf_check(printf) const
+#pragma printf_check(vprintf) const
+#pragma printf_check(sprintf) const
+#pragma printf_check(snprintf) const
+#pragma printf_check(vsprintf) const
+#pragma printf_check(vsnprintf) const
+
+int printf(const char *restrict, ...);
+int fprintf(FILE *restrict, const char *restrict, ...);
+int sprintf(char *restrict, const char *restrict, ...);
+int snprintf(char *restrict, size_t, const char *restrict, ...);
+
+int vprintf(const char *restrict, __isoc_va_list);
+int vfprintf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsprintf(char *restrict, const char *restrict, __isoc_va_list);
+int vsnprintf(char *restrict, size_t, const char *restrict, __isoc_va_list);
+
+int scanf(const char *restrict, ...);
+int fscanf(FILE *restrict, const char *restrict, ...);
+int sscanf(const char *restrict, const char *restrict, ...);
+int vscanf(const char *restrict, __isoc_va_list);
+int vfscanf(FILE *restrict, const char *restrict, __isoc_va_list);
+int vsscanf(const char *restrict, const char *restrict, __isoc_va_list);
+
+void perror(const char *);
+
+int setvbuf(FILE *restrict, char *restrict, int, size_t);
+void setbuf(FILE *restrict, char *restrict);
+
+char *tmpnam(char *);
+FILE *tmpfile(void);
+
+
+
+
+FILE *fmemopen(void *restrict, size_t, const char *restrict);
+FILE *open_memstream(char **, size_t *);
+FILE *fdopen(int, const char *);
+FILE *popen(const char *, const char *);
+int pclose(FILE *);
+int fileno(FILE *);
+int fseeko(FILE *, off_t, int);
+off_t ftello(FILE *);
+int dprintf(int, const char *restrict, ...);
+int vdprintf(int, const char *restrict, __isoc_va_list);
+void flockfile(FILE *);
+int ftrylockfile(FILE *);
+void funlockfile(FILE *);
+int getc_unlocked(FILE *);
+int getchar_unlocked(void);
+int putc_unlocked(int, FILE *);
+int putchar_unlocked(int);
+ssize_t getdelim(char **restrict, size_t *restrict, int, FILE *restrict);
+ssize_t getline(char **restrict, size_t *restrict, FILE *restrict);
+int renameat(int, const char *, int, const char *);
+char *ctermid(char *);
+
+
+
+
+
+
+
+char *tempnam(const char *, const char *);
+# 54 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h" 2
+
+
+
+
+typedef enum {
+    I2C_NOERR,
+    I2C_BUSY,
+    I2C_FAIL
+
+
+} i2c_error_t;
+
+typedef enum
+{
+    I2C_STOP=1,
+    I2C_RESTART_READ,
+    I2C_RESTART_WRITE,
+    I2C_CONTINUE,
+    I2C_RESET_LINK
+} i2c_operations_t;
+
+typedef uint8_t i2c_address_t;
+typedef i2c_operations_t (*i2c_callback_t)(void *funPtr);
+
+
+i2c_operations_t I2C_CallbackReturnStop(void *funPtr);
+i2c_operations_t I2C_CallbackReturnReset(void *funPtr);
+i2c_operations_t I2C_CallbackRestartWrite(void *funPtr);
+i2c_operations_t I2C_CallbackRestartRead(void *funPtr);
+
+
+
+
+
+
+void I2C_Initialize(void);
+# 101 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+i2c_error_t I2C_Open(i2c_address_t address);
+# 111 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+i2c_error_t I2C_Close(void);
+# 123 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+i2c_error_t I2C_MasterOperation(_Bool read);
+
+
+
+
+i2c_error_t I2C_MasterWrite(void);
+
+
+
+
+i2c_error_t I2C_MasterRead(void);
+# 142 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetTimeout(uint8_t timeOut);
+# 152 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetBuffer(void *buffer, size_t bufferSize);
+# 164 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetDataCompleteCallback(i2c_callback_t cb, void *ptr);
+# 174 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetWriteCollisionCallback(i2c_callback_t cb, void *ptr);
+# 184 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetAddressNackCallback(i2c_callback_t cb, void *ptr);
+# 194 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetDataNackCallback(i2c_callback_t cb, void *ptr);
+# 204 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h"
+void I2C_SetTimeoutCallback(i2c_callback_t cb, void *ptr);
+# 56 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/pwm1.h" 1
+# 102 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/pwm1.h"
+ void PWM1_Initialize(void);
+# 129 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/pwm1.h"
+ void PWM1_LoadDutyValue(uint16_t dutyValue);
+# 57 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h" 1
+# 104 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_Initialize(void);
+# 133 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_StartTimer(void);
+# 165 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_StopTimer(void);
+# 200 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+uint8_t TMR2_ReadTimer(void);
+# 239 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_WriteTimer(uint8_t timerVal);
+# 291 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_LoadPeriodRegister(uint8_t periodVal);
+# 309 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_ISR(void);
+# 327 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+ void TMR2_CallBack(void);
+# 344 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+ void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
+# 362 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+extern void (*TMR2_InterruptHandler)(void);
+# 380 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h"
+void TMR2_DefaultInterruptHandler(void);
+# 58 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+
+# 1 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h" 1
+# 75 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+typedef union {
+    struct {
+        unsigned perr : 1;
+        unsigned ferr : 1;
+        unsigned oerr : 1;
+        unsigned reserved : 5;
+    };
+    uint8_t status;
+}eusart_status_t;
+# 110 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+void EUSART_Initialize(void);
+# 158 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+_Bool EUSART_is_tx_ready(void);
+# 206 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+_Bool EUSART_is_rx_ready(void);
+# 253 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+_Bool EUSART_is_tx_done(void);
+# 301 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+eusart_status_t EUSART_get_last_status(void);
+# 321 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+uint8_t EUSART_Read(void);
+# 341 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+void EUSART_Write(uint8_t txData);
+# 361 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+void EUSART_SetFramingErrorHandler(void (* interruptHandler)(void));
+# 379 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+void EUSART_SetOverrunErrorHandler(void (* interruptHandler)(void));
+# 397 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h"
+void EUSART_SetErrorHandler(void (* interruptHandler)(void));
+# 59 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h" 2
+# 74 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h"
+void SYSTEM_Initialize(void);
+# 87 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h"
+void OSCILLATOR_Initialize(void);
+# 99 "SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h"
+void WDT_Initialize(void);
+# 13 "SourceFiles/COS/../SunSensor/UART_Display.h" 2
+
+
+extern void SendByUart(uint8_t Txt);
+extern void UartDisplay(void);
+# 14 "SourceFiles/COS/COS_UserTskList.c" 2
+# 34 "SourceFiles/COS/COS_UserTskList.c"
 const task COS_tsk[(2 +2)] =
 {
 
 
 
 
- {LedBreathControl, 0xff }
-# 57 "SourceFiles/COS/COS_UserTskList.c"
+ {UartDisplay, 0x80 }
+# 58 "SourceFiles/COS/COS_UserTskList.c"
 };

@@ -49,16 +49,6 @@
                          Main application
  */
 
-void Led0_toggle(void)
-{
-    IO_RC0_Toggle();
-}
-
-void Led1_toggle(void)
-{
-    IO_RC1_Toggle();
-}
-
 void main(void)
 {
     // initialize the device
