@@ -34,13 +34,13 @@
    <POPUP w="695" x="413" flags="00000001" y="835" h="459" pid="0" iid="12">
     <PROPERTIES/>
    </POPUP>
-   <POPUP w="771" x="1123" flags="00008023" y="797" h="507" pid="0" iid="13">
+   <POPUP w="771" x="376" flags="00008023" y="297" h="507" pid="0" iid="13">
     <PROPERTIES>
      <ITEM name="AutoEcho">0</ITEM>
      <ITEM name="HexMode">0</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="434" x="833" flags="00000008" y="248" h="242" pid="3" iid="1">
+   <POPUP w="434" x="833" flags="00000009" y="248" h="242" pid="3" iid="1">
     <PROPERTIES/>
    </POPUP>
    <POPUP w="8" x="148" flags="0000000b" y="260" h="32" pid="4" iid="1">
@@ -76,8 +76,41 @@
      <ITEM name="TopLineAddress">00000000</ITEM>
     </PROPERTIES>
    </POPUP>
-   <POPUP w="290" x="528" flags="00000000" y="641" h="195" pid="0" iid="14">
-    <PROPERTIES/>
+   <POPUP w="290" x="299" flags="00000022" y="150" h="195" pid="0" iid="14">
+    <PROPERTIES>
+     <ITEM name="ComboBox1000">S</ITEM>
+     <ITEM name="ComboBox1001">Sr</ITEM>
+     <ITEM name="ComboBox1002">P</ITEM>
+     <ITEM name="ComboBox1003">A</ITEM>
+     <ITEM name="ComboBox1004">N</ITEM>
+     <ITEM name="ComboBox1005">S</ITEM>
+     <ITEM name="ComboBox1006">Sr</ITEM>
+     <ITEM name="ComboBox1007">P</ITEM>
+     <ITEM name="ComboBox1008">A</ITEM>
+     <ITEM name="ComboBox1009">N</ITEM>
+     <ITEM name="HSplitter1Pos">6</ITEM>
+     <ITEM name="VSplitter1Pos">6</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="8" x="48" flags="0000000a" y="160" h="32" pid="101" iid="15">
+    <PROPERTIES>
+     <ITEM name="DataType">2</ITEM>
+     <ITEM name="DispChars">Yes</ITEM>
+     <ITEM name="DispFormat">2</ITEM>
+     <ITEM name="ShowChanges">Yes</ITEM>
+     <ITEM name="ShowToolTips">Yes</ITEM>
+     <ITEM name="TopLineAddress">00000000</ITEM>
+    </PROPERTIES>
+   </POPUP>
+   <POPUP w="8" x="68" flags="0000000a" y="180" h="16" pid="101" iid="16">
+    <PROPERTIES>
+     <ITEM name="DataType">2</ITEM>
+     <ITEM name="DispChars">Yes</ITEM>
+     <ITEM name="DispFormat">2</ITEM>
+     <ITEM name="ShowChanges">Yes</ITEM>
+     <ITEM name="ShowToolTips">Yes</ITEM>
+     <ITEM name="TopLineAddress">00000000</ITEM>
+    </PROPERTIES>
    </POPUP>
   </PWI>
  </MODULE>

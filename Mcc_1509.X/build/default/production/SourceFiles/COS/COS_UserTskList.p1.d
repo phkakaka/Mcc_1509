@@ -14,4 +14,5 @@ SourceFiles/COS/../SunSensor/../../mcc_generated_files/interrupt_manager.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/pwm1.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h  \
-SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h 
+SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h  \
+SourceFiles/COS/../SunSensor/SHT25.h 

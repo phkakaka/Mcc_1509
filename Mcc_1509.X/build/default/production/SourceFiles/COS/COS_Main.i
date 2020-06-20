@@ -6100,7 +6100,7 @@ void COS_TskMan(void)
 
  }
  COS_tsk_ind++;
- if (COS_tsk_ind >= (2 +2))
+ if (COS_tsk_ind >= (3 +2))
  {
   COS_tsk_ena = 0;
   COS_tsk_ind = 0;

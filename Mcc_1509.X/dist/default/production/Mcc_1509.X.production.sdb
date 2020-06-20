@@ -58,6 +58,12 @@ I2C_DATA_NACK 3
 I2C_TIMEOUT 4
 I2C_NULL 5
 ]
+"20 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[e E3817 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
 "10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
 "15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul16.c
@@ -68,8 +74,6 @@ I2C_NULL 5
 [v _main main `(v  1 e 1 0 ]
 "66 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
-"94
-[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
 "132
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 "144
@@ -224,9 +228,13 @@ I2C_NULL 5
 [v _COS_TskMan COS_TskMan `(v  1 e 1 0 ]
 "30 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/Led.c
 [v _Led2_PWM Led2_PWM `(v  1 e 1 0 ]
-"21 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
+"18 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[v _GetTemp GetTemp `(v  1 e 1 0 ]
+"17 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
+[v _SendByUart SendByUart `(v  1 e 1 0 ]
+"23
 [v _UartDisplay UartDisplay `(v  1 e 1 0 ]
-[s S324 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S328 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -236,14 +244,14 @@ I2C_NULL 5
 `uc 1 GIE 1 0 :1:7 
 ]
 "374 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
-[s S333 . 1 `uc 1 . 1 0 :2:0 
+[s S337 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S338 . 1 `S324 1 . 1 0 `S333 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES338  1 e 1 @11 ]
-[s S196 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S342 . 1 `S328 1 . 1 0 `S337 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES342  1 e 1 @11 ]
+[s S200 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -253,9 +261,9 @@ I2C_NULL 5
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "597
-[u S205 . 1 `S196 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES205  1 e 1 @17 ]
-[s S790 . 1 `uc 1 . 1 0 :2:0 
+[u S209 . 1 `S200 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES209  1 e 1 @17 ]
+[s S794 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 NCO1IF 1 0 :1:2 
 `uc 1 BCL1IF 1 0 :1:3 
 `uc 1 . 1 0 :1:4 
@@ -264,8 +272,8 @@ I2C_NULL 5
 `uc 1 OSFIF 1 0 :1:7 
 ]
 "653
-[u S798 . 1 `S790 1 . 1 0 ]
-[v _PIR2bits PIR2bits `VES798  1 e 1 @18 ]
+[u S802 . 1 `S794 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES802  1 e 1 @18 ]
 "748
 [v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
 "768
@@ -278,12 +286,12 @@ I2C_NULL 5
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
 "970
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-[s S249 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S253 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "991
-[s S253 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S257 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -291,15 +299,15 @@ I2C_NULL 5
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S261 . 1 `S249 1 . 1 0 `S253 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES261  1 e 1 @28 ]
+[u S265 . 1 `S253 1 . 1 0 `S257 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES265  1 e 1 @28 ]
 "1041
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1091
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1130
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S217 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S221 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -309,9 +317,9 @@ I2C_NULL 5
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1209
-[u S226 . 1 `S217 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES226  1 e 1 @145 ]
-[s S438 . 1 `uc 1 PS 1 0 :3:0 
+[u S230 . 1 `S221 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES230  1 e 1 @145 ]
+[s S442 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -319,15 +327,15 @@ I2C_NULL 5
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "1356
-[s S445 . 1 `uc 1 PS0 1 0 :1:0 
+[s S449 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S452 . 1 `S438 1 . 1 0 `S445 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES452  1 e 1 @149 ]
+[u S456 . 1 `S442 1 . 1 0 `S449 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES456  1 e 1 @149 ]
 "1473
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "1532
@@ -338,7 +346,7 @@ I2C_NULL 5
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "1950
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S1185 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S1189 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -348,8 +356,8 @@ I2C_NULL 5
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1967
-[u S1194 . 1 `S1185 1 . 1 0 ]
-[v _LATCbits LATCbits `VES1194  1 e 1 @270 ]
+[u S1198 . 1 `S1189 1 . 1 0 ]
+[v _LATCbits LATCbits `VES1198  1 e 1 @270 ]
 "2296
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "2498
@@ -370,7 +378,7 @@ I2C_NULL 5
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
 "2965
 [v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
-[s S1111 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S1115 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -380,11 +388,11 @@ I2C_NULL 5
 `uc 1 SPEN 1 0 :1:7 
 ]
 "2982
-[u S1120 . 1 `S1111 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES1120  1 e 1 @413 ]
+[u S1124 . 1 `S1115 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES1124  1 e 1 @413 ]
 "3027
 [v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
-[s S1090 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S1094 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -394,8 +402,8 @@ I2C_NULL 5
 `uc 1 CSRC 1 0 :1:7 
 ]
 "3044
-[u S1099 . 1 `S1090 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES1099  1 e 1 @414 ]
+[u S1103 . 1 `S1094 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES1103  1 e 1 @414 ]
 "3089
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
 "3141
@@ -408,7 +416,7 @@ I2C_NULL 5
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
 "3361
 [v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
-[s S809 . 1 `uc 1 BF 1 0 :1:0 
+[s S813 . 1 `uc 1 BF 1 0 :1:0 
 `uc 1 UA 1 0 :1:1 
 `uc 1 R_nW 1 0 :1:2 
 `uc 1 S 1 0 :1:3 
@@ -418,11 +426,11 @@ I2C_NULL 5
 `uc 1 SMP 1 0 :1:7 
 ]
 "3383
-[u S818 . 1 `S809 1 . 1 0 ]
-[v _SSP1STATbits SSP1STATbits `VES818  1 e 1 @532 ]
+[u S822 . 1 `S813 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES822  1 e 1 @532 ]
 "3483
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
-[s S604 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S608 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
@@ -432,13 +440,13 @@ I2C_NULL 5
 `uc 1 WCOL 1 0 :1:7 
 ]
 "3512
-[s S613 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S617 . 1 `uc 1 SSPM 1 0 :4:0 
 ]
-[u S615 . 1 `S604 1 . 1 0 `S613 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES615  1 e 1 @533 ]
+[u S619 . 1 `S608 1 . 1 0 `S617 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES619  1 e 1 @533 ]
 "3687
 [v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
-[s S769 . 1 `uc 1 SEN 1 0 :1:0 
+[s S773 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -448,22 +456,22 @@ I2C_NULL 5
 `uc 1 GCEN 1 0 :1:7 
 ]
 "3709
-[u S778 . 1 `S769 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES778  1 e 1 @534 ]
+[u S782 . 1 `S773 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES782  1 e 1 @534 ]
 "4665
 [v _PWM1DCL PWM1DCL `VEuc  1 e 1 @1553 ]
 "4701
 [v _PWM1DCH PWM1DCH `VEuc  1 e 1 @1554 ]
 "4771
 [v _PWM1CON PWM1CON `VEuc  1 e 1 @1555 ]
-[s S1032 . 1 `uc 1 perr 1 0 :1:0 
+[s S1036 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "52 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
-[u S1037 . 1 `S1032 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxLastError eusartRxLastError `VES1037  1 e 1 0 ]
+[u S1041 . 1 `S1036 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES1041  1 e 1 0 ]
 "58
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
@@ -472,13 +480,13 @@ I2C_NULL 5
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
 "146 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/i2c_master.c
 [v _fsmStateTable fsmStateTable `DC[16]*.37(E3874  1 e 32 0 ]
-[s S578 . 29 `[6]*.37(E358 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E3874 1 state 1 26 `E353 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+[s S582 . 29 `[6]*.37(E358 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E3874 1 state 1 26 `E353 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
 `uc 1 busy 1 28 :1:1 
 `uc 1 inUse 1 28 :1:2 
 `uc 1 bufferFree 1 28 :1:3 
 ]
 "165
-[v _I2C_Status I2C_Status `S578  1 e 29 0 ]
+[v _I2C_Status I2C_Status `S582  1 e 29 0 ]
 "58 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/tmr2.c
 [v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
 "13 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_Main.c
@@ -498,8 +506,8 @@ I2C_NULL 5
 "22
 [v _COS_tcnt_lst COS_tcnt_lst `us  1 e 2 0 ]
 [s S30 . 3 `*.37(v 1 tptr 2 0 `uc 1 sched 1 2 ]
-"34 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_UserTskList.c
-[v _COS_tsk COS_tsk `DC[4]S30  1 e 12 0 ]
+"35 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_UserTskList.c
+[v _COS_tsk COS_tsk `DC[5]S30  1 e 15 0 ]
 "24 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/Led.c
 [v _counter counter `us  1 s 2 counter ]
 "25
@@ -508,6 +516,8 @@ I2C_NULL 5
 [v _dutyValue dutyValue `us  1 s 2 dutyValue ]
 "13 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _U8Message U8Message `uc  1 s 1 U8Message ]
+"14
+[v _NewMessageFlag NewMessageFlag `uc  1 s 1 NewMessageFlag ]
 "52 E:\GitHub\Mcc_1509\Mcc_1509.X\main.c
 [v _main main `(v  1 e 1 0 ]
 {
@@ -592,23 +602,54 @@ I2C_NULL 5
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"21 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
+"18 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[v _GetTemp GetTemp `(v  1 e 1 0 ]
+{
+"23
+} 0
+"23 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _UartDisplay UartDisplay `(v  1 e 1 0 ]
 {
-"33
+"40
 } 0
-"94 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
-[v _EUSART_is_tx_ready EUSART_is_tx_ready `(a  1 e 1 0 ]
-{
-"97
-} 0
-"132
+"132 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
 [v _EUSART_Write EUSART_Write `(v  1 e 1 0 ]
 {
 [v EUSART_Write@txData txData `uc  1 a 1 wreg ]
 [v EUSART_Write@txData txData `uc  1 a 1 wreg ]
 [v EUSART_Write@txData txData `uc  1 a 1 0 ]
 "139
+} 0
+"17 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
+[v _SendByUart SendByUart `(v  1 e 1 0 ]
+{
+[v SendByUart@Txt Txt `uc  1 a 1 wreg ]
+[v SendByUart@Txt Txt `uc  1 a 1 wreg ]
+"19
+[v SendByUart@Txt Txt `uc  1 a 1 1 ]
+"21
+} 0
+"176 E:\GitHub\Mcc_1509\Mcc_1509.X\mcc_generated_files/i2c_master.c
+[v _I2C_Open I2C_Open `(E353  1 e 1 0 ]
+{
+[v I2C_Open@address address `uc  1 a 1 wreg ]
+"178
+[v I2C_Open@returnValue returnValue `E353  1 a 1 2 ]
+"176
+[v I2C_Open@address address `uc  1 a 1 wreg ]
+"178
+[v I2C_Open@address address `uc  1 a 1 1 ]
+"207
+} 0
+"543
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+{
+"555
+} 0
+"640
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+{
+"643
 } 0
 "92 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_Main.c
 [v _COS_TmrHandler COS_TmrHandler `(v  1 e 1 0 ]

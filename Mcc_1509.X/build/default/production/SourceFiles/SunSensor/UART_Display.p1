@@ -1,8 +1,5 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"158 SourceFiles/SunSensor/../../mcc_generated_files/eusart.h
-[; ;SourceFiles/SunSensor/../../mcc_generated_files/eusart.h: 158: _Bool EUSART_is_tx_ready(void);
-[v _EUSART_is_tx_ready `(a ~T0 @X0 0 ef ]
-"341
+"341 SourceFiles/SunSensor/../../mcc_generated_files/eusart.h
 [; ;SourceFiles/SunSensor/../../mcc_generated_files/eusart.h: 341: void EUSART_Write(uint8_t txData);
 [v _EUSART_Write `(v ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
@@ -567,50 +564,59 @@ Version 4.0 HI-TECH Software Intermediate Code
 -> -> 85 `i `uc
 ]
 "14
-[; ;SourceFiles/SunSensor/UART_Display.c: 14: static uint8_t counter;
+[; ;SourceFiles/SunSensor/UART_Display.c: 14: static uint8_t NewMessageFlag;
+[v _NewMessageFlag `uc ~T0 @X0 1 s ]
+"15
+[; ;SourceFiles/SunSensor/UART_Display.c: 15: static uint8_t counter;
 [v _counter `uc ~T0 @X0 1 s ]
-"16
-[; ;SourceFiles/SunSensor/UART_Display.c: 16: void SendByUart(uint8_t Txt)
-[v _SendByUart `(v ~T0 @X0 1 ef1`uc ]
 "17
-[; ;SourceFiles/SunSensor/UART_Display.c: 17: {
+[; ;SourceFiles/SunSensor/UART_Display.c: 17: void SendByUart(uint8_t Txt)
+[v _SendByUart `(v ~T0 @X0 1 ef1`uc ]
+"18
+[; ;SourceFiles/SunSensor/UART_Display.c: 18: {
 {
 [e :U _SendByUart ]
-"16
-[; ;SourceFiles/SunSensor/UART_Display.c: 16: void SendByUart(uint8_t Txt)
-[v _Txt `uc ~T0 @X0 1 r1 ]
 "17
-[; ;SourceFiles/SunSensor/UART_Display.c: 17: {
-[f ]
+[; ;SourceFiles/SunSensor/UART_Display.c: 17: void SendByUart(uint8_t Txt)
+[v _Txt `uc ~T0 @X0 1 r1 ]
 "18
-[; ;SourceFiles/SunSensor/UART_Display.c: 18:     U8Message = Txt;
-[e = _U8Message _Txt ]
+[; ;SourceFiles/SunSensor/UART_Display.c: 18: {
+[f ]
 "19
-[; ;SourceFiles/SunSensor/UART_Display.c: 19: }
+[; ;SourceFiles/SunSensor/UART_Display.c: 19:     U8Message = Txt;
+[e = _U8Message _Txt ]
+"20
+[; ;SourceFiles/SunSensor/UART_Display.c: 20:     NewMessageFlag = 1;
+[e = _NewMessageFlag -> -> 1 `i `uc ]
+"21
+[; ;SourceFiles/SunSensor/UART_Display.c: 21: }
 [e :UE 453 ]
 }
-"21
-[; ;SourceFiles/SunSensor/UART_Display.c: 21: void UartDisplay(void)
+"23
+[; ;SourceFiles/SunSensor/UART_Display.c: 23: void UartDisplay(void)
 [v _UartDisplay `(v ~T0 @X0 1 ef ]
-"22
-[; ;SourceFiles/SunSensor/UART_Display.c: 22: {
+"24
+[; ;SourceFiles/SunSensor/UART_Display.c: 24: {
 {
 [e :U _UartDisplay ]
 [f ]
-"23
-[; ;SourceFiles/SunSensor/UART_Display.c: 23:     if (EUSART_is_tx_ready())
-[e $ ! != -> ( _EUSART_is_tx_ready ..  `i -> 0 `i 455  ]
-"24
-[; ;SourceFiles/SunSensor/UART_Display.c: 24:     {
-{
 "25
-[; ;SourceFiles/SunSensor/UART_Display.c: 25:         EUSART_Write(U8Message);
-[e ( _EUSART_Write (1 _U8Message ]
+[; ;SourceFiles/SunSensor/UART_Display.c: 25:     if (NewMessageFlag == 1)
+[e $ ! == -> _NewMessageFlag `i -> 1 `i 455  ]
 "26
-[; ;SourceFiles/SunSensor/UART_Display.c: 26:     }
+[; ;SourceFiles/SunSensor/UART_Display.c: 26:     {
+{
+"27
+[; ;SourceFiles/SunSensor/UART_Display.c: 27:         EUSART_Write(U8Message);
+[e ( _EUSART_Write (1 _U8Message ]
+"28
+[; ;SourceFiles/SunSensor/UART_Display.c: 28:         NewMessageFlag = 0;
+[e = _NewMessageFlag -> -> 0 `i `uc ]
+"29
+[; ;SourceFiles/SunSensor/UART_Display.c: 29:     }
 }
 [e :U 455 ]
-"33
-[; ;SourceFiles/SunSensor/UART_Display.c: 33: }
+"40
+[; ;SourceFiles/SunSensor/UART_Display.c: 40: }
 [e :UE 454 ]
 }

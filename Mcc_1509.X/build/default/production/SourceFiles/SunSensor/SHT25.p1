@@ -1,4 +1,13 @@
 Version 4.0 HI-TECH Software Intermediate Code
+"20 SourceFiles/SunSensor/SHT25.c
+[; ;SourceFiles/SunSensor/SHT25.c: 20:     I2C_Open(128);
+[c E3817 0 1 2 .. ]
+[n E3817 . I2C_NOERR I2C_BUSY I2C_FAIL  ]
+"101 SourceFiles/SunSensor/../../mcc_generated_files/examples/../i2c_master.h
+[v _I2C_Open `(E3817 ~T0 @X0 0 ef1`uc ]
+"15 SourceFiles/SunSensor/UART_Display.h
+[; ;SourceFiles/SunSensor/UART_Display.h: 15: extern void SendByUart(uint8_t Txt);
+[v _SendByUart `(v ~T0 @X0 0 ef1`uc ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -554,3 +563,27 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9812
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 9812: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
+"15 SourceFiles/SunSensor/SHT25.c
+[; ;SourceFiles/SunSensor/SHT25.c: 15: uint16_t Temp;
+[v _Temp `us ~T0 @X0 1 e ]
+"16
+[; ;SourceFiles/SunSensor/SHT25.c: 16: uint16_t Humi;
+[v _Humi `us ~T0 @X0 1 e ]
+"18
+[; ;SourceFiles/SunSensor/SHT25.c: 18: void GetTemp(void)
+[v _GetTemp `(v ~T0 @X0 1 ef ]
+"19
+[; ;SourceFiles/SunSensor/SHT25.c: 19: {
+{
+[e :U _GetTemp ]
+[f ]
+"20
+[; ;SourceFiles/SunSensor/SHT25.c: 20:     I2C_Open(128);
+[e ( _I2C_Open (1 -> -> 128 `i `uc ]
+"22
+[; ;SourceFiles/SunSensor/SHT25.c: 22:     SendByUart('I2C');
+[e ( _SendByUart (1 -> -> 12867 `ui `uc ]
+"23
+[; ;SourceFiles/SunSensor/SHT25.c: 23: }
+[e :UE 453 ]
+}

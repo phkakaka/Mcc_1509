@@ -6358,8 +6358,74 @@ void WDT_Initialize(void);
 # 10 "SourceFiles/SunSensor/SHT25.c" 2
 
 # 1 "SourceFiles/SunSensor/SHT25.h" 1
-# 14 "SourceFiles/SunSensor/SHT25.h"
-extern void Led2_PWM(void);
-extern void LedBreathControl(void);
+# 15 "SourceFiles/SunSensor/SHT25.h"
+typedef enum{
+  TRIG_T_MEASUREMENT_HM = 0xE3,
+  TRIG_RH_MEASUREMENT_HM = 0xE5,
+  TRIG_T_MEASUREMENT_POLL = 0xF3,
+  TRIG_RH_MEASUREMENT_POLL = 0xF5,
+  USER_REG_W = 0xE6,
+  USER_REG_R = 0xE7,
+  SOFT_RESET = 0xFE
+}etSHT2xCommand;
+
+typedef enum {
+  SHT2x_RES_12_14BIT = 0x00,
+  SHT2x_RES_8_12BIT = 0x01,
+  SHT2x_RES_10_13BIT = 0x80,
+  SHT2x_RES_11_11BIT = 0x81,
+  SHT2x_RES_MASK = 0x81
+} etSHT2xResolution;
+
+typedef enum {
+  SHT2x_EOB_ON = 0x40,
+  SHT2x_EOB_MASK = 0x40,
+} etSHT2xEob;
+
+typedef enum {
+  SHT2x_HEATER_ON = 0x04,
+  SHT2x_HEATER_OFF = 0x00,
+  SHT2x_HEATER_MASK = 0x04,
+} etSHT2xHeater;
+
+
+typedef enum{
+  HUMIDITY,
+  TEMP
+}etSHT2xMeasureType;
+
+typedef enum{
+  I2C_ADR_W = 128,
+  I2C_ADR_R = 129
+}etI2cHeader;
+
+extern void GetTemp(void);
 # 11 "SourceFiles/SunSensor/SHT25.c" 2
 
+# 1 "SourceFiles/SunSensor/UART_Display.h" 1
+# 15 "SourceFiles/SunSensor/UART_Display.h"
+extern void SendByUart(uint8_t Txt);
+extern void UartDisplay(void);
+# 12 "SourceFiles/SunSensor/SHT25.c" 2
+
+# 1 "SourceFiles/SunSensor/../../mcc_generated_files/examples/i2c_master_example.h" 1
+# 54 "SourceFiles/SunSensor/../../mcc_generated_files/examples/i2c_master_example.h"
+uint8_t I2C_Read1ByteRegister(i2c_address_t address, uint8_t reg);
+uint16_t I2C_Read2ByteRegister(i2c_address_t address, uint8_t reg);
+void I2C_Write1ByteRegister(i2c_address_t address, uint8_t reg, uint8_t data);
+void I2C_Write2ByteRegister(i2c_address_t address, uint8_t reg, uint16_t data);
+void I2C_WriteNBytes(i2c_address_t address, uint8_t *data, size_t len);
+void I2C_ReadNBytes(i2c_address_t address, uint8_t *data, size_t len);
+void I2C_ReadDataBlock(i2c_address_t address, uint8_t reg, uint8_t *data, size_t len);
+# 13 "SourceFiles/SunSensor/SHT25.c" 2
+
+
+uint16_t Temp;
+uint16_t Humi;
+
+void GetTemp(void)
+{
+    I2C_Open(128);
+
+    SendByUart('I2C');
+}

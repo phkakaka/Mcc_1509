@@ -6426,13 +6426,59 @@ void WDT_Initialize(void);
 extern void SendByUart(uint8_t Txt);
 extern void UartDisplay(void);
 # 14 "SourceFiles/COS/COS_UserTskList.c" 2
-# 34 "SourceFiles/COS/COS_UserTskList.c"
-const task COS_tsk[(2 +2)] =
+
+# 1 "SourceFiles/COS/../SunSensor/SHT25.h" 1
+# 15 "SourceFiles/COS/../SunSensor/SHT25.h"
+typedef enum{
+  TRIG_T_MEASUREMENT_HM = 0xE3,
+  TRIG_RH_MEASUREMENT_HM = 0xE5,
+  TRIG_T_MEASUREMENT_POLL = 0xF3,
+  TRIG_RH_MEASUREMENT_POLL = 0xF5,
+  USER_REG_W = 0xE6,
+  USER_REG_R = 0xE7,
+  SOFT_RESET = 0xFE
+}etSHT2xCommand;
+
+typedef enum {
+  SHT2x_RES_12_14BIT = 0x00,
+  SHT2x_RES_8_12BIT = 0x01,
+  SHT2x_RES_10_13BIT = 0x80,
+  SHT2x_RES_11_11BIT = 0x81,
+  SHT2x_RES_MASK = 0x81
+} etSHT2xResolution;
+
+typedef enum {
+  SHT2x_EOB_ON = 0x40,
+  SHT2x_EOB_MASK = 0x40,
+} etSHT2xEob;
+
+typedef enum {
+  SHT2x_HEATER_ON = 0x04,
+  SHT2x_HEATER_OFF = 0x00,
+  SHT2x_HEATER_MASK = 0x04,
+} etSHT2xHeater;
+
+
+typedef enum{
+  HUMIDITY,
+  TEMP
+}etSHT2xMeasureType;
+
+typedef enum{
+  I2C_ADR_W = 128,
+  I2C_ADR_R = 129
+}etI2cHeader;
+
+extern void GetTemp(void);
+# 15 "SourceFiles/COS/COS_UserTskList.c" 2
+# 35 "SourceFiles/COS/COS_UserTskList.c"
+const task COS_tsk[(3 +2)] =
 {
 
 
 
 
- {UartDisplay, 0x80 }
-# 58 "SourceFiles/COS/COS_UserTskList.c"
+ {UartDisplay, 0x80 },
+    {GetTemp, 0x40 }
+# 60 "SourceFiles/COS/COS_UserTskList.c"
 };

@@ -807,8 +807,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;SourceFiles/COS/COS_Main.c: 150:  COS_tsk_ind++;
 [e ++ _COS_tsk_ind -> -> 1 `i `uc ]
 "151
-[; ;SourceFiles/COS/COS_Main.c: 151:  if (COS_tsk_ind >= (2 +2))
-[e $ ! >= -> _COS_tsk_ind `i + -> 2 `i -> 2 `i 460  ]
+[; ;SourceFiles/COS/COS_Main.c: 151:  if (COS_tsk_ind >= (3 +2))
+[e $ ! >= -> _COS_tsk_ind `i + -> 3 `i -> 2 `i 460  ]
 "152
 [; ;SourceFiles/COS/COS_Main.c: 152:  {
 {
