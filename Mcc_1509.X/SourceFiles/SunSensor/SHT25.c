@@ -13,13 +13,17 @@
 #include "../../mcc_generated_files/examples/i2c_master_example.h"
 
 uint16_t Temp;
+uint8_t TempH = 0xE3;
 uint16_t Humi;
 
 void GetTemp(void)
 {
-    I2C_Open(128);
+    
     //Temp = I2C_Read2ByteRegister(128,0xE5);
-    SendByUart('I2C');
+    I2C_WriteNBytes(128,&TempH,1);
+    I2C_ReadNBytes(128,&TempH,1);
+    SendByUart(TempH+0x30);
+    TempH = 0xE3;
 }
 
 //
