@@ -226,7 +226,7 @@ I2C_NULL 5
 [v _COS_TskMan COS_TskMan `(v  1 e 1 0 ]
 "30 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/Led.c
 [v _Led2_PWM Led2_PWM `(v  1 e 1 0 ]
-"19 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+"21 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
 [v _GetTemp GetTemp `(v  1 e 1 0 ]
 "17 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _SendByUart SendByUart `(v  1 e 1 0 ]
@@ -514,6 +514,8 @@ I2C_NULL 5
 [v _dutyValue dutyValue `us  1 s 2 dutyValue ]
 "16 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
 [v _TempH TempH `uc  1 e 1 0 ]
+"18
+[v _Command Command `uc  1 e 1 0 ]
 "13 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _U8Message U8Message `uc  1 s 1 U8Message ]
 "14
@@ -602,10 +604,10 @@ I2C_NULL 5
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"19 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+"21 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
 [v _GetTemp GetTemp `(v  1 e 1 0 ]
 {
-"27
+"31
 } 0
 "23 E:\GitHub\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _UartDisplay UartDisplay `(v  1 e 1 0 ]

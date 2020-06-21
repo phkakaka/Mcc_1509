@@ -6421,15 +6421,19 @@ void I2C_ReadDataBlock(i2c_address_t address, uint8_t reg, uint8_t *data, size_t
 
 
 uint16_t Temp;
-uint8_t TempH = 0xE3;
+uint8_t TempH;
 uint16_t Humi;
+uint8_t Command;
+
 
 void GetTemp(void)
 {
+    Command = 0xF5;
+
+    I2C_WriteNBytes(128,&Command,1);
+    I2C_ReadNBytes(129,&TempH,1);
 
 
-    I2C_WriteNBytes(128,&TempH,1);
-    I2C_ReadNBytes(128,&TempH,1);
     SendByUart(TempH+0x30);
-    TempH = 0xE3;
+
 }

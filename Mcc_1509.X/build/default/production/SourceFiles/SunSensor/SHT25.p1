@@ -567,35 +567,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;SourceFiles/SunSensor/SHT25.c: 15: uint16_t Temp;
 [v _Temp `us ~T0 @X0 1 e ]
 "16
-[; ;SourceFiles/SunSensor/SHT25.c: 16: uint8_t TempH = 0xE3;
+[; ;SourceFiles/SunSensor/SHT25.c: 16: uint8_t TempH;
 [v _TempH `uc ~T0 @X0 1 e ]
-[i _TempH
--> -> 227 `i `uc
-]
 "17
 [; ;SourceFiles/SunSensor/SHT25.c: 17: uint16_t Humi;
 [v _Humi `us ~T0 @X0 1 e ]
-"19
-[; ;SourceFiles/SunSensor/SHT25.c: 19: void GetTemp(void)
+"18
+[; ;SourceFiles/SunSensor/SHT25.c: 18: uint8_t Command;
+[v _Command `uc ~T0 @X0 1 e ]
+"21
+[; ;SourceFiles/SunSensor/SHT25.c: 21: void GetTemp(void)
 [v _GetTemp `(v ~T0 @X0 1 ef ]
-"20
-[; ;SourceFiles/SunSensor/SHT25.c: 20: {
+"22
+[; ;SourceFiles/SunSensor/SHT25.c: 22: {
 {
 [e :U _GetTemp ]
 [f ]
 "23
-[; ;SourceFiles/SunSensor/SHT25.c: 23:     I2C_WriteNBytes(128,&TempH,1);
-[e ( _I2C_WriteNBytes (3 , , -> -> 128 `i `uc &U _TempH -> -> 1 `i `ui ]
-"24
-[; ;SourceFiles/SunSensor/SHT25.c: 24:     I2C_ReadNBytes(128,&TempH,1);
-[e ( _I2C_ReadNBytes (3 , , -> -> 128 `i `uc &U _TempH -> -> 1 `i `ui ]
+[; ;SourceFiles/SunSensor/SHT25.c: 23:     Command = 0xF5;
+[e = _Command -> -> 245 `i `uc ]
 "25
-[; ;SourceFiles/SunSensor/SHT25.c: 25:     SendByUart(TempH+0x30);
-[e ( _SendByUart (1 -> + -> _TempH `i -> 48 `i `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 25:     I2C_WriteNBytes(128,&Command,1);
+[e ( _I2C_WriteNBytes (3 , , -> -> 128 `i `uc &U _Command -> -> 1 `i `ui ]
 "26
-[; ;SourceFiles/SunSensor/SHT25.c: 26:     TempH = 0xE3;
-[e = _TempH -> -> 227 `i `uc ]
-"27
-[; ;SourceFiles/SunSensor/SHT25.c: 27: }
+[; ;SourceFiles/SunSensor/SHT25.c: 26:     I2C_ReadNBytes(129,&TempH,1);
+[e ( _I2C_ReadNBytes (3 , , -> -> 129 `i `uc &U _TempH -> -> 1 `i `ui ]
+"29
+[; ;SourceFiles/SunSensor/SHT25.c: 29:     SendByUart(TempH+0x30);
+[e ( _SendByUart (1 -> + -> _TempH `i -> 48 `i `uc ]
+"31
+[; ;SourceFiles/SunSensor/SHT25.c: 31: }
 [e :UE 453 ]
 }
