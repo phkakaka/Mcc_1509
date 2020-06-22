@@ -13,6 +13,8 @@
 #include "../SunSensor/Led.h"
 #include "../SunSensor/UART_Display.h"
 #include "../SunSensor/SHT25.h"
+#include "../SunSensor/StateMachine.h"
+#include "../SunSensor/SHT21.h"
 
 /** @var const task COS_tsk[NUM_TSKS]
  * 
@@ -39,7 +41,7 @@ const task COS_tsk[NUM_TSKS] = /* Task array for task manager */
 ////////////////////////////////////////////////////////////////////////////////
 
 	{UartDisplay, TSK_EIGHTHSPEED_S1 },
-    {GetTemp, TSK_EIGHTHSPEED_S2 }
+    {SHT21_StateMachine, TSK_EIGHTHSPEED_S2 }
 
 
 ////////////////////////////////////////////////////////////////////////////////

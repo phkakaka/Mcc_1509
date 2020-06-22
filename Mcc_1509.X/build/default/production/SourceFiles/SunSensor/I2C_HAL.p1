@@ -1,31 +1,52 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"136 mcc_generated_files/pin_manager.h
-[; ;mcc_generated_files/pin_manager.h: 136: void PIN_MANAGER_Initialize (void);
-[v _PIN_MANAGER_Initialize `(v ~T0 @X0 0 ef ]
-"86 mcc_generated_files/mcc.h
-[; ;mcc_generated_files/mcc.h: 86: void OSCILLATOR_Initialize(void);
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 0 ef ]
-"98
-[; ;mcc_generated_files/mcc.h: 98: void WDT_Initialize(void);
-[v _WDT_Initialize `(v ~T0 @X0 0 ef ]
-"102 mcc_generated_files/pwm1.h
-[; ;mcc_generated_files/pwm1.h: 102:  void PWM1_Initialize(void);
-[v _PWM1_Initialize `(v ~T0 @X0 0 ef ]
-"104 mcc_generated_files/tmr2.h
-[; ;mcc_generated_files/tmr2.h: 104: void TMR2_Initialize(void);
-[v _TMR2_Initialize `(v ~T0 @X0 0 ef ]
-"110 mcc_generated_files/eusart.h
-[; ;mcc_generated_files/eusart.h: 110: void EUSART_Initialize(void);
-[v _EUSART_Initialize `(v ~T0 @X0 0 ef ]
-"1532 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1532: extern volatile unsigned char OSCCON __attribute__((address(0x099)));
-[v _OSCCON `Vuc ~T0 @X0 0 e@153 ]
-"2296
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 2296: extern volatile unsigned char BORCON __attribute__((address(0x116)));
-[v _BORCON `Vuc ~T0 @X0 0 e@278 ]
-"1473
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1473: extern volatile unsigned char WDTCON __attribute__((address(0x097)));
-[v _WDTCON `Vuc ~T0 @X0 0 e@151 ]
+[v F3443 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
+[v __delay `JF3443 ~T0 @X0 0 e ]
+[p i __delay ]
+"3361 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3361: extern volatile unsigned char SSP1STAT __attribute__((address(0x214)));
+[v _SSP1STAT `Vuc ~T0 @X0 0 e@532 ]
+"3483
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3483: extern volatile unsigned char SSP1CON1 __attribute__((address(0x215)));
+[v _SSP1CON1 `Vuc ~T0 @X0 0 e@533 ]
+"3687
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3687: extern volatile unsigned char SSP1CON2 __attribute__((address(0x216)));
+[v _SSP1CON2 `Vuc ~T0 @X0 0 e@534 ]
+"3285
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3285: extern volatile unsigned char SSP1ADD __attribute__((address(0x212)));
+[v _SSP1ADD `Vuc ~T0 @X0 0 e@530 ]
+"3498
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3498:     struct {
+[s S194 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S194 . SSPM0 SSPM1 SSPM2 SSPM3 CKP SSPEN SSPOV WCOL ]
+"3508
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3508:     struct {
+[s S195 :4 `uc 1 ]
+[n S195 . SSPM ]
+"3497
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3497: typedef union {
+[u S193 `S194 1 `S195 1 ]
+[n S193 . . . ]
+"3512
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3512: extern volatile SSP1CON1bits_t SSP1CON1bits __attribute__((address(0x215)));
+[v _SSP1CON1bits `VS193 ~T0 @X0 0 e@533 ]
+"11765
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 11765: extern volatile __bit SSP1IF __attribute__((address(0x8B)));
+[v _SSP1IF `Vb ~T0 @X0 0 e@139 ]
+"3247
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3247: extern volatile unsigned char SSP1BUF __attribute__((address(0x211)));
+[v _SSP1BUF `Vuc ~T0 @X0 0 e@529 ]
+"3698
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3698:     struct {
+[s S203 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S203 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
+"3697
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3697: typedef union {
+[u S202 `S203 1 ]
+[n S202 . . ]
+"3709
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3709: extern volatile SSP1CON2bits_t SSP1CON2bits __attribute__((address(0x216)));
+[v _SSP1CON2bits `VS202 ~T0 @X0 0 e@534 ]
 "54 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 54: __asm("INDF0 equ 00h");
 [; <" INDF0 equ 00h ;# ">
@@ -581,66 +602,244 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9812
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 9812: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"50 mcc_generated_files/mcc.c
-[; ;mcc_generated_files/mcc.c: 50: void SYSTEM_Initialize(void)
-[v _SYSTEM_Initialize `(v ~T0 @X0 1 ef ]
-"51
-[; ;mcc_generated_files/mcc.c: 51: {
+"4 SourceFiles/SunSensor/I2C_HAL.c
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 4: void DelayMicroSeconds (UINT_16 nbrOfUs)
+[v _DelayMicroSeconds `(v ~T0 @X0 1 ef1`us ]
+"5
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 5: {
 {
-[e :U _SYSTEM_Initialize ]
+[e :U _DelayMicroSeconds ]
+"4
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 4: void DelayMicroSeconds (UINT_16 nbrOfUs)
+[v _nbrOfUs `us ~T0 @X0 1 r1 ]
+"5
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 5: {
+[f ]
+"6
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 6:     UINT_16 i;
+[v _i `us ~T0 @X0 1 a ]
+"7
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 7:     for(i=0; i<nbrOfUs; i++)
+{
+[e = _i -> -> 0 `i `us ]
+[e $U 454  ]
+[e :U 451 ]
+"8
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 8:     {
+{
+"9
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 9:         _delay((unsigned long)((1)*(32000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 32000000 `l `d .4000000.0 `ul ]
+"10
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 10:     }
+}
+[e ++ _i -> -> 1 `i `us ]
+[e :U 454 ]
+[e $ < -> _i `ui -> _nbrOfUs `ui 451  ]
+[e :U 452 ]
+}
+"11
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 11: }
+[e :UE 450 ]
+}
+"13
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 13: void I2c_Init ()
+[v _I2c_Init `(v ~T0 @X0 1 ef ]
+"14
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 14: {
+{
+[e :U _I2c_Init ]
+[f ]
+"15
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 15:     SSP1STAT = 0x00;
+[e = _SSP1STAT -> -> 0 `i `uc ]
+"16
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 16:     SSP1CON1 = 0x08;
+[e = _SSP1CON1 -> -> 8 `i `uc ]
+"17
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 17:     SSP1CON2 = 0x00;
+[e = _SSP1CON2 -> -> 0 `i `uc ]
+"18
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 18:     SSP1ADD = 0x4F;
+[e = _SSP1ADD -> -> 79 `i `uc ]
+"19
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 19:     SSP1CON1bits.SSPEN = 0;
+[e = . . _SSP1CON1bits 0 5 -> -> 0 `i `uc ]
+"20
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 20: }
+[e :UE 455 ]
+}
+"22
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 22: void I2c_StartCondition (void)
+[v _I2c_StartCondition `(v ~T0 @X0 1 ef ]
+"23
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 23: {
+{
+[e :U _I2c_StartCondition ]
+[f ]
+"24
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 24:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"25
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 25:     SSP1CON2 = 0x01;
+[e = _SSP1CON2 -> -> 1 `i `uc ]
+"26
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 26:     while(!SSP1IF);
+[e $U 457  ]
+[e :U 458 ]
+[e :U 457 ]
+[e $ ! _SSP1IF 458  ]
+[e :U 459 ]
+"27
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 27:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"28
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 28: }
+[e :UE 456 ]
+}
+"30
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 30: void I2c_StopCondition ()
+[v _I2c_StopCondition `(v ~T0 @X0 1 ef ]
+"31
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 31: {
+{
+[e :U _I2c_StopCondition ]
+[f ]
+"32
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 32:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"33
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 33:     SSP1CON2 = 0x04;
+[e = _SSP1CON2 -> -> 4 `i `uc ]
+"34
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 34:     while(!SSP1IF);
+[e $U 461  ]
+[e :U 462 ]
+[e :U 461 ]
+[e $ ! _SSP1IF 462  ]
+[e :U 463 ]
+"35
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 35:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"36
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 36: }
+[e :UE 460 ]
+}
+"38
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 38: UINT_8 I2c_WriteByte (UINT_8 txByte)
+[v _I2c_WriteByte `(uc ~T0 @X0 1 ef1`uc ]
+"39
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 39: {
+{
+[e :U _I2c_WriteByte ]
+"38
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 38: UINT_8 I2c_WriteByte (UINT_8 txByte)
+[v _txByte `uc ~T0 @X0 1 r1 ]
+"39
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 39: {
+[f ]
+"40
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 40:     UINT_8 ack;
+[v _ack `uc ~T0 @X0 1 a ]
+"41
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 41:     ack = 0;
+[e = _ack -> -> 0 `i `uc ]
+"42
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 42:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"43
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 43:     SSP1BUF = txByte;
+[e = _SSP1BUF _txByte ]
+"44
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 44:     while(!SSP1IF);
+[e $U 465  ]
+[e :U 466 ]
+[e :U 465 ]
+[e $ ! _SSP1IF 466  ]
+[e :U 467 ]
+"45
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 45:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"46
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 46:     SSP1STAT = 0;
+[e = _SSP1STAT -> -> 0 `i `uc ]
+"47
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 47:     ack |= SSP1CON2&0x40;
+[e =| _ack -> & -> _SSP1CON2 `i -> 64 `i `uc ]
+"48
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 48:     return ack;
+[e ) _ack ]
+[e $UE 464  ]
+"49
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 49: }
+[e :UE 464 ]
+}
+"51
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 51: UINT_8 I2c_ReadByte (UINT_8 ack)
+[v _I2c_ReadByte `(uc ~T0 @X0 1 ef1`uc ]
+"52
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 52: {
+{
+[e :U _I2c_ReadByte ]
+"51
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 51: UINT_8 I2c_ReadByte (UINT_8 ack)
+[v _ack `uc ~T0 @X0 1 r1 ]
+"52
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 52: {
 [f ]
 "53
-[; ;mcc_generated_files/mcc.c: 53:     PIN_MANAGER_Initialize();
-[e ( _PIN_MANAGER_Initialize ..  ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 53:     UINT_8 rxByte;
+[v _rxByte `uc ~T0 @X0 1 a ]
 "54
-[; ;mcc_generated_files/mcc.c: 54:     OSCILLATOR_Initialize();
-[e ( _OSCILLATOR_Initialize ..  ]
-"55
-[; ;mcc_generated_files/mcc.c: 55:     WDT_Initialize();
-[e ( _WDT_Initialize ..  ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 54:     rxByte=0;
+[e = _rxByte -> -> 0 `i `uc ]
 "56
-[; ;mcc_generated_files/mcc.c: 56:     PWM1_Initialize();
-[e ( _PWM1_Initialize ..  ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 56:     SSP1CON2bits.RCEN = 1;
+[e = . . _SSP1CON2bits 0 3 -> -> 1 `i `uc ]
 "57
-[; ;mcc_generated_files/mcc.c: 57:     TMR2_Initialize();
-[e ( _TMR2_Initialize ..  ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 57:     while(!SSP1IF);
+[e $U 469  ]
+[e :U 470 ]
+[e :U 469 ]
+[e $ ! _SSP1IF 470  ]
+[e :U 471 ]
 "58
-[; ;mcc_generated_files/mcc.c: 58:     EUSART_Initialize();
-[e ( _EUSART_Initialize ..  ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 58:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
 "59
-[; ;mcc_generated_files/mcc.c: 59: }
-[e :UE 451 ]
-}
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 59:     rxByte = SSP1BUF;
+[e = _rxByte _SSP1BUF ]
+"60
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 60:     if(ack == 0)SSP1CON2bits.ACKDT = 0;
+[e $ ! == -> _ack `i -> 0 `i 472  ]
+[e = . . _SSP1CON2bits 0 5 -> -> 0 `i `uc ]
+[e $U 473  ]
 "61
-[; ;mcc_generated_files/mcc.c: 61: void OSCILLATOR_Initialize(void)
-[v _OSCILLATOR_Initialize `(v ~T0 @X0 1 ef ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 61:     else SSP1CON2bits.ACKDT = 1;
+[e :U 472 ]
+[e = . . _SSP1CON2bits 0 5 -> -> 1 `i `uc ]
+[e :U 473 ]
 "62
-[; ;mcc_generated_files/mcc.c: 62: {
-{
-[e :U _OSCILLATOR_Initialize ]
-[f ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 62:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"63
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 63:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
 "64
-[; ;mcc_generated_files/mcc.c: 64:     OSCCON = 0x78;
-[e = _OSCCON -> -> 120 `i `uc ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 64:     while(!SSP1IF);
+[e $U 474  ]
+[e :U 475 ]
+[e :U 474 ]
+[e $ ! _SSP1IF 475  ]
+[e :U 476 ]
+"65
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 65:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
 "66
-[; ;mcc_generated_files/mcc.c: 66:     BORCON = 0x00;
-[e = _BORCON -> -> 0 `i `uc ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 66:     return rxByte;
+[e ) _rxByte ]
+[e $UE 468  ]
 "67
-[; ;mcc_generated_files/mcc.c: 67: }
-[e :UE 452 ]
-}
-"69
-[; ;mcc_generated_files/mcc.c: 69: void WDT_Initialize(void)
-[v _WDT_Initialize `(v ~T0 @X0 1 ef ]
-"70
-[; ;mcc_generated_files/mcc.c: 70: {
-{
-[e :U _WDT_Initialize ]
-[f ]
-"72
-[; ;mcc_generated_files/mcc.c: 72:     WDTCON = 0x16;
-[e = _WDTCON -> -> 22 `i `uc ]
-"73
-[; ;mcc_generated_files/mcc.c: 73: }
-[e :UE 453 ]
+[; ;SourceFiles/SunSensor/I2C_HAL.c: 67: }
+[e :UE 468 ]
 }

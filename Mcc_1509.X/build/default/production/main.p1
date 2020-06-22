@@ -1,15 +1,15 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"74 ./mcc_generated_files/mcc.h
-[; ;./mcc_generated_files/mcc.h: 74: void SYSTEM_Initialize(void);
+"73 ./mcc_generated_files/mcc.h
+[; ;./mcc_generated_files/mcc.h: 73: void SYSTEM_Initialize(void);
 [v _SYSTEM_Initialize `(v ~T0 @X0 0 ef ]
 "76 ./SourceFiles/COS/COS_Main.h
 [; ;./SourceFiles/COS/COS_Main.h: 76: void COS_Init(void);
 [v _COS_Init `(v ~T0 @X0 0 ef ]
-[v F3903 `(v ~T0 @X0 0 tf ]
+[v F3513 `(v ~T0 @X0 0 tf ]
 "344 ./mcc_generated_files/tmr2.h
 [; ;./mcc_generated_files/tmr2.h: 344:  void TMR2_SetInterruptHandler(void (* InterruptHandler)(void));
-[v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F3903 ]
+[v _TMR2_SetInterruptHandler `(v ~T0 @X0 0 ef1`*F3513 ]
 "14 ./SourceFiles/SunSensor/Led.h
 [; ;./SourceFiles/SunSensor/Led.h: 14: extern void Led2_PWM(void);
 [v _Led2_PWM `(v ~T0 @X0 0 ef ]
@@ -618,7 +618,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _INTCONbits 0 6 -> -> 1 `i `uc ]
 "74
 [; ;main.c: 74:     while (1)
-[e :U 456 ]
+[e :U 454 ]
 "75
 [; ;main.c: 75:     {
 {
@@ -627,7 +627,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _COS_TmrHandler ..  ]
 "78
 [; ;main.c: 78:         if (COS_tsk_ena)
-[e $ ! != -> _COS_tsk_ena `i -> 0 `i 458  ]
+[e $ ! != -> _COS_tsk_ena `i -> 0 `i 456  ]
 "79
 [; ;main.c: 79:         {
 {
@@ -637,14 +637,14 @@ Version 4.0 HI-TECH Software Intermediate Code
 "81
 [; ;main.c: 81:         }
 }
-[e :U 458 ]
+[e :U 456 ]
 "83
 [; ;main.c: 83:     }
 }
+[e :U 453 ]
+[e $U 454  ]
 [e :U 455 ]
-[e $U 456  ]
-[e :U 457 ]
 "84
 [; ;main.c: 84: }
-[e :UE 454 ]
+[e :UE 452 ]
 }

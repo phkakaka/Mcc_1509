@@ -1,21 +1,4 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"3698 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3698:     struct {
-[s S203 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S203 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
-"3697
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3697: typedef union {
-[u S202 `S203 1 ]
-[n S202 . . ]
-"3709
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3709: extern volatile SSP1CON2bits_t SSP1CON2bits __attribute__((address(0x216)));
-[v _SSP1CON2bits `VS202 ~T0 @X0 0 e@534 ]
-"3247
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3247: extern volatile unsigned char SSP1BUF __attribute__((address(0x211)));
-[v _SSP1BUF `Vuc ~T0 @X0 0 e@529 ]
-"59 SourceFiles/SunSensor/../../mcc_generated_files/examples/i2c_master_example.h
-[; ;SourceFiles/SunSensor/../../mcc_generated_files/examples/i2c_master_example.h: 59: void I2C_ReadNBytes(i2c_address_t address, uint8_t *data, size_t len);
-[v _I2C_ReadNBytes `(v ~T0 @X0 0 ef3`uc`*uc`ui ]
 "15 SourceFiles/SunSensor/UART_Display.h
 [; ;SourceFiles/SunSensor/UART_Display.h: 15: extern void SendByUart(uint8_t Txt);
 [v _SendByUart `(v ~T0 @X0 0 ef1`uc ]
@@ -574,178 +557,71 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9812
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 9812: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"15 SourceFiles/SunSensor/SHT25.c
-[; ;SourceFiles/SunSensor/SHT25.c: 15: uint16_t Temp;
+"14 SourceFiles/SunSensor/SHT25.c
+[; ;SourceFiles/SunSensor/SHT25.c: 14: uint16_t Temp;
 [v _Temp `us ~T0 @X0 1 e ]
-"16
-[; ;SourceFiles/SunSensor/SHT25.c: 16: uint8_t TempH;
+"15
+[; ;SourceFiles/SunSensor/SHT25.c: 15: uint8_t TempH;
 [v _TempH `uc ~T0 @X0 1 e ]
-"17
-[; ;SourceFiles/SunSensor/SHT25.c: 17: uint16_t Humi;
+"16
+[; ;SourceFiles/SunSensor/SHT25.c: 16: uint16_t Humi;
 [v _Humi `us ~T0 @X0 1 e ]
-"18
-[; ;SourceFiles/SunSensor/SHT25.c: 18: uint8_t Command;
+"17
+[; ;SourceFiles/SunSensor/SHT25.c: 17: uint8_t Command;
 [v _Command `uc ~T0 @X0 1 e ]
-"26
-[; ;SourceFiles/SunSensor/SHT25.c: 26: uint8_t I2cState = 1;
+"25
+[; ;SourceFiles/SunSensor/SHT25.c: 25: uint8_t I2cState = 1;
 [v _I2cState `uc ~T0 @X0 1 e ]
 [i _I2cState
 -> -> 1 `i `uc
 ]
-"28
-[; ;SourceFiles/SunSensor/SHT25.c: 28: void Delay(uint16_t Timecounter)
+"27
+[; ;SourceFiles/SunSensor/SHT25.c: 27: void Delay(uint16_t Timecounter)
 [v _Delay `(v ~T0 @X0 1 ef1`us ]
-"29
-[; ;SourceFiles/SunSensor/SHT25.c: 29: {
+"28
+[; ;SourceFiles/SunSensor/SHT25.c: 28: {
 {
 [e :U _Delay ]
-"28
-[; ;SourceFiles/SunSensor/SHT25.c: 28: void Delay(uint16_t Timecounter)
+"27
+[; ;SourceFiles/SunSensor/SHT25.c: 27: void Delay(uint16_t Timecounter)
 [v _Timecounter `us ~T0 @X0 1 r1 ]
-"29
-[; ;SourceFiles/SunSensor/SHT25.c: 29: {
+"28
+[; ;SourceFiles/SunSensor/SHT25.c: 28: {
 [f ]
-"30
-[; ;SourceFiles/SunSensor/SHT25.c: 30:     for(uint16_t i = 0; i< Timecounter; i++)
+"29
+[; ;SourceFiles/SunSensor/SHT25.c: 29:     for(uint16_t i = 0; i< Timecounter; i++)
 {
 [v _i `us ~T0 @X0 1 a ]
 [e = _i -> -> 0 `i `us ]
-[e $U 457  ]
-[e :U 454 ]
-"31
-[; ;SourceFiles/SunSensor/SHT25.c: 31:     {
+[e $U 455  ]
+[e :U 452 ]
+"30
+[; ;SourceFiles/SunSensor/SHT25.c: 30:     {
 {
-"33
-[; ;SourceFiles/SunSensor/SHT25.c: 33:     }
+"32
+[; ;SourceFiles/SunSensor/SHT25.c: 32:     }
 }
 [e ++ _i -> -> 1 `i `us ]
-[e :U 457 ]
-[e $ < -> _i `ui -> _Timecounter `ui 454  ]
 [e :U 455 ]
+[e $ < -> _i `ui -> _Timecounter `ui 452  ]
+[e :U 453 ]
 }
-"34
-[; ;SourceFiles/SunSensor/SHT25.c: 34: }
-[e :UE 453 ]
+"33
+[; ;SourceFiles/SunSensor/SHT25.c: 33: }
+[e :UE 451 ]
 }
-"36
-[; ;SourceFiles/SunSensor/SHT25.c: 36: void GetTemp(void)
+"35
+[; ;SourceFiles/SunSensor/SHT25.c: 35: void GetTemp(void)
 [v _GetTemp `(v ~T0 @X0 1 ef ]
-"37
-[; ;SourceFiles/SunSensor/SHT25.c: 37: {
+"36
+[; ;SourceFiles/SunSensor/SHT25.c: 36: {
 {
 [e :U _GetTemp ]
 [f ]
-"41
-[; ;SourceFiles/SunSensor/SHT25.c: 41:     switch (I2cState)
-[e $U 460  ]
-"42
-[; ;SourceFiles/SunSensor/SHT25.c: 42:     {
-{
-"43
-[; ;SourceFiles/SunSensor/SHT25.c: 43:         case 1:
-[e :U 461 ]
-"44
-[; ;SourceFiles/SunSensor/SHT25.c: 44:             SSP1CON2bits.SEN = 1;
-[e = . . _SSP1CON2bits 0 0 -> -> 1 `i `uc ]
-"45
-[; ;SourceFiles/SunSensor/SHT25.c: 45:             SSP1BUF = 128;
-[e = _SSP1BUF -> -> 128 `i `uc ]
-"47
-[; ;SourceFiles/SunSensor/SHT25.c: 47:             I2cState = 2;
-[e = _I2cState -> -> 2 `i `uc ]
-"48
-[; ;SourceFiles/SunSensor/SHT25.c: 48:             break;
-[e $U 459  ]
-"49
-[; ;SourceFiles/SunSensor/SHT25.c: 49:         case 2:
-[e :U 462 ]
-"50
-[; ;SourceFiles/SunSensor/SHT25.c: 50:             if (SSP1CON2bits.ACKSTAT)
-[e $ ! != -> . . _SSP1CON2bits 0 6 `i -> 0 `i 463  ]
-"51
-[; ;SourceFiles/SunSensor/SHT25.c: 51:             {
-{
-"52
-[; ;SourceFiles/SunSensor/SHT25.c: 52:                 SSP1BUF = 0xF5;
-[e = _SSP1BUF -> -> 245 `i `uc ]
-"53
-[; ;SourceFiles/SunSensor/SHT25.c: 53:                 I2cState = 3;
-[e = _I2cState -> -> 3 `i `uc ]
-"54
-[; ;SourceFiles/SunSensor/SHT25.c: 54:             }
-}
-[e :U 463 ]
-"55
-[; ;SourceFiles/SunSensor/SHT25.c: 55:             break;
-[e $U 459  ]
-"56
-[; ;SourceFiles/SunSensor/SHT25.c: 56:         case 3:
-[e :U 464 ]
-"57
-[; ;SourceFiles/SunSensor/SHT25.c: 57:             if (SSP1CON2bits.ACKSTAT)
-[e $ ! != -> . . _SSP1CON2bits 0 6 `i -> 0 `i 465  ]
-"58
-[; ;SourceFiles/SunSensor/SHT25.c: 58:             {
-{
-"59
-[; ;SourceFiles/SunSensor/SHT25.c: 59:                 Delay(100);
-[e ( _Delay (1 -> -> 100 `i `us ]
-"60
-[; ;SourceFiles/SunSensor/SHT25.c: 60:                 SSP1CON2bits.PEN = 1;
-[e = . . _SSP1CON2bits 0 2 -> -> 1 `i `uc ]
-"61
-[; ;SourceFiles/SunSensor/SHT25.c: 61:                 I2cState = 4;
-[e = _I2cState -> -> 4 `i `uc ]
-"62
-[; ;SourceFiles/SunSensor/SHT25.c: 62:             }
-}
-[e :U 465 ]
-"63
-[; ;SourceFiles/SunSensor/SHT25.c: 63:             break;
-[e $U 459  ]
-"64
-[; ;SourceFiles/SunSensor/SHT25.c: 64:         case 4:
-[e :U 466 ]
-"65
-[; ;SourceFiles/SunSensor/SHT25.c: 65:             I2C_ReadNBytes(128,&Temp,2);
-[e ( _I2C_ReadNBytes (3 , , -> -> 128 `i `uc -> &U _Temp `*uc -> -> 2 `i `ui ]
-"67
-[; ;SourceFiles/SunSensor/SHT25.c: 67:             I2cState = 5;
-[e = _I2cState -> -> 5 `i `uc ]
-"68
-[; ;SourceFiles/SunSensor/SHT25.c: 68:             break;
-[e $U 459  ]
-"69
-[; ;SourceFiles/SunSensor/SHT25.c: 69:         case 5:
-[e :U 467 ]
-"70
-[; ;SourceFiles/SunSensor/SHT25.c: 70:             I2cState = 1;
-[e = _I2cState -> -> 1 `i `uc ]
-"71
-[; ;SourceFiles/SunSensor/SHT25.c: 71:             break;
-[e $U 459  ]
-"72
-[; ;SourceFiles/SunSensor/SHT25.c: 72:         default:
-[e :U 468 ]
-"73
-[; ;SourceFiles/SunSensor/SHT25.c: 73:             break;
-[e $U 459  ]
-"74
-[; ;SourceFiles/SunSensor/SHT25.c: 74:     }
-}
-[e $U 459  ]
-[e :U 460 ]
-[e [\ -> _I2cState `i , $ -> 1 `i 461
- , $ -> 2 `i 462
- , $ -> 3 `i 464
- , $ -> 4 `i 466
- , $ -> 5 `i 467
- 468 ]
-[e :U 459 ]
-"104
-[; ;SourceFiles/SunSensor/SHT25.c: 104:     SendByUart((uint8_t)Temp+0x30);
+"103
+[; ;SourceFiles/SunSensor/SHT25.c: 103:     SendByUart((uint8_t)Temp+0x30);
 [e ( _SendByUart (1 -> + -> -> _Temp `uc `i -> 48 `i `uc ]
-"105
-[; ;SourceFiles/SunSensor/SHT25.c: 105: }
-[e :UE 458 ]
+"104
+[; ;SourceFiles/SunSensor/SHT25.c: 104: }
+[e :UE 456 ]
 }

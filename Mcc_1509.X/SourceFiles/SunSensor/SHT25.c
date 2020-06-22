@@ -10,7 +10,6 @@
 #include "../../mcc_generated_files/mcc.h"
 #include "SHT25.h"
 #include "UART_Display.h"
-#include "../../mcc_generated_files/examples/i2c_master_example.h"
 
 uint16_t Temp;
 uint8_t TempH;
@@ -38,40 +37,40 @@ void GetTemp(void)
     //I2C_WriteNBytes(128,&Command,1);
     //I2C_ReadNBytes(128,&TempH,1);
 
-    switch (I2cState)
-    {
-        case INIT_STATE:    
-            SSP1CON2bits.SEN = 1;
-            SSP1BUF  = 128;
-            
-            I2cState = COMMAND_STATE;
-            break;
-        case COMMAND_STATE:
-            if (SSP1CON2bits.ACKSTAT)
-            {
-                SSP1BUF = 0xF5;
-                I2cState = WAIT_STATE;
-            }
-            break;
-        case WAIT_STATE:
-            if (SSP1CON2bits.ACKSTAT)
-            {
-                Delay(100);
-                SSP1CON2bits.PEN = 1;
-                I2cState = READ_STATE;
-            }
-            break;
-        case READ_STATE:
-            I2C_ReadNBytes(128,&Temp,2);
-            
-            I2cState = END_STATE;
-            break;
-        case END_STATE:
-            I2cState = INIT_STATE;
-            break;
-        default:
-            break;
-    }
+//    switch (I2cState)
+//    {
+//        case INIT_STATE:    
+//            SSP1CON2bits.SEN = 1;
+//            SSP1BUF  = 128;
+//            
+//            I2cState = COMMAND_STATE;
+//            break;
+//        case COMMAND_STATE:
+//            if (SSP1CON2bits.ACKSTAT)
+//            {
+//                SSP1BUF = 0xF5;
+//                I2cState = WAIT_STATE;
+//            }
+//            break;
+//        case WAIT_STATE:
+//            if (SSP1CON2bits.ACKSTAT)
+//            {
+//                Delay(100);
+//                SSP1CON2bits.PEN = 1;
+//                I2cState = READ_STATE;
+//            }
+//            break;
+//        case READ_STATE:
+//            I2C_ReadNBytes(128,&Temp,2);
+//            
+//            I2cState = END_STATE;
+//            break;
+//        case END_STATE:
+//            I2cState = INIT_STATE;
+//            break;
+//        default:
+//            break;
+//    }
 
 //    switch (I2cState)
 //    {
