@@ -17,17 +17,91 @@ uint8_t TempH;
 uint16_t Humi;
 uint8_t Command;
 
+#define INIT_STATE 1
+#define COMMAND_STATE 2
+#define WAIT_STATE  3
+#define READ_STATE 4
+#define END_STATE  5
+
+uint8_t I2cState = INIT_STATE;
+
+void Delay(uint16_t Timecounter)
+{
+    for(uint16_t i = 0; i< Timecounter; i++)
+    {
+        ;
+    }
+}
 
 void GetTemp(void)
 {
-    Command = 0xF5;
-    //Temp = I2C_Read2ByteRegister(128,0xE5);
-    I2C_WriteNBytes(128,&Command,1);
-    I2C_ReadNBytes(129,&TempH,1);
-    
-    
-    SendByUart(TempH+0x30);
+    //I2C_WriteNBytes(128,&Command,1);
+    //I2C_ReadNBytes(128,&TempH,1);
 
+    switch (I2cState)
+    {
+        case INIT_STATE:    
+            SSP1CON2bits.SEN = 1;
+            SSP1BUF  = 128;
+            
+            I2cState = COMMAND_STATE;
+            break;
+        case COMMAND_STATE:
+            if (SSP1CON2bits.ACKSTAT)
+            {
+                SSP1BUF = 0xF5;
+                I2cState = WAIT_STATE;
+            }
+            break;
+        case WAIT_STATE:
+            if (SSP1CON2bits.ACKSTAT)
+            {
+                Delay(100);
+                SSP1CON2bits.PEN = 1;
+                I2cState = READ_STATE;
+            }
+            break;
+        case READ_STATE:
+            I2C_ReadNBytes(128,&Temp,2);
+            
+            I2cState = END_STATE;
+            break;
+        case END_STATE:
+            I2cState = INIT_STATE;
+            break;
+        default:
+            break;
+    }
+
+//    switch (I2cState)
+//    {
+//        case INIT_STATE:    
+//            PIR1bits.SSP1IF = 0;
+//            SSP1STAT = 0x00;
+//            SSP1CON1 = 0x08;
+//            SSP1CON2 = 0x00;
+//            SSP1ADD = 0x27;
+//            SSP1CON1bits.SSPEN = 1;
+//           
+//            I2cState = COMMAND_STATE;
+//            break;
+//        case COMMAND_STATE:
+//            SSP1CON2bits.SEN = 1;  //start condition
+//            SSP1BUF  = I2C_ADR_W;
+//            
+//            I2cState = READ_STATE;
+//            break;
+//        case READ_STATE:
+//            I2cState = END_STATE;
+//            break;
+//        case END_STATE:
+//            I2cState = INIT_STATE;
+//            break;
+//        default:
+//            break;
+//    }
+    
+    SendByUart((uint8_t)Temp+0x30);
 }
 
 //
