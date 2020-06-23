@@ -73,7 +73,7 @@ void COS_TimerSetup(void)
 	TMR1L = 0;
 
 	/* Timer 1 Clock Source Fosc/4 = 4MHz */
-	/* Set Timer 1 Prescaler to 1:8 --> Timer1Tick = 1usec */
+	/* Set Timer 1 Prescaler to 1:4 --> Timer1Tick = 1usec */
 	/* Switch On Timer 1 */
 	T1CON = COS_TMR1_CON;
 }

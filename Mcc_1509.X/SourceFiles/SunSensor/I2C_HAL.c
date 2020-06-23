@@ -13,7 +13,7 @@ void DelayMicroSeconds (UINT_16 nbrOfUs)
 void I2c_Init ()
 {
     SSP1STAT = 0x00;
-    SSP1CON1 = 0x08;
+    SSP1CON1 = 0x28;
     SSP1CON2 = 0x00;
     SSP1ADD  = 0x4F;
     SSP1CON1bits.SSPEN = 0;

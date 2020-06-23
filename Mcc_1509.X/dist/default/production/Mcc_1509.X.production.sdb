@@ -3,23 +3,77 @@
 [d edition pro ]
 [d chip 16F1509 ]
 [d frameptr 6 ]
-"20 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT21.c
-[e E3491 . `uc
-SHT21_MEASURE_TEMP_0 0
-SHT21_MEASURE_TEMP_1 1
-SHT21_MEASURE_TEMP_2 2
-SHT21_MEASURE_RH_0 3
-SHT21_MEASURE_RH_1 4
-SHT21_CALC_TEMP_0 5
-SHT21_CALC_RH_0 6
+"31 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[e E3987 . `uc
+SHT25_MEASURE_INIT 0
+SHT25_MEASURE_TEMP_0 1
+SHT25_MEASURE_TEMP_1 2
+SHT25_MEASURE_RH_0 3
+SHT25_MEASURE_RH_1 4
+SHT25_CALC_TEMP_0 5
+SHT25_CALC_RH_0 6
 ]
-"19 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/StateMachine.c
-[e E3505 . `uc
-I2C_START_0 0
-I2C_START_1 1
-I2C_SHT21 2
-I2C_TI_TMP 3
-I2C_SHT31 4
+"146 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/i2c_master.c
+[e E3880 . `uc
+I2C_IDLE 0
+I2C_SEND_ADR_READ 1
+I2C_SEND_ADR_WRITE 2
+I2C_TX 3
+I2C_RX 4
+I2C_RCEN 5
+I2C_TX_EMPTY 6
+I2C_SEND_RESTART_READ 7
+I2C_SEND_RESTART_WRITE 8
+I2C_SEND_RESTART 9
+I2C_SEND_STOP 10
+I2C_RX_ACK 11
+I2C_RX_NACK_STOP 12
+I2C_RX_NACK_RESTART 13
+I2C_RESET 14
+I2C_ADDRESS_NACK 15
+]
+"165
+[e E358 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
+]
+[e E353 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"191
+[e E3898 . `uc
+I2C_DATA_COMPLETE 0
+I2C_WRITE_COLLISION 1
+I2C_ADDR_NACK 2
+I2C_DATA_NACK 3
+I2C_TIMEOUT 4
+I2C_NULL 5
+]
+"88 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/adc.c
+[e E3489 . `uc
+channel_AN0 0
+channel_Temp 29
+channel_DAC 30
+channel_FVR 31
+]
+"67 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/examples/i2c_master_example.c
+[e E353 . `uc
+I2C_NOERR 0
+I2C_BUSY 1
+I2C_FAIL 2
+]
+"68
+[e E358 . `uc
+I2C_STOP 1
+I2C_RESTART_READ 2
+I2C_RESTART_WRITE 3
+I2C_CONTINUE 4
+I2C_RESET_LINK 5
 ]
 "10 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\sprcadd.c
 [v ___fladd __fladd `(d  1 e 4 0 ]
@@ -47,14 +101,122 @@ I2C_SHT31 4
 [v _EUSART_SetOverrunErrorHandler EUSART_SetOverrunErrorHandler `(v  1 e 1 0 ]
 "165
 [v _EUSART_SetErrorHandler EUSART_SetErrorHandler `(v  1 e 1 0 ]
+"142 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/examples/i2c_master_example.c
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E358  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E358  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E358  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E358  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E358  1 s 1 rdBlkRegCompleteHandler ]
+"176 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/i2c_master.c
+[v _I2C_Open I2C_Open `(E353  1 e 1 0 ]
+"211
+[v _I2C_Close I2C_Close `(E353  1 e 1 0 ]
+"226
+[v _I2C_MasterOperation I2C_MasterOperation `(E353  1 e 1 0 ]
+"247
+[v _I2C_MasterRead I2C_MasterRead `(E353  1 e 1 0 ]
+"252
+[v _I2C_MasterWrite I2C_MasterWrite `(E353  1 e 1 0 ]
+"264
+[v _I2C_SetBuffer I2C_SetBuffer `(v  1 e 1 0 ]
+"274
+[v _I2C_SetDataCompleteCallback I2C_SetDataCompleteCallback `(v  1 e 1 0 ]
+"284
+[v _I2C_SetAddressNackCallback I2C_SetAddressNackCallback `(v  1 e 1 0 ]
+"299
+[v _I2C_SetInterruptHandler I2C_SetInterruptHandler `(v  1 e 1 0 ]
+"304
+[v _I2C_SetCallback I2C_SetCallback `(v  1 s 1 I2C_SetCallback ]
+"318
+[v _I2C_MasterIsr I2C_MasterIsr `(v  1 s 1 I2C_MasterIsr ]
+"323
+[v _I2C_MasterFsm I2C_MasterFsm `T(v  1 s 1 I2C_MasterFsm ]
+"335
+[v _I2C_DO_IDLE I2C_DO_IDLE `(E3880  1 s 1 I2C_DO_IDLE ]
+"342
+[v _I2C_DO_SEND_ADR_READ I2C_DO_SEND_ADR_READ `(E3880  1 s 1 I2C_DO_SEND_ADR_READ ]
+"349
+[v _I2C_DO_SEND_ADR_WRITE I2C_DO_SEND_ADR_WRITE `(E3880  1 s 1 I2C_DO_SEND_ADR_WRITE ]
+"356
+[v _I2C_DO_TX I2C_DO_TX `(E3880  1 s 1 I2C_DO_TX ]
+"380
+[v _I2C_DO_RX I2C_DO_RX `(E3880  1 s 1 I2C_DO_RX ]
+"404
+[v _I2C_DO_RCEN I2C_DO_RCEN `(E3880  1 s 1 I2C_DO_RCEN ]
+"411
+[v _I2C_DO_TX_EMPTY I2C_DO_TX_EMPTY `(E3880  1 s 1 I2C_DO_TX_EMPTY ]
+"451
+[v _I2C_DO_SEND_RESTART_READ I2C_DO_SEND_RESTART_READ `(E3880  1 s 1 I2C_DO_SEND_RESTART_READ ]
+"457
+[v _I2C_DO_SEND_RESTART_WRITE I2C_DO_SEND_RESTART_WRITE `(E3880  1 s 1 I2C_DO_SEND_RESTART_WRITE ]
+"464
+[v _I2C_DO_SEND_RESTART I2C_DO_SEND_RESTART `(E3880  1 s 1 I2C_DO_SEND_RESTART ]
+"470
+[v _I2C_DO_SEND_STOP I2C_DO_SEND_STOP `(E3880  1 s 1 I2C_DO_SEND_STOP ]
+"476
+[v _I2C_DO_RX_ACK I2C_DO_RX_ACK `(E3880  1 s 1 I2C_DO_RX_ACK ]
+"483
+[v _I2C_DO_RX_NACK_STOP I2C_DO_RX_NACK_STOP `(E3880  1 s 1 I2C_DO_RX_NACK_STOP ]
+"489
+[v _I2C_DO_RX_NACK_RESTART I2C_DO_RX_NACK_RESTART `(E3880  1 s 1 I2C_DO_RX_NACK_RESTART ]
+"495
+[v _I2C_DO_RESET I2C_DO_RESET `(E3880  1 s 1 I2C_DO_RESET ]
+"501
+[v _I2C_DO_ADDRESS_NACK I2C_DO_ADDRESS_NACK `(E3880  1 s 1 I2C_DO_ADDRESS_NACK ]
+"521
+[v _I2C_CallbackReturnStop I2C_CallbackReturnStop `(E358  1 e 1 0 ]
+"526
+[v _I2C_CallbackReturnReset I2C_CallbackReturnReset `(E358  1 e 1 0 ]
+"544
+[v _I2C_MasterOpen I2C_MasterOpen `T(a  1 s 1 I2C_MasterOpen ]
+"558
+[v _I2C_MasterClose I2C_MasterClose `T(v  1 s 1 I2C_MasterClose ]
+"564
+[v _I2C_MasterGetRxData I2C_MasterGetRxData `T(uc  1 s 1 I2C_MasterGetRxData ]
+"569
+[v _I2C_MasterSendTxData I2C_MasterSendTxData `T(v  1 s 1 I2C_MasterSendTxData ]
+"574
+[v _I2C_MasterEnableRestart I2C_MasterEnableRestart `T(v  1 s 1 I2C_MasterEnableRestart ]
+"579
+[v _I2C_MasterDisableRestart I2C_MasterDisableRestart `T(v  1 s 1 I2C_MasterDisableRestart ]
+"584
+[v _I2C_MasterStartRx I2C_MasterStartRx `T(v  1 s 1 I2C_MasterStartRx ]
+"589
+[v _I2C_MasterStart I2C_MasterStart `T(v  1 s 1 I2C_MasterStart ]
+"594
+[v _I2C_MasterStop I2C_MasterStop `T(v  1 s 1 I2C_MasterStop ]
+"599
+[v _I2C_MasterIsNack I2C_MasterIsNack `T(a  1 s 1 I2C_MasterIsNack ]
+"604
+[v _I2C_MasterSendAck@i2c_master$F1074 I2C_MasterSendAck `T(v  1 s 1 I2C_MasterSendAck ]
+"610
+[v _I2C_MasterSendNack@i2c_master$F1104 I2C_MasterSendNack `T(v  1 s 1 I2C_MasterSendNack ]
+"616
+[v _I2C_MasterClearBusCollision I2C_MasterClearBusCollision `T(v  1 s 1 I2C_MasterClearBusCollision ]
+"627
+[v _I2C_MasterEnableIrq I2C_MasterEnableIrq `T(v  1 s 1 I2C_MasterEnableIrq ]
+"637
+[v _I2C_MasterDisableIrq I2C_MasterDisableIrq `T(v  1 s 1 I2C_MasterDisableIrq ]
+"642
+[v _I2C_MasterClearIrq I2C_MasterClearIrq `T(v  1 s 1 I2C_MasterClearIrq ]
+"647
+[v _I2C_MasterSetIrq I2C_MasterSetIrq `T(v  1 s 1 I2C_MasterSetIrq ]
 "52 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 "50 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
-"61
+"63
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
-"69
-[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
+"58 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/memory.c
+[v _FLASH_ReadWord FLASH_ReadWord `(us  1 e 2 0 ]
+"94
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"148
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
 "55 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/pin_manager.c
 [v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
 "58 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/pwm1.c
@@ -79,31 +241,29 @@ I2C_SHT31 4
 [v _COS_TmrHandler COS_TmrHandler `(v  1 e 1 0 ]
 "133
 [v _COS_TskMan COS_TskMan `(v  1 e 1 0 ]
-"13 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/I2C_HAL.c
-[v _I2c_Init I2c_Init `(v  1 e 1 0 ]
-"22
-[v _I2c_StartCondition I2c_StartCondition `(v  1 e 1 0 ]
-"30
-[v _I2c_StopCondition I2c_StopCondition `(v  1 e 1 0 ]
-"38
-[v _I2c_WriteByte I2c_WriteByte `(uc  1 e 1 0 ]
-"51
-[v _I2c_ReadByte I2c_ReadByte `(uc  1 e 1 0 ]
+"4 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/I2C_Driver.c
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+"15
+[v _I2C_StartCondition I2C_StartCondition `(v  1 e 1 0 ]
+"23
+[v _I2C_StopCondition I2C_StopCondition `(v  1 e 1 0 ]
+"43
+[v _I2C_WriteByte I2C_WriteByte `(uc  1 e 1 0 ]
+"56
+[v _I2C_ReadByte I2C_ReadByte `(uc  1 e 1 0 ]
 "30 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/Led.c
 [v _Led2_PWM Led2_PWM `(v  1 e 1 0 ]
-"24 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT21.c
-[v _SHT21_StateMachine SHT21_StateMachine `(v  1 e 1 0 ]
-"122
-[v _SHT21_FaultHand SHT21_FaultHand `(v  1 e 1 0 ]
-"154
+"34 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[v _SHT25_StateMachine SHT25_StateMachine `(v  1 e 1 0 ]
+"133
+[v _SHT25_FaultHand SHT25_FaultHand `(v  1 e 1 0 ]
+"142
 [v _SHT2x_CalcTemperatureC SHT2x_CalcTemperatureC `(us  1 e 2 0 ]
-"170
+"158
 [v _SHT2x_CalcRelativeHumidity SHT2x_CalcRelativeHumidity `(us  1 e 2 0 ]
-"17 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
-[v _SendByUart SendByUart `(v  1 e 1 0 ]
-"23
+"23 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _UartDisplay UartDisplay `(v  1 e 1 0 ]
-[s S197 . 1 `uc 1 IOCIF 1 0 :1:0 
+[s S200 . 1 `uc 1 IOCIF 1 0 :1:0 
 `uc 1 INTF 1 0 :1:1 
 `uc 1 TMR0IF 1 0 :1:2 
 `uc 1 IOCIE 1 0 :1:3 
@@ -113,14 +273,14 @@ I2C_SHT31 4
 `uc 1 GIE 1 0 :1:7 
 ]
 "374 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
-[s S206 . 1 `uc 1 . 1 0 :2:0 
+[s S209 . 1 `uc 1 . 1 0 :2:0 
 `uc 1 T0IF 1 0 :1:2 
 `uc 1 . 1 0 :2:3 
 `uc 1 T0IE 1 0 :1:5 
 ]
-[u S211 . 1 `S197 1 . 1 0 `S206 1 . 1 0 ]
-[v _INTCONbits INTCONbits `VES211  1 e 1 @11 ]
-[s S69 . 1 `uc 1 TMR1IF 1 0 :1:0 
+[u S214 . 1 `S200 1 . 1 0 `S209 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES214  1 e 1 @11 ]
+[s S71 . 1 `uc 1 TMR1IF 1 0 :1:0 
 `uc 1 TMR2IF 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IF 1 0 :1:3 
@@ -130,8 +290,19 @@ I2C_SHT31 4
 `uc 1 TMR1GIF 1 0 :1:7 
 ]
 "597
-[u S78 . 1 `S69 1 . 1 0 ]
-[v _PIR1bits PIR1bits `VES78  1 e 1 @17 ]
+[u S80 . 1 `S71 1 . 1 0 ]
+[v _PIR1bits PIR1bits `VES80  1 e 1 @17 ]
+[s S1126 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 NCO1IF 1 0 :1:2 
+`uc 1 BCL1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 C1IF 1 0 :1:5 
+`uc 1 C2IF 1 0 :1:6 
+`uc 1 OSFIF 1 0 :1:7 
+]
+"653
+[u S1134 . 1 `S1126 1 . 1 0 ]
+[v _PIR2bits PIR2bits `VES1134  1 e 1 @18 ]
 "748
 [v _TMR1L TMR1L `VEuc  1 e 1 @22 ]
 "768
@@ -144,12 +315,12 @@ I2C_SHT31 4
 [v _PR2 PR2 `VEuc  1 e 1 @27 ]
 "970
 [v _T2CON T2CON `VEuc  1 e 1 @28 ]
-[s S122 . 1 `uc 1 T2CKPS 1 0 :2:0 
+[s S124 . 1 `uc 1 T2CKPS 1 0 :2:0 
 `uc 1 TMR2ON 1 0 :1:2 
 `uc 1 T2OUTPS 1 0 :4:3 
 ]
 "991
-[s S126 . 1 `uc 1 T2CKPS0 1 0 :1:0 
+[s S128 . 1 `uc 1 T2CKPS0 1 0 :1:0 
 `uc 1 T2CKPS1 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 T2OUTPS0 1 0 :1:3 
@@ -157,15 +328,15 @@ I2C_SHT31 4
 `uc 1 T2OUTPS2 1 0 :1:5 
 `uc 1 T2OUTPS3 1 0 :1:6 
 ]
-[u S134 . 1 `S122 1 . 1 0 `S126 1 . 1 0 ]
-[v _T2CONbits T2CONbits `VES134  1 e 1 @28 ]
+[u S136 . 1 `S124 1 . 1 0 `S128 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES136  1 e 1 @28 ]
 "1041
 [v _TRISA TRISA `VEuc  1 e 1 @140 ]
 "1091
 [v _TRISB TRISB `VEuc  1 e 1 @141 ]
 "1130
 [v _TRISC TRISC `VEuc  1 e 1 @142 ]
-[s S90 . 1 `uc 1 TMR1IE 1 0 :1:0 
+[s S92 . 1 `uc 1 TMR1IE 1 0 :1:0 
 `uc 1 TMR2IE 1 0 :1:1 
 `uc 1 . 1 0 :1:2 
 `uc 1 SSP1IE 1 0 :1:3 
@@ -175,9 +346,9 @@ I2C_SHT31 4
 `uc 1 TMR1GIE 1 0 :1:7 
 ]
 "1209
-[u S99 . 1 `S90 1 . 1 0 ]
-[v _PIE1bits PIE1bits `VES99  1 e 1 @145 ]
-[s S307 . 1 `uc 1 PS 1 0 :3:0 
+[u S101 . 1 `S92 1 . 1 0 ]
+[v _PIE1bits PIE1bits `VES101  1 e 1 @145 ]
+[s S309 . 1 `uc 1 PS 1 0 :3:0 
 `uc 1 PSA 1 0 :1:3 
 `uc 1 TMR0SE 1 0 :1:4 
 `uc 1 TMR0CS 1 0 :1:5 
@@ -185,26 +356,54 @@ I2C_SHT31 4
 `uc 1 nWPUEN 1 0 :1:7 
 ]
 "1356
-[s S314 . 1 `uc 1 PS0 1 0 :1:0 
+[s S316 . 1 `uc 1 PS0 1 0 :1:0 
 `uc 1 PS1 1 0 :1:1 
 `uc 1 PS2 1 0 :1:2 
 `uc 1 . 1 0 :1:3 
 `uc 1 T0SE 1 0 :1:4 
 `uc 1 T0CS 1 0 :1:5 
 ]
-[u S321 . 1 `S307 1 . 1 0 `S314 1 . 1 0 ]
-[v _OPTION_REGbits OPTION_REGbits `VES321  1 e 1 @149 ]
+[u S323 . 1 `S309 1 . 1 0 `S316 1 . 1 0 ]
+[v _OPTION_REGbits OPTION_REGbits `VES323  1 e 1 @149 ]
 "1473
 [v _WDTCON WDTCON `VEuc  1 e 1 @151 ]
 "1532
 [v _OSCCON OSCCON `VEuc  1 e 1 @153 ]
+"1651
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"1671
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"1691
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S1367 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GO_nDONE 1 0 :1:1 
+`uc 1 CHS 1 0 :5:2 
+]
+"1716
+[s S1371 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADGO 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+]
+[s S1379 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 GO 1 0 :1:1 
+]
+[u S1382 . 1 `S1367 1 . 1 0 `S1371 1 . 1 0 `S1379 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1382  1 e 1 @157 ]
+"1771
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1818
+[v _ADCON2 ADCON2 `VEuc  1 e 1 @159 ]
 "1866
 [v _LATA LATA `VEuc  1 e 1 @268 ]
 "1911
 [v _LATB LATB `VEuc  1 e 1 @269 ]
 "1950
 [v _LATC LATC `VEuc  1 e 1 @270 ]
-[s S507 . 1 `uc 1 LATC0 1 0 :1:0 
+[s S510 . 1 `uc 1 LATC0 1 0 :1:0 
 `uc 1 LATC1 1 0 :1:1 
 `uc 1 LATC2 1 0 :1:2 
 `uc 1 LATC3 1 0 :1:3 
@@ -214,8 +413,8 @@ I2C_SHT31 4
 `uc 1 LATC7 1 0 :1:7 
 ]
 "1967
-[u S516 . 1 `S507 1 . 1 0 ]
-[v _LATCbits LATCbits `VES516  1 e 1 @270 ]
+[u S519 . 1 `S510 1 . 1 0 ]
+[v _LATCbits LATCbits `VES519  1 e 1 @270 ]
 "2296
 [v _BORCON BORCON `VEuc  1 e 1 @278 ]
 "2498
@@ -226,6 +425,27 @@ I2C_SHT31 4
 [v _ANSELB ANSELB `VEuc  1 e 1 @397 ]
 "2628
 [v _ANSELC ANSELC `VEuc  1 e 1 @398 ]
+"2694
+[v _PMADRL PMADRL `VEuc  1 e 1 @401 ]
+"2714
+[v _PMADRH PMADRH `VEuc  1 e 1 @402 ]
+"2741
+[v _PMDATL PMDATL `VEuc  1 e 1 @403 ]
+"2761
+[v _PMDATH PMDATH `VEuc  1 e 1 @404 ]
+[s S773 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 CFGS 1 0 :1:6 
+]
+"2797
+[u S781 . 1 `S773 1 . 1 0 ]
+[v _PMCON1bits PMCON1bits `VES781  1 e 1 @405 ]
+"2837
+[v _PMCON2 PMCON2 `VEuc  1 e 1 @406 ]
 "2878
 [v _RCREG RCREG `VEuc  1 e 1 @409 ]
 "2898
@@ -236,7 +456,7 @@ I2C_SHT31 4
 [v _SPBRGH SPBRGH `VEuc  1 e 1 @412 ]
 "2965
 [v _RCSTA RCSTA `VEuc  1 e 1 @413 ]
-[s S433 . 1 `uc 1 RX9D 1 0 :1:0 
+[s S435 . 1 `uc 1 RX9D 1 0 :1:0 
 `uc 1 OERR 1 0 :1:1 
 `uc 1 FERR 1 0 :1:2 
 `uc 1 ADDEN 1 0 :1:3 
@@ -246,11 +466,11 @@ I2C_SHT31 4
 `uc 1 SPEN 1 0 :1:7 
 ]
 "2982
-[u S442 . 1 `S433 1 . 1 0 ]
-[v _RCSTAbits RCSTAbits `VES442  1 e 1 @413 ]
+[u S444 . 1 `S435 1 . 1 0 ]
+[v _RCSTAbits RCSTAbits `VES444  1 e 1 @413 ]
 "3027
 [v _TXSTA TXSTA `VEuc  1 e 1 @414 ]
-[s S412 . 1 `uc 1 TX9D 1 0 :1:0 
+[s S414 . 1 `uc 1 TX9D 1 0 :1:0 
 `uc 1 TRMT 1 0 :1:1 
 `uc 1 BRGH 1 0 :1:2 
 `uc 1 SENDB 1 0 :1:3 
@@ -260,8 +480,8 @@ I2C_SHT31 4
 `uc 1 CSRC 1 0 :1:7 
 ]
 "3044
-[u S421 . 1 `S412 1 . 1 0 ]
-[v _TXSTAbits TXSTAbits `VES421  1 e 1 @414 ]
+[u S423 . 1 `S414 1 . 1 0 ]
+[v _TXSTAbits TXSTAbits `VES423  1 e 1 @414 ]
 "3089
 [v _BAUDCON BAUDCON `VEuc  1 e 1 @415 ]
 "3141
@@ -274,9 +494,21 @@ I2C_SHT31 4
 [v _SSP1ADD SSP1ADD `VEuc  1 e 1 @530 ]
 "3361
 [v _SSP1STAT SSP1STAT `VEuc  1 e 1 @532 ]
+[s S1145 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"3383
+[u S1154 . 1 `S1145 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES1154  1 e 1 @532 ]
 "3483
 [v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @533 ]
-[s S608 . 1 `uc 1 SSPM0 1 0 :1:0 
+[s S665 . 1 `uc 1 SSPM0 1 0 :1:0 
 `uc 1 SSPM1 1 0 :1:1 
 `uc 1 SSPM2 1 0 :1:2 
 `uc 1 SSPM3 1 0 :1:3 
@@ -286,13 +518,13 @@ I2C_SHT31 4
 `uc 1 WCOL 1 0 :1:7 
 ]
 "3512
-[s S617 . 1 `uc 1 SSPM 1 0 :4:0 
+[s S674 . 1 `uc 1 SSPM 1 0 :4:0 
 ]
-[u S619 . 1 `S608 1 . 1 0 `S617 1 . 1 0 ]
-[v _SSP1CON1bits SSP1CON1bits `VES619  1 e 1 @533 ]
+[u S676 . 1 `S665 1 . 1 0 `S674 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES676  1 e 1 @533 ]
 "3687
 [v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @534 ]
-[s S636 . 1 `uc 1 SEN 1 0 :1:0 
+[s S704 . 1 `uc 1 SEN 1 0 :1:0 
 `uc 1 RSEN 1 0 :1:1 
 `uc 1 PEN 1 0 :1:2 
 `uc 1 RCEN 1 0 :1:3 
@@ -302,8 +534,8 @@ I2C_SHT31 4
 `uc 1 GCEN 1 0 :1:7 
 ]
 "3709
-[u S645 . 1 `S636 1 . 1 0 ]
-[v _SSP1CON2bits SSP1CON2bits `VES645  1 e 1 @534 ]
+[u S713 . 1 `S704 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES713  1 e 1 @534 ]
 "4665
 [v _PWM1DCL PWM1DCL `VEuc  1 e 1 @1553 ]
 "4701
@@ -312,20 +544,31 @@ I2C_SHT31 4
 [v _PWM1CON PWM1CON `VEuc  1 e 1 @1555 ]
 "11765
 [v _SSP1IF SSP1IF `VEb  1 e 0 @139 ]
-[s S354 . 1 `uc 1 perr 1 0 :1:0 
+[s S356 . 1 `uc 1 perr 1 0 :1:0 
 `uc 1 ferr 1 0 :1:1 
 `uc 1 oerr 1 0 :1:2 
 `uc 1 reserved 1 0 :5:3 
 ]
 "52 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
-[u S359 . 1 `S354 1 . 1 0 `uc 1 status 1 0 ]
-[v _eusartRxLastError eusartRxLastError `VES359  1 e 1 0 ]
+[u S361 . 1 `S356 1 . 1 0 `uc 1 status 1 0 ]
+[v _eusartRxLastError eusartRxLastError `VES361  1 e 1 0 ]
 "58
 [v _EUSART_FramingErrorHandler EUSART_FramingErrorHandler `*.37(v  1 e 2 0 ]
 "59
 [v _EUSART_OverrunErrorHandler EUSART_OverrunErrorHandler `*.37(v  1 e 2 0 ]
 "60
 [v _EUSART_ErrorHandler EUSART_ErrorHandler `*.37(v  1 e 2 0 ]
+"213 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/i2c_master.h
+[v _MSSP_InterruptHandler MSSP_InterruptHandler `*.37(v  1 e 2 0 ]
+"146 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/i2c_master.c
+[v _fsmStateTable fsmStateTable `DC[16]*.37(E3880  1 e 32 0 ]
+[s S931 . 29 `[6]*.37(E358 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `us 1 time_out 2 18 `us 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E3880 1 state 1 26 `E353 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+`uc 1 busy 1 28 :1:1 
+`uc 1 inUse 1 28 :1:2 
+`uc 1 bufferFree 1 28 :1:3 
+]
+"165
+[v _I2C_Status I2C_Status `S931  1 e 29 0 ]
 "58 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/tmr2.c
 [v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
 "13 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_Main.c
@@ -346,41 +589,39 @@ I2C_SHT31 4
 [v _COS_tcnt_lst COS_tcnt_lst `us  1 e 2 0 ]
 [s S30 . 3 `*.37(v 1 tptr 2 0 `uc 1 sched 1 2 ]
 "37 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_UserTskList.c
-[v _COS_tsk COS_tsk `DC[5]S30  1 e 15 0 ]
+[v _COS_tsk COS_tsk `DC[4]S30  1 e 12 0 ]
 "24 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/Led.c
 [v _counter counter `us  1 s 2 counter ]
 "25
 [v _BreathState BreathState `uc  1 s 1 BreathState ]
 "27
 [v _dutyValue dutyValue `us  1 s 2 dutyValue ]
-"8 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT21.c
+"17 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
 [v _SensirionTemperature_UBP8 SensirionTemperature_UBP8 `us  1 e 2 0 ]
-"9
-[v _SensirionRH_UBP8 SensirionRH_UBP8 `us  1 e 2 0 ]
-"10
-[v _SHT21_Fault SHT21_Fault `uc  1 e 1 0 ]
-"13
-[v _checksum checksum `uc  1 e 1 0 ]
-"14
-[v _TemperatureRaw_H TemperatureRaw_H `uc  1 e 1 0 ]
-"15
-[v _TemperatureRaw_L TemperatureRaw_L `uc  1 e 1 0 ]
-"16
-[v _TemperatureRaw TemperatureRaw `us  1 e 2 0 ]
-"17
-[v _RelativeHumidityRaw_H RelativeHumidityRaw_H `uc  1 e 1 0 ]
 "18
-[v _RelativeHumidityRaw_L RelativeHumidityRaw_L `uc  1 e 1 0 ]
+[v _SensirionRH_UBP8 SensirionRH_UBP8 `us  1 e 2 0 ]
 "19
-[v _RelativeHumidityRaw RelativeHumidityRaw `us  1 e 2 0 ]
+[v _SHT25_Fault SHT25_Fault `uc  1 e 1 0 ]
 "20
-[v _SHT21_State SHT21_State `E3491  1 e 1 0 ]
-"5 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/StateMachine.c
-[v _I2C_State I2C_State `uc  1 e 1 0 ]
-"6
-[v _I2C_Timer I2C_Timer `us  1 e 2 0 ]
-"7
 [v _ErrorStat ErrorStat `uc  1 e 1 0 ]
+"21
+[v _I2C_Timer I2C_Timer `us  1 e 2 0 ]
+"24
+[v _checksum checksum `uc  1 e 1 0 ]
+"25
+[v _TemperatureRaw_H TemperatureRaw_H `uc  1 e 1 0 ]
+"26
+[v _TemperatureRaw_L TemperatureRaw_L `uc  1 e 1 0 ]
+"27
+[v _TemperatureRaw TemperatureRaw `us  1 e 2 0 ]
+"28
+[v _RelativeHumidityRaw_H RelativeHumidityRaw_H `uc  1 e 1 0 ]
+"29
+[v _RelativeHumidityRaw_L RelativeHumidityRaw_L `uc  1 e 1 0 ]
+"30
+[v _RelativeHumidityRaw RelativeHumidityRaw `us  1 e 2 0 ]
+"31
+[v _SHT25_State SHT25_State `E3987  1 e 1 0 ]
 "13 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _U8Message U8Message `uc  1 s 1 U8Message ]
 "14
@@ -393,12 +634,7 @@ I2C_SHT31 4
 "50 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/mcc.c
 [v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
 {
-"59
-} 0
-"69
-[v _WDT_Initialize WDT_Initialize `(v  1 e 1 0 ]
-{
-"73
+"61
 } 0
 "64 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/tmr2.c
 [v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
@@ -421,10 +657,10 @@ I2C_SHT31 4
 {
 "96
 } 0
-"61 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/mcc.c
+"63 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/mcc.c
 [v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
 {
-"67
+"69
 } 0
 "66 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/eusart.c
 [v _EUSART_Initialize EUSART_Initialize `(v  1 e 1 0 ]
@@ -464,10 +700,10 @@ I2C_SHT31 4
 [v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
 "53
 } 0
-"24 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT21.c
-[v _SHT21_StateMachine SHT21_StateMachine `(v  1 e 1 0 ]
+"34 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[v _SHT25_StateMachine SHT25_StateMachine `(v  1 e 1 0 ]
 {
-"120
+"131
 } 0
 "23 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
 [v _UartDisplay UartDisplay `(v  1 e 1 0 ]
@@ -482,32 +718,23 @@ I2C_SHT31 4
 [v EUSART_Write@txData txData `uc  1 a 1 0 ]
 "139
 } 0
-"17 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/UART_Display.c
-[v _SendByUart SendByUart `(v  1 e 1 0 ]
-{
-[v SendByUart@Txt Txt `uc  1 a 1 wreg ]
-[v SendByUart@Txt Txt `uc  1 a 1 wreg ]
-"19
-[v SendByUart@Txt Txt `uc  1 a 1 1 ]
-"21
-} 0
-"154 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT21.c
+"142 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
 [v _SHT2x_CalcTemperatureC SHT2x_CalcTemperatureC `(us  1 e 2 0 ]
 {
-"156
+"144
 [v SHT2x_CalcTemperatureC@TemperatureTemp TemperatureTemp `l  1 a 4 17 ]
-"157
+"145
 [v SHT2x_CalcTemperatureC@Temperature_UBP8 Temperature_UBP8 `us  1 a 2 15 ]
-"168
+"156
 } 0
-"170
+"158
 [v _SHT2x_CalcRelativeHumidity SHT2x_CalcRelativeHumidity `(us  1 e 2 0 ]
 {
-"172
+"160
 [v SHT2x_CalcRelativeHumidity@RelativeHumidityTemp RelativeHumidityTemp `l  1 a 4 17 ]
-"173
+"161
 [v SHT2x_CalcRelativeHumidity@RelativeHumidity_UBP8 RelativeHumidity_UBP8 `us  1 a 2 15 ]
-"188
+"176
 } 0
 "15 C:\Program Files\Microchip\xc8\v2.20\pic\sources\c99\common\Umul32.c
 [v ___lmul __lmul `(ul  1 e 4 0 ]
@@ -519,43 +746,48 @@ I2C_SHT31 4
 [v ___lmul@multiplicand multiplicand `ul  1 p 4 4 ]
 "129
 } 0
-"122 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT21.c
-[v _SHT21_FaultHand SHT21_FaultHand `(v  1 e 1 0 ]
+"133 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/SHT25.c
+[v _SHT25_FaultHand SHT25_FaultHand `(v  1 e 1 0 ]
 {
-"128
+"139
 } 0
-"38 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/I2C_HAL.c
-[v _I2c_WriteByte I2c_WriteByte `(uc  1 e 1 0 ]
+"43 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/SunSensor/I2C_Driver.c
+[v _I2C_WriteByte I2C_WriteByte `(uc  1 e 1 0 ]
 {
-[v I2c_WriteByte@txByte txByte `uc  1 a 1 wreg ]
-"40
-[v I2c_WriteByte@ack ack `uc  1 a 1 2 ]
-"38
-[v I2c_WriteByte@txByte txByte `uc  1 a 1 wreg ]
-"41
-[v I2c_WriteByte@txByte txByte `uc  1 a 1 1 ]
-"49
+[v I2C_WriteByte@txByte txByte `uc  1 a 1 wreg ]
+"45
+[v I2C_WriteByte@ack ack `uc  1 a 1 2 ]
+"43
+[v I2C_WriteByte@txByte txByte `uc  1 a 1 wreg ]
+"46
+[v I2C_WriteByte@txByte txByte `uc  1 a 1 1 ]
+"54
 } 0
-"30
-[v _I2c_StopCondition I2c_StopCondition `(v  1 e 1 0 ]
+"23
+[v _I2C_StopCondition I2C_StopCondition `(v  1 e 1 0 ]
 {
-"36
+"29
 } 0
-"22
-[v _I2c_StartCondition I2c_StartCondition `(v  1 e 1 0 ]
+"15
+[v _I2C_StartCondition I2C_StartCondition `(v  1 e 1 0 ]
 {
-"28
+"21
 } 0
-"51
-[v _I2c_ReadByte I2c_ReadByte `(uc  1 e 1 0 ]
+"56
+[v _I2C_ReadByte I2C_ReadByte `(uc  1 e 1 0 ]
 {
-[v I2c_ReadByte@ack ack `uc  1 a 1 wreg ]
-"53
-[v I2c_ReadByte@rxByte rxByte `uc  1 a 1 2 ]
-"51
-[v I2c_ReadByte@ack ack `uc  1 a 1 wreg ]
-[v I2c_ReadByte@ack ack `uc  1 a 1 1 ]
-"67
+[v I2C_ReadByte@ack ack `uc  1 a 1 wreg ]
+"58
+[v I2C_ReadByte@rxByte rxByte `uc  1 a 1 2 ]
+"56
+[v I2C_ReadByte@ack ack `uc  1 a 1 wreg ]
+[v I2C_ReadByte@ack ack `uc  1 a 1 1 ]
+"72
+} 0
+"4
+[v _I2C_Init I2C_Init `(v  1 e 1 0 ]
+{
+"13
 } 0
 "92 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\SourceFiles/COS/COS_Main.c
 [v _COS_TmrHandler COS_TmrHandler `(v  1 e 1 0 ]
@@ -581,7 +813,7 @@ I2C_SHT31 4
 "52 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/interrupt_manager.c
 [v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
 {
-"70
+"79
 } 0
 "119 D:\Github\Microchip\Mcc_1509\Mcc_1509.X\mcc_generated_files/tmr2.c
 [v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]

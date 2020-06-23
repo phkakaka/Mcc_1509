@@ -50,10 +50,12 @@
 void SYSTEM_Initialize(void)
 {
 
+    //I2C_Initialize();
     PIN_MANAGER_Initialize();
     OSCILLATOR_Initialize();
-    WDT_Initialize();
+    //WDT_Initialize();
     PWM1_Initialize();
+    //ADC_Initialize();
     TMR2_Initialize();
     EUSART_Initialize();
 }

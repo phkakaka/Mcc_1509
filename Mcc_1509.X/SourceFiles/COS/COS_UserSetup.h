@@ -23,7 +23,7 @@
 ////////////////////////////////////////////////////////////////////////////////
 
 /*********** FOSC Definition ***********/
-#define _XTAL_FREQ				32000000	/* Define FOSC in Hz */
+#define _XTAL_FREQ				16000000	/* Define FOSC in Hz */
 
 /*********** LIN Configuration ***********/
 #define _COS_LIN_ENABLED /* Set to define if LIN is used */

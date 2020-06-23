@@ -11,8 +11,11 @@ SourceFiles/COS/../SunSensor/../../mcc_generated_files/mcc.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/device_config.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/pin_manager.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/interrupt_manager.h  \
+SourceFiles/COS/../SunSensor/../../mcc_generated_files/i2c_master.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/pwm1.h  \
+SourceFiles/COS/../SunSensor/../../mcc_generated_files/memory.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/tmr2.h  \
+SourceFiles/COS/../SunSensor/../../mcc_generated_files/adc.h  \
 SourceFiles/COS/../SunSensor/../../mcc_generated_files/eusart.h  \
 SourceFiles/COS/../SunSensor/SHT25.h  \
 SourceFiles/COS/../SunSensor/StateMachine.h  \

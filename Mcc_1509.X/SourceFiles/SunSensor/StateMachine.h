@@ -18,7 +18,7 @@ typedef enum
     I2C_SHT31, //Run Sensirion SHT31 state machine
 } I2C_State_tt;
 
-#define I2C_TASK_TIME			TIME_TSK_EVERYSLOT
+#define I2C_TASK_TIME			TIME_TSK_EIGHTHSPEED
 
 #define I2C_SOFT_RESET_DELAY        15
 #define I2C_MEASUREMENT_TIME_OUT    200
