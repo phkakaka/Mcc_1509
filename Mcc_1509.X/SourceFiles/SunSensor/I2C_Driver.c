@@ -44,6 +44,7 @@ UINT_8 I2C_WriteByte (UINT_8 txByte)
 {
     UINT_8 ack;
     ack = 0;
+    
     SSP1IF = 0;
     SSP1BUF = txByte;
     while(!SSP1IF);
