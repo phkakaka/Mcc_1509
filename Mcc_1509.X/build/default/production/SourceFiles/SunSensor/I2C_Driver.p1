@@ -11,36 +11,31 @@ Version 4.0 HI-TECH Software Intermediate Code
 "3285
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3285: extern volatile unsigned char SSP1ADD __attribute__((address(0x212)));
 [v _SSP1ADD `Vuc ~T0 @X0 0 e@530 ]
-"3498
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3498:     struct {
-[s S194 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S194 . SSPM0 SSPM1 SSPM2 SSPM3 CKP SSPEN SSPOV WCOL ]
-"3508
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3508:     struct {
-[s S195 :4 `uc 1 ]
-[n S195 . SSPM ]
-"3497
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3497: typedef union {
-[u S193 `S194 1 `S195 1 ]
-[n S193 . . . ]
-"3512
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3512: extern volatile SSP1CON1bits_t SSP1CON1bits __attribute__((address(0x215)));
-[v _SSP1CON1bits `VS193 ~T0 @X0 0 e@533 ]
+"11768
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 11768: extern volatile __bit SSPEN __attribute__((address(0x10AD)));
+[v _SSPEN `Vb ~T0 @X0 0 e@4269 ]
 "11765
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 11765: extern volatile __bit SSP1IF __attribute__((address(0x8B)));
 [v _SSP1IF `Vb ~T0 @X0 0 e@139 ]
-"1198
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1198:     struct {
-[s S71 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S71 . TMR1IE TMR2IE . SSP1IE TXIE RCIE ADIE TMR1GIE ]
-"1197
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1197: typedef union {
-[u S70 `S71 1 ]
-[n S70 . . ]
-"1209
-[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1209: extern volatile PIE1bits_t PIE1bits __attribute__((address(0x091)));
-[v _PIE1bits `VS70 ~T0 @X0 0 e@145 ]
-"3698
+"11762
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 11762: extern volatile __bit SSP1IE __attribute__((address(0x48B)));
+[v _SSP1IE `Vb ~T0 @X0 0 e@1163 ]
+"1917
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1917:     struct {
+[s S106 :4 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S106 . . LATB4 LATB5 LATB6 LATB7 ]
+"1916
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1916: typedef union {
+[u S105 `S106 1 ]
+[n S105 . . ]
+"1925
+[; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 1925: extern volatile LATBbits_t LATBbits __attribute__((address(0x10D)));
+[v _LATBbits `VS105 ~T0 @X0 0 e@269 ]
+[v F3443 `(v ~T0 @X0 1 tf1`ul ]
+"92 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\pic.h
+[v __delay `JF3443 ~T0 @X0 0 e ]
+[p i __delay ]
+"3698 C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 3698:     struct {
 [s S203 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S203 . SEN RSEN PEN RCEN ACKEN ACKDT ACKSTAT GCEN ]
@@ -609,246 +604,404 @@ Version 4.0 HI-TECH Software Intermediate Code
 "9812
 [; ;C:/Program Files (x86)/Microchip/MPLABX/v5.40/packs/Microchip/PIC12-16F1xxx_DFP/1.2.63/xc8\pic\include\proc\pic16f1509.h: 9812: __asm("TOSH equ 0FEFh");
 [; <" TOSH equ 0FEFh ;# ">
-"4 SourceFiles/SunSensor/I2C_Driver.c
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 4: void I2C_Init(void)
+"7 SourceFiles/SunSensor/I2C_Driver.c
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 7: void I2C_Init(void)
 [v _I2C_Init `(v ~T0 @X0 1 ef ]
-"5
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 5: {
+"8
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 8: {
 {
 [e :U _I2C_Init ]
 [f ]
-"6
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 6:     SSP1STAT = 0x00;
-[e = _SSP1STAT -> -> 0 `i `uc ]
-"7
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 7:     SSP1CON1 = 0x08;
-[e = _SSP1CON1 -> -> 8 `i `uc ]
-"8
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 8:     SSP1CON2 = 0x00;
-[e = _SSP1CON2 -> -> 0 `i `uc ]
 "9
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 9:     SSP1ADD = 0x27;
-[e = _SSP1ADD -> -> 39 `i `uc ]
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 9:     SSP1STAT = 0x00;
+[e = _SSP1STAT -> -> 0 `i `uc ]
 "10
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 10:     SSP1CON1bits.SSPEN = 1;
-[e = . . _SSP1CON1bits 0 5 -> -> 1 `i `uc ]
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 10:     SSP1CON1 = 0x08;
+[e = _SSP1CON1 -> -> 8 `i `uc ]
 "11
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 11:     SSP1IF = 0;
-[e = _SSP1IF -> -> 0 `i `b ]
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 11:     SSP1CON2 = 0x00;
+[e = _SSP1CON2 -> -> 0 `i `uc ]
 "12
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 12:     PIE1bits.SSP1IE = 1;
-[e = . . _PIE1bits 0 3 -> -> 1 `i `uc ]
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 12:     SSP1ADD = 0x27;
+[e = _SSP1ADD -> -> 39 `i `uc ]
 "13
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 13: }
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 13:     SSPEN = 1;
+[e = _SSPEN -> -> 1 `i `b ]
+"14
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 14:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"15
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 15:     SSP1IE = 1;
+[e = _SSP1IE -> -> 1 `i `b ]
+"16
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 16: }
 [e :UE 450 ]
 }
-"15
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 15: void I2C_StartCondition(void)
+"18
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 18: void I2C_Init_IO(void)
+[v _I2C_Init_IO `(v ~T0 @X0 1 ef ]
+"19
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 19: {
+{
+[e :U _I2C_Init_IO ]
+[f ]
+"20
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 20:    LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"21
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 21:    LATBbits.LATB6 = 0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"23
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 23:    LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"24
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 24:    LATBbits.LATB6 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"25
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 25: }
+[e :UE 451 ]
+}
+"27
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 27: void I2C_StartCondition_IO(void)
+[v _I2C_StartCondition_IO `(v ~T0 @X0 1 ef ]
+"28
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 28: {
+{
+[e :U _I2C_StartCondition_IO ]
+[f ]
+"29
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 29:    LATBbits.LATB4 = 1;
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"30
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 30:    LATBbits.LATB6 = 1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"32
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 32:    LATBbits.LATB4 = 0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"33
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 33:    _delay((unsigned long)((10)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"34
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 34:    LATBbits.LATB6 = 0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"35
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 35:    _delay((unsigned long)((10)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"36
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 36: }
+[e :UE 452 ]
+}
+"38
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 38: UINT_8 I2C_WriteByte_IO (UINT_8 txByte)
+[v _I2C_WriteByte_IO `(uc ~T0 @X0 1 ef1`uc ]
+"39
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 39: {
+{
+[e :U _I2C_WriteByte_IO ]
+"38
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 38: UINT_8 I2C_WriteByte_IO (UINT_8 txByte)
+[v _txByte `uc ~T0 @X0 1 r1 ]
+"39
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 39: {
+[f ]
+"40
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 40:   UINT_8 mask,error=0;
+[v _mask `uc ~T0 @X0 1 a ]
+[v _error `uc ~T0 @X0 1 a ]
+[e = _error -> -> 0 `i `uc ]
+"42
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 42:   for (mask=0x80; mask>0; mask>>=1)
+{
+[e = _mask -> -> 128 `i `uc ]
+[e $ > -> _mask `i -> 0 `i 454  ]
+[e $U 455  ]
+[e :U 454 ]
+"43
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 43:   {
+{
+"44
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 44:     if ((mask & txByte) == 0)
+[e $ ! == & -> _mask `i -> _txByte `i -> 0 `i 457  ]
+"45
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 45:     {
+{
+"46
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 46:         LATBbits.LATB4=0;
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+"47
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 47:     }
+}
+[e $U 458  ]
+"48
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 48:     else
+[e :U 457 ]
+"49
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 49:     {
+{
+"50
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 50:         LATBbits.LATB4=1;
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"51
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 51:     }
+}
+[e :U 458 ]
+"53
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 53:     _delay((unsigned long)((1)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"54
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 54:     LATBbits.LATB6=1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"55
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 55:     _delay((unsigned long)((10)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"56
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 56:     LATBbits.LATB6=0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"57
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 57:     _delay((unsigned long)((1)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"58
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 58:   }
+}
+[e =>> _mask -> -> 1 `i `uc ]
+[e $ > -> _mask `i -> 0 `i 454  ]
+[e :U 455 ]
+}
+"59
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 59:   LATBbits.LATB4=1;
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+"60
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 60:   LATBbits.LATB6=1;
+[e = . . _LATBbits 0 3 -> -> 1 `i `uc ]
+"61
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 61:   _delay((unsigned long)((1)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"62
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 62:   if(SSP1CON2&0x40 == 1) error=1;
+[e $ ! != & -> _SSP1CON2 `i -> == -> 64 `i -> 1 `i `i -> 0 `i 459  ]
+[e = _error -> -> 1 `i `uc ]
+[e :U 459 ]
+"63
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 63:   LATBbits.LATB6=0;
+[e = . . _LATBbits 0 3 -> -> 0 `i `uc ]
+"64
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 64:   _delay((unsigned long)((20)*(16000000/4000000.0)));
+[e ( __delay (1 -> * -> -> 20 `i `d / -> -> 16000000 `l `d .4000000.0 `ul ]
+"65
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 65:   return error;
+[e ) _error ]
+[e $UE 453  ]
+"66
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 66: }
+[e :UE 453 ]
+}
+"68
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 68: void I2C_StartCondition(void)
 [v _I2C_StartCondition `(v ~T0 @X0 1 ef ]
-"16
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 16: {
+"69
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 69: {
 {
 [e :U _I2C_StartCondition ]
 [f ]
-"17
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 17:     SSP1IF = 0;
+"70
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 70:     SSP1IF = 0;
 [e = _SSP1IF -> -> 0 `i `b ]
-"18
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 18:     SSP1CON2bits.SEN = 1;
+"71
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 71:     SSP1CON2bits.SEN = 1;
 [e = . . _SSP1CON2bits 0 0 -> -> 1 `i `uc ]
-"19
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 19:     while(!SSP1IF);
-[e $U 452  ]
-[e :U 453 ]
-[e :U 452 ]
-[e $ ! _SSP1IF 453  ]
-[e :U 454 ]
-"20
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 20:     SSP1IF = 0;
+"72
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 72:     while(!SSP1IF);
+[e $U 461  ]
+[e :U 462 ]
+[e :U 461 ]
+[e $ ! _SSP1IF 462  ]
+[e :U 463 ]
+"73
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 73:     SSP1IF = 0;
 [e = _SSP1IF -> -> 0 `i `b ]
-"21
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 21: }
-[e :UE 451 ]
+"74
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 74: }
+[e :UE 460 ]
 }
-"23
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 23: void I2C_StopCondition(void)
+"76
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 76: void I2C_StopCondition(void)
 [v _I2C_StopCondition `(v ~T0 @X0 1 ef ]
-"24
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 24: {
+"77
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 77: {
 {
 [e :U _I2C_StopCondition ]
 [f ]
-"25
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 25:     SSP1IF = 0;
+"78
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 78:     SSP1IF = 0;
 [e = _SSP1IF -> -> 0 `i `b ]
-"26
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 26:     SSP1CON2bits.PEN = 1;
+"79
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 79:     SSP1CON2bits.PEN = 1;
 [e = . . _SSP1CON2bits 0 2 -> -> 1 `i `uc ]
-"27
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 27:     while(!SSP1IF);
-[e $U 456  ]
-[e :U 457 ]
-[e :U 456 ]
-[e $ ! _SSP1IF 457  ]
-[e :U 458 ]
-"28
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 28:     SSP1IF = 0;
+"80
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 80:     while(!SSP1IF);
+[e $U 465  ]
+[e :U 466 ]
+[e :U 465 ]
+[e $ ! _SSP1IF 466  ]
+[e :U 467 ]
+"81
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 81:     SSP1IF = 0;
 [e = _SSP1IF -> -> 0 `i `b ]
-"29
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 29: }
-[e :UE 455 ]
+"82
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 82: }
+[e :UE 464 ]
 }
-"31
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 31: void I2C_MasterSendAck(void)
+"84
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 84: void I2C_MasterSendAck(void)
 [v _I2C_MasterSendAck `(v ~T0 @X0 1 ef ]
-"32
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 32: {
+"85
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 85: {
 {
 [e :U _I2C_MasterSendAck ]
 [f ]
-"33
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 33:     SSP1CON2bits.ACKDT = 0;
+"86
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 86:     SSP1CON2bits.ACKDT = 0;
 [e = . . _SSP1CON2bits 0 5 -> -> 0 `i `uc ]
-"34
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 34:     SSP1CON2bits.ACKEN = 1;
+"87
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 87:     SSP1CON2bits.ACKEN = 1;
 [e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
-"35
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 35: }
-[e :UE 459 ]
+"88
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 88: }
+[e :UE 468 ]
 }
-"37
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 37: void I2C_MasterSendNack(void)
+"90
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 90: void I2C_MasterSendNack(void)
 [v _I2C_MasterSendNack `(v ~T0 @X0 1 ef ]
-"38
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 38: {
+"91
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 91: {
 {
 [e :U _I2C_MasterSendNack ]
 [f ]
-"39
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 39:     SSP1CON2bits.ACKDT = 1;
+"92
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 92:     SSP1CON2bits.ACKDT = 1;
 [e = . . _SSP1CON2bits 0 5 -> -> 1 `i `uc ]
-"40
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 40:     SSP1CON2bits.ACKEN = 1;
+"93
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 93:     SSP1CON2bits.ACKEN = 1;
 [e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
-"41
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 41: }
-[e :UE 460 ]
+"94
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 94: }
+[e :UE 469 ]
 }
-"43
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 43: UINT_8 I2C_WriteByte (UINT_8 txByte)
+"96
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 96: UINT_8 I2C_WriteByte (UINT_8 txByte)
 [v _I2C_WriteByte `(uc ~T0 @X0 1 ef1`uc ]
-"44
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 44: {
+"97
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 97: {
 {
 [e :U _I2C_WriteByte ]
-"43
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 43: UINT_8 I2C_WriteByte (UINT_8 txByte)
+"96
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 96: UINT_8 I2C_WriteByte (UINT_8 txByte)
 [v _txByte `uc ~T0 @X0 1 r1 ]
-"44
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 44: {
+"97
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 97: {
 [f ]
-"45
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 45:     UINT_8 ack;
+"98
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 98:     UINT_8 ack;
 [v _ack `uc ~T0 @X0 1 a ]
-"46
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 46:     ack = 0;
+"99
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 99:     ack = 0;
 [e = _ack -> -> 0 `i `uc ]
-"48
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 48:     SSP1IF = 0;
+"101
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 101:     SSP1IF = 0;
 [e = _SSP1IF -> -> 0 `i `b ]
-"49
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 49:     SSP1BUF = txByte;
+"102
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 102:     SSP1BUF = txByte;
 [e = _SSP1BUF _txByte ]
-"50
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 50:     while(!SSP1IF);
-[e $U 462  ]
-[e :U 463 ]
-[e :U 462 ]
-[e $ ! _SSP1IF 463  ]
-[e :U 464 ]
-"51
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 51:     SSP1IF = 0;
-[e = _SSP1IF -> -> 0 `i `b ]
-"52
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 52:     SSP1STAT = 0;
-[e = _SSP1STAT -> -> 0 `i `uc ]
-"53
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 53:     ack |= SSP1CON2&0x40;
-[e =| _ack -> & -> _SSP1CON2 `i -> 64 `i `uc ]
-"54
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 54:     return ack;
-[e ) _ack ]
-[e $UE 461  ]
-"55
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 55: }
-[e :UE 461 ]
-}
-"57
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 57: UINT_8 I2C_ReadByte (UINT_8 ack)
-[v _I2C_ReadByte `(uc ~T0 @X0 1 ef1`uc ]
-"58
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 58: {
-{
-[e :U _I2C_ReadByte ]
-"57
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 57: UINT_8 I2C_ReadByte (UINT_8 ack)
-[v _ack `uc ~T0 @X0 1 r1 ]
-"58
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 58: {
-[f ]
-"59
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 59:     UINT_8 rxByte;
-[v _rxByte `uc ~T0 @X0 1 a ]
-"60
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 60:     rxByte=0;
-[e = _rxByte -> -> 0 `i `uc ]
-"62
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 62:     SSP1CON2bits.RCEN = 1;
-[e = . . _SSP1CON2bits 0 3 -> -> 1 `i `uc ]
-"63
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 63:     while(!SSP1IF);
-[e $U 466  ]
-[e :U 467 ]
-[e :U 466 ]
-[e $ ! _SSP1IF 467  ]
-[e :U 468 ]
-"64
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 64:     SSP1IF = 0;
-[e = _SSP1IF -> -> 0 `i `b ]
-"65
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 65:     rxByte = SSP1BUF;
-[e = _rxByte _SSP1BUF ]
-"66
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 66:     if(ack == 0)SSP1CON2bits.ACKDT = 0;
-[e $ ! == -> _ack `i -> 0 `i 469  ]
-[e = . . _SSP1CON2bits 0 5 -> -> 0 `i `uc ]
-[e $U 470  ]
-"67
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 67:     else SSP1CON2bits.ACKDT = 1;
-[e :U 469 ]
-[e = . . _SSP1CON2bits 0 5 -> -> 1 `i `uc ]
-[e :U 470 ]
-"68
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 68:     SSP1IF = 0;
-[e = _SSP1IF -> -> 0 `i `b ]
-"69
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 69:     SSP1CON2bits.ACKEN = 1;
-[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
-"70
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 70:     while(!SSP1IF);
+"103
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 103:     while(!SSP1IF);
 [e $U 471  ]
 [e :U 472 ]
 [e :U 471 ]
 [e $ ! _SSP1IF 472  ]
 [e :U 473 ]
-"71
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 71:     SSP1IF = 0;
+"104
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 104:     SSP1IF = 0;
 [e = _SSP1IF -> -> 0 `i `b ]
-"72
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 72:     return rxByte;
+"105
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 105:     SSP1STAT = 0;
+[e = _SSP1STAT -> -> 0 `i `uc ]
+"106
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 106:     ack |= SSP1CON2&0x40;
+[e =| _ack -> & -> _SSP1CON2 `i -> 64 `i `uc ]
+"107
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 107:     return ack;
+[e ) _ack ]
+[e $UE 470  ]
+"108
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 108: }
+[e :UE 470 ]
+}
+"110
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 110: UINT_8 I2C_ReadByte (UINT_8 ack)
+[v _I2C_ReadByte `(uc ~T0 @X0 1 ef1`uc ]
+"111
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 111: {
+{
+[e :U _I2C_ReadByte ]
+"110
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 110: UINT_8 I2C_ReadByte (UINT_8 ack)
+[v _ack `uc ~T0 @X0 1 r1 ]
+"111
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 111: {
+[f ]
+"112
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 112:     UINT_8 rxByte;
+[v _rxByte `uc ~T0 @X0 1 a ]
+"113
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 113:     rxByte=0;
+[e = _rxByte -> -> 0 `i `uc ]
+"115
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 115:     SSP1CON2bits.RCEN = 1;
+[e = . . _SSP1CON2bits 0 3 -> -> 1 `i `uc ]
+"116
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 116:     while(!SSP1IF);
+[e $U 475  ]
+[e :U 476 ]
+[e :U 475 ]
+[e $ ! _SSP1IF 476  ]
+[e :U 477 ]
+"117
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 117:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"118
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 118:     rxByte = SSP1BUF;
+[e = _rxByte _SSP1BUF ]
+"119
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 119:     if(ack == 0)SSP1CON2bits.ACKDT = 0;
+[e $ ! == -> _ack `i -> 0 `i 478  ]
+[e = . . _SSP1CON2bits 0 5 -> -> 0 `i `uc ]
+[e $U 479  ]
+"120
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 120:     else SSP1CON2bits.ACKDT = 1;
+[e :U 478 ]
+[e = . . _SSP1CON2bits 0 5 -> -> 1 `i `uc ]
+[e :U 479 ]
+"121
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 121:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"122
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 122:     SSP1CON2bits.ACKEN = 1;
+[e = . . _SSP1CON2bits 0 4 -> -> 1 `i `uc ]
+"123
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 123:     while(!SSP1IF);
+[e $U 480  ]
+[e :U 481 ]
+[e :U 480 ]
+[e $ ! _SSP1IF 481  ]
+[e :U 482 ]
+"124
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 124:     SSP1IF = 0;
+[e = _SSP1IF -> -> 0 `i `b ]
+"125
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 125:     return rxByte;
 [e ) _rxByte ]
-[e $UE 465  ]
-"73
-[; ;SourceFiles/SunSensor/I2C_Driver.c: 73: }
-[e :UE 465 ]
+[e $UE 474  ]
+"126
+[; ;SourceFiles/SunSensor/I2C_Driver.c: 126: }
+[e :UE 474 ]
 }

@@ -30,7 +30,8 @@ UINT_8  RelativeHumidityRaw_L;
 UINT_16 RelativeHumidityRaw;
 SHT25_State_tt SHT25_State = SHT25_MEASURE_INIT;
 UINT_8 Command = TRIG_T_MEASUREMENT_POLL;
-
+UINT_8 AddressW = SHT25_ADDR_W;
+        
 void SHT25_StateMachine(void)
 {
     switch(SHT25_State)
@@ -42,6 +43,7 @@ void SHT25_StateMachine(void)
             break;
         case SHT25_MEASURE_TEMP_0:
             I2C_StartCondition();
+            //I2C_WriteNBytes(SHT25_ADDR_W,&Command,1);
             ErrorStat |= I2C_WriteByte(SHT25_ADDR_W);
             ErrorStat |= I2C_WriteByte(TRIG_T_MEASUREMENT_POLL);
             if (ErrorStat == 0)

@@ -18,5 +18,10 @@ extern void I2C_MasterSendNack(void);
 extern UINT_8 I2C_WriteByte (UINT_8 txByte);
 extern UINT_8 I2C_ReadByte (UINT_8 ack);
 
+extern void I2C_Init_IO(void);
+extern void I2C_StartCondition_IO(void);
+extern UINT_8 I2C_WriteByte_IO (UINT_8 txByte);
+
+
 #endif
 

@@ -633,297 +633,303 @@ Version 4.0 HI-TECH Software Intermediate Code
 [i _Command
 -> -> 243 `i `uc
 ]
-"34
-[; ;SourceFiles/SunSensor/SHT25.c: 34: void SHT25_StateMachine(void)
-[v _SHT25_StateMachine `(v ~T0 @X0 1 ef ]
+"33
+[; ;SourceFiles/SunSensor/SHT25.c: 33: UINT_8 AddressW = 128;
+[v _AddressW `uc ~T0 @X0 1 e ]
+[i _AddressW
+-> -> 128 `i `uc
+]
 "35
-[; ;SourceFiles/SunSensor/SHT25.c: 35: {
+[; ;SourceFiles/SunSensor/SHT25.c: 35: void SHT25_StateMachine(void)
+[v _SHT25_StateMachine `(v ~T0 @X0 1 ef ]
+"36
+[; ;SourceFiles/SunSensor/SHT25.c: 36: {
 {
 [e :U _SHT25_StateMachine ]
 [f ]
-"36
-[; ;SourceFiles/SunSensor/SHT25.c: 36:     switch(SHT25_State)
-[e $U 457  ]
 "37
-[; ;SourceFiles/SunSensor/SHT25.c: 37:     {
-{
+[; ;SourceFiles/SunSensor/SHT25.c: 37:     switch(SHT25_State)
+[e $U 457  ]
 "38
-[; ;SourceFiles/SunSensor/SHT25.c: 38:         case SHT25_MEASURE_INIT:
-[e :U 458 ]
-"39
-[; ;SourceFiles/SunSensor/SHT25.c: 39:             I2C_Init();
-[e ( _I2C_Init ..  ]
-"40
-[; ;SourceFiles/SunSensor/SHT25.c: 40:             SHT25_Fault = 0;
-[e = _SHT25_Fault -> -> 0 `i `uc ]
-"41
-[; ;SourceFiles/SunSensor/SHT25.c: 41:             SHT25_State = SHT25_MEASURE_TEMP_0;
-[e = _SHT25_State . `E3987 1 ]
-"42
-[; ;SourceFiles/SunSensor/SHT25.c: 42:             break;
-[e $U 456  ]
-"43
-[; ;SourceFiles/SunSensor/SHT25.c: 43:         case SHT25_MEASURE_TEMP_0:
-[e :U 459 ]
-"44
-[; ;SourceFiles/SunSensor/SHT25.c: 44:             I2C_StartCondition();
-[e ( _I2C_StartCondition ..  ]
-"45
-[; ;SourceFiles/SunSensor/SHT25.c: 45:             ErrorStat |= I2C_WriteByte(128);
-[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 128 `i `uc `uc ]
-"46
-[; ;SourceFiles/SunSensor/SHT25.c: 46:             ErrorStat |= I2C_WriteByte(0xF3);
-[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 243 `i `uc `uc ]
-"47
-[; ;SourceFiles/SunSensor/SHT25.c: 47:             if (ErrorStat == 0)
-[e $ ! == -> _ErrorStat `i -> 0 `i 460  ]
-"48
-[; ;SourceFiles/SunSensor/SHT25.c: 48:             {
+[; ;SourceFiles/SunSensor/SHT25.c: 38:     {
 {
+"39
+[; ;SourceFiles/SunSensor/SHT25.c: 39:         case SHT25_MEASURE_INIT:
+[e :U 458 ]
+"40
+[; ;SourceFiles/SunSensor/SHT25.c: 40:             I2C_Init();
+[e ( _I2C_Init ..  ]
+"41
+[; ;SourceFiles/SunSensor/SHT25.c: 41:             SHT25_Fault = 0;
+[e = _SHT25_Fault -> -> 0 `i `uc ]
+"42
+[; ;SourceFiles/SunSensor/SHT25.c: 42:             SHT25_State = SHT25_MEASURE_TEMP_0;
+[e = _SHT25_State . `E3987 1 ]
+"43
+[; ;SourceFiles/SunSensor/SHT25.c: 43:             break;
+[e $U 456  ]
+"44
+[; ;SourceFiles/SunSensor/SHT25.c: 44:         case SHT25_MEASURE_TEMP_0:
+[e :U 459 ]
+"45
+[; ;SourceFiles/SunSensor/SHT25.c: 45:             I2C_StartCondition();
+[e ( _I2C_StartCondition ..  ]
+"47
+[; ;SourceFiles/SunSensor/SHT25.c: 47:             ErrorStat |= I2C_WriteByte(128);
+[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 128 `i `uc `uc ]
+"48
+[; ;SourceFiles/SunSensor/SHT25.c: 48:             ErrorStat |= I2C_WriteByte(0xF3);
+[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 243 `i `uc `uc ]
 "49
-[; ;SourceFiles/SunSensor/SHT25.c: 49:                 SHT25_State = SHT25_MEASURE_TEMP_1;
-[e = _SHT25_State . `E3987 2 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 49:             if (ErrorStat == 0)
+[e $ ! == -> _ErrorStat `i -> 0 `i 460  ]
 "50
-[; ;SourceFiles/SunSensor/SHT25.c: 50:                 I2C_Timer = 0;
-[e = _I2C_Timer -> -> 0 `i `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 50:             {
+{
 "51
-[; ;SourceFiles/SunSensor/SHT25.c: 51:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 51:                 SHT25_State = SHT25_MEASURE_TEMP_1;
+[e = _SHT25_State . `E3987 2 ]
+"52
+[; ;SourceFiles/SunSensor/SHT25.c: 52:                 I2C_Timer = 0;
+[e = _I2C_Timer -> -> 0 `i `us ]
+"53
+[; ;SourceFiles/SunSensor/SHT25.c: 53:             }
 }
 [e $U 461  ]
-"52
-[; ;SourceFiles/SunSensor/SHT25.c: 52:             else
-[e :U 460 ]
-"53
-[; ;SourceFiles/SunSensor/SHT25.c: 53:             {
-{
 "54
-[; ;SourceFiles/SunSensor/SHT25.c: 54:                 SHT25_FaultHand();
-[e ( _SHT25_FaultHand ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 54:             else
+[e :U 460 ]
 "55
-[; ;SourceFiles/SunSensor/SHT25.c: 55:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 55:             {
+{
+"56
+[; ;SourceFiles/SunSensor/SHT25.c: 56:                 SHT25_FaultHand();
+[e ( _SHT25_FaultHand ..  ]
+"57
+[; ;SourceFiles/SunSensor/SHT25.c: 57:             }
 }
 [e :U 461 ]
-"56
-[; ;SourceFiles/SunSensor/SHT25.c: 56:             break;
-[e $U 456  ]
-"57
-[; ;SourceFiles/SunSensor/SHT25.c: 57:         case SHT25_MEASURE_TEMP_1:
-[e :U 462 ]
 "58
-[; ;SourceFiles/SunSensor/SHT25.c: 58:             I2C_StartCondition();
-[e ( _I2C_StartCondition ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 58:             break;
+[e $U 456  ]
 "59
-[; ;SourceFiles/SunSensor/SHT25.c: 59:             I2C_Timer += 10;
-[e =+ _I2C_Timer -> -> 10 `i `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 59:         case SHT25_MEASURE_TEMP_1:
+[e :U 462 ]
 "60
-[; ;SourceFiles/SunSensor/SHT25.c: 60:             if (I2C_Timer > 200)
-[e $ ! > -> _I2C_Timer `ui -> -> 200 `i `ui 463  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 60:             I2C_StartCondition();
+[e ( _I2C_StartCondition ..  ]
 "61
-[; ;SourceFiles/SunSensor/SHT25.c: 61:             {
-{
+[; ;SourceFiles/SunSensor/SHT25.c: 61:             I2C_Timer += 10;
+[e =+ _I2C_Timer -> -> 10 `i `us ]
 "62
-[; ;SourceFiles/SunSensor/SHT25.c: 62:                 SHT25_FaultHand();
-[e ( _SHT25_FaultHand ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 62:             if (I2C_Timer > 200)
+[e $ ! > -> _I2C_Timer `ui -> -> 200 `i `ui 463  ]
 "63
-[; ;SourceFiles/SunSensor/SHT25.c: 63:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 63:             {
+{
+"64
+[; ;SourceFiles/SunSensor/SHT25.c: 64:                 SHT25_FaultHand();
+[e ( _SHT25_FaultHand ..  ]
+"65
+[; ;SourceFiles/SunSensor/SHT25.c: 65:             }
 }
 [e $U 464  ]
-"64
-[; ;SourceFiles/SunSensor/SHT25.c: 64:             else if (I2C_WriteByte(129) != 0)
+"66
+[; ;SourceFiles/SunSensor/SHT25.c: 66:             else if (I2C_WriteByte(129) != 0)
 [e :U 463 ]
 [e $ ! != -> ( _I2C_WriteByte (1 -> -> 129 `i `uc `i -> 0 `i 465  ]
-"65
-[; ;SourceFiles/SunSensor/SHT25.c: 65:             {
-{
 "67
-[; ;SourceFiles/SunSensor/SHT25.c: 67:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 67:             {
+{
+"69
+[; ;SourceFiles/SunSensor/SHT25.c: 69:             }
 }
 [e $U 466  ]
-"68
-[; ;SourceFiles/SunSensor/SHT25.c: 68:             else
+"70
+[; ;SourceFiles/SunSensor/SHT25.c: 70:             else
 [e :U 465 ]
-"69
-[; ;SourceFiles/SunSensor/SHT25.c: 69:             {
-{
 "71
-[; ;SourceFiles/SunSensor/SHT25.c: 71:                 TemperatureRaw_H = I2C_ReadByte(0);
-[e = _TemperatureRaw_H ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
-"72
-[; ;SourceFiles/SunSensor/SHT25.c: 72:                 TemperatureRaw_L = I2C_ReadByte(0);
-[e = _TemperatureRaw_L ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 71:             {
+{
 "73
-[; ;SourceFiles/SunSensor/SHT25.c: 73:                 TemperatureRaw = (UINT_16) TemperatureRaw_H;
-[e = _TemperatureRaw -> _TemperatureRaw_H `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 73:                 TemperatureRaw_H = I2C_ReadByte(0);
+[e = _TemperatureRaw_H ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
 "74
-[; ;SourceFiles/SunSensor/SHT25.c: 74:                 TemperatureRaw <<= 8;
-[e =<< _TemperatureRaw -> -> 8 `i `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 74:                 TemperatureRaw_L = I2C_ReadByte(0);
+[e = _TemperatureRaw_L ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
 "75
-[; ;SourceFiles/SunSensor/SHT25.c: 75:                 TemperatureRaw |= (UINT_16) TemperatureRaw_L;
-[e =| _TemperatureRaw -> -> _TemperatureRaw_L `us `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 75:                 TemperatureRaw = (UINT_16) TemperatureRaw_H;
+[e = _TemperatureRaw -> _TemperatureRaw_H `us ]
 "76
-[; ;SourceFiles/SunSensor/SHT25.c: 76:                 checksum = I2C_ReadByte(1);
-[e = _checksum ( _I2C_ReadByte (1 -> -> 1 `i `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 76:                 TemperatureRaw <<= 8;
+[e =<< _TemperatureRaw -> -> 8 `i `us ]
 "77
-[; ;SourceFiles/SunSensor/SHT25.c: 77:                 I2C_StopCondition();
-[e ( _I2C_StopCondition ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 77:                 TemperatureRaw |= (UINT_16) TemperatureRaw_L;
+[e =| _TemperatureRaw -> -> _TemperatureRaw_L `us `us ]
 "78
-[; ;SourceFiles/SunSensor/SHT25.c: 78:                 SHT25_State = SHT25_MEASURE_RH_0;
-[e = _SHT25_State . `E3987 3 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 78:                 checksum = I2C_ReadByte(1);
+[e = _checksum ( _I2C_ReadByte (1 -> -> 1 `i `uc ]
 "79
-[; ;SourceFiles/SunSensor/SHT25.c: 79:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 79:                 I2C_StopCondition();
+[e ( _I2C_StopCondition ..  ]
+"80
+[; ;SourceFiles/SunSensor/SHT25.c: 80:                 SHT25_State = SHT25_MEASURE_RH_0;
+[e = _SHT25_State . `E3987 3 ]
+"81
+[; ;SourceFiles/SunSensor/SHT25.c: 81:             }
 }
 [e :U 466 ]
 [e :U 464 ]
-"80
-[; ;SourceFiles/SunSensor/SHT25.c: 80:             break;
+"82
+[; ;SourceFiles/SunSensor/SHT25.c: 82:             break;
 [e $U 456  ]
-"81
-[; ;SourceFiles/SunSensor/SHT25.c: 81:         case SHT25_MEASURE_RH_0:
-[e :U 467 ]
 "83
-[; ;SourceFiles/SunSensor/SHT25.c: 83:             I2C_StartCondition();
-[e ( _I2C_StartCondition ..  ]
-"84
-[; ;SourceFiles/SunSensor/SHT25.c: 84:             ErrorStat |= I2C_WriteByte(128);
-[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 128 `i `uc `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 83:         case SHT25_MEASURE_RH_0:
+[e :U 467 ]
 "85
-[; ;SourceFiles/SunSensor/SHT25.c: 85:             ErrorStat |= I2C_WriteByte(0xF5);
-[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 245 `i `uc `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 85:             I2C_StartCondition();
+[e ( _I2C_StartCondition ..  ]
 "86
-[; ;SourceFiles/SunSensor/SHT25.c: 86:             if (ErrorStat == 0)
-[e $ ! == -> _ErrorStat `i -> 0 `i 468  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 86:             ErrorStat |= I2C_WriteByte(128);
+[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 128 `i `uc `uc ]
 "87
-[; ;SourceFiles/SunSensor/SHT25.c: 87:             {
-{
+[; ;SourceFiles/SunSensor/SHT25.c: 87:             ErrorStat |= I2C_WriteByte(0xF5);
+[e =| _ErrorStat -> ( _I2C_WriteByte (1 -> -> 245 `i `uc `uc ]
 "88
-[; ;SourceFiles/SunSensor/SHT25.c: 88:                 I2C_Timer = 0;
-[e = _I2C_Timer -> -> 0 `i `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 88:             if (ErrorStat == 0)
+[e $ ! == -> _ErrorStat `i -> 0 `i 468  ]
 "89
-[; ;SourceFiles/SunSensor/SHT25.c: 89:                 SHT25_State = SHT25_MEASURE_RH_1;
-[e = _SHT25_State . `E3987 4 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 89:             {
+{
 "90
-[; ;SourceFiles/SunSensor/SHT25.c: 90:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 90:                 I2C_Timer = 0;
+[e = _I2C_Timer -> -> 0 `i `us ]
+"91
+[; ;SourceFiles/SunSensor/SHT25.c: 91:                 SHT25_State = SHT25_MEASURE_RH_1;
+[e = _SHT25_State . `E3987 4 ]
+"92
+[; ;SourceFiles/SunSensor/SHT25.c: 92:             }
 }
 [e $U 469  ]
-"91
-[; ;SourceFiles/SunSensor/SHT25.c: 91:             else
-[e :U 468 ]
-"92
-[; ;SourceFiles/SunSensor/SHT25.c: 92:             {
-{
 "93
-[; ;SourceFiles/SunSensor/SHT25.c: 93:                 SHT25_FaultHand();
-[e ( _SHT25_FaultHand ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 93:             else
+[e :U 468 ]
 "94
-[; ;SourceFiles/SunSensor/SHT25.c: 94:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 94:             {
+{
+"95
+[; ;SourceFiles/SunSensor/SHT25.c: 95:                 SHT25_FaultHand();
+[e ( _SHT25_FaultHand ..  ]
+"96
+[; ;SourceFiles/SunSensor/SHT25.c: 96:             }
 }
 [e :U 469 ]
-"95
-[; ;SourceFiles/SunSensor/SHT25.c: 95:             break;
-[e $U 456  ]
-"96
-[; ;SourceFiles/SunSensor/SHT25.c: 96:         case SHT25_MEASURE_RH_1:
-[e :U 470 ]
 "97
-[; ;SourceFiles/SunSensor/SHT25.c: 97:             I2C_StartCondition();
-[e ( _I2C_StartCondition ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 97:             break;
+[e $U 456  ]
 "98
-[; ;SourceFiles/SunSensor/SHT25.c: 98:             I2C_Timer += 10;
-[e =+ _I2C_Timer -> -> 10 `i `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 98:         case SHT25_MEASURE_RH_1:
+[e :U 470 ]
 "99
-[; ;SourceFiles/SunSensor/SHT25.c: 99:             if (I2C_Timer > 200)
-[e $ ! > -> _I2C_Timer `ui -> -> 200 `i `ui 471  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 99:             I2C_StartCondition();
+[e ( _I2C_StartCondition ..  ]
 "100
-[; ;SourceFiles/SunSensor/SHT25.c: 100:             {
-{
+[; ;SourceFiles/SunSensor/SHT25.c: 100:             I2C_Timer += 10;
+[e =+ _I2C_Timer -> -> 10 `i `us ]
 "101
-[; ;SourceFiles/SunSensor/SHT25.c: 101:                 SHT25_FaultHand();
-[e ( _SHT25_FaultHand ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 101:             if (I2C_Timer > 200)
+[e $ ! > -> _I2C_Timer `ui -> -> 200 `i `ui 471  ]
 "102
-[; ;SourceFiles/SunSensor/SHT25.c: 102:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 102:             {
+{
+"103
+[; ;SourceFiles/SunSensor/SHT25.c: 103:                 SHT25_FaultHand();
+[e ( _SHT25_FaultHand ..  ]
+"104
+[; ;SourceFiles/SunSensor/SHT25.c: 104:             }
 }
 [e $U 472  ]
-"103
-[; ;SourceFiles/SunSensor/SHT25.c: 103:             else if (I2C_WriteByte(129) != 0)
+"105
+[; ;SourceFiles/SunSensor/SHT25.c: 105:             else if (I2C_WriteByte(129) != 0)
 [e :U 471 ]
 [e $ ! != -> ( _I2C_WriteByte (1 -> -> 129 `i `uc `i -> 0 `i 473  ]
-"104
-[; ;SourceFiles/SunSensor/SHT25.c: 104:             {
-{
 "106
-[; ;SourceFiles/SunSensor/SHT25.c: 106:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 106:             {
+{
+"108
+[; ;SourceFiles/SunSensor/SHT25.c: 108:             }
 }
 [e $U 474  ]
-"107
-[; ;SourceFiles/SunSensor/SHT25.c: 107:             else
+"109
+[; ;SourceFiles/SunSensor/SHT25.c: 109:             else
 [e :U 473 ]
-"108
-[; ;SourceFiles/SunSensor/SHT25.c: 108:             {
-{
 "110
-[; ;SourceFiles/SunSensor/SHT25.c: 110:                 RelativeHumidityRaw_H = I2C_ReadByte(0);
-[e = _RelativeHumidityRaw_H ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
-"111
-[; ;SourceFiles/SunSensor/SHT25.c: 111:                 RelativeHumidityRaw_L = I2C_ReadByte(0);
-[e = _RelativeHumidityRaw_L ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 110:             {
+{
 "112
-[; ;SourceFiles/SunSensor/SHT25.c: 112:                 RelativeHumidityRaw = (UINT_16) RelativeHumidityRaw_H;
-[e = _RelativeHumidityRaw -> _RelativeHumidityRaw_H `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 112:                 RelativeHumidityRaw_H = I2C_ReadByte(0);
+[e = _RelativeHumidityRaw_H ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
 "113
-[; ;SourceFiles/SunSensor/SHT25.c: 113:                 RelativeHumidityRaw <<= 8;
-[e =<< _RelativeHumidityRaw -> -> 8 `i `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 113:                 RelativeHumidityRaw_L = I2C_ReadByte(0);
+[e = _RelativeHumidityRaw_L ( _I2C_ReadByte (1 -> -> 0 `i `uc ]
 "114
-[; ;SourceFiles/SunSensor/SHT25.c: 114:                 RelativeHumidityRaw |= (UINT_16) RelativeHumidityRaw_L;
-[e =| _RelativeHumidityRaw -> -> _RelativeHumidityRaw_L `us `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 114:                 RelativeHumidityRaw = (UINT_16) RelativeHumidityRaw_H;
+[e = _RelativeHumidityRaw -> _RelativeHumidityRaw_H `us ]
 "115
-[; ;SourceFiles/SunSensor/SHT25.c: 115:                 checksum = I2C_ReadByte(1);
-[e = _checksum ( _I2C_ReadByte (1 -> -> 1 `i `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 115:                 RelativeHumidityRaw <<= 8;
+[e =<< _RelativeHumidityRaw -> -> 8 `i `us ]
 "116
-[; ;SourceFiles/SunSensor/SHT25.c: 116:                 I2C_StopCondition();
-[e ( _I2C_StopCondition ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 116:                 RelativeHumidityRaw |= (UINT_16) RelativeHumidityRaw_L;
+[e =| _RelativeHumidityRaw -> -> _RelativeHumidityRaw_L `us `us ]
 "117
-[; ;SourceFiles/SunSensor/SHT25.c: 117:                 SHT25_State = SHT25_CALC_TEMP_0;
-[e = _SHT25_State . `E3987 5 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 117:                 checksum = I2C_ReadByte(1);
+[e = _checksum ( _I2C_ReadByte (1 -> -> 1 `i `uc ]
 "118
-[; ;SourceFiles/SunSensor/SHT25.c: 118:             }
+[; ;SourceFiles/SunSensor/SHT25.c: 118:                 I2C_StopCondition();
+[e ( _I2C_StopCondition ..  ]
+"119
+[; ;SourceFiles/SunSensor/SHT25.c: 119:                 SHT25_State = SHT25_CALC_TEMP_0;
+[e = _SHT25_State . `E3987 5 ]
+"120
+[; ;SourceFiles/SunSensor/SHT25.c: 120:             }
 }
 [e :U 474 ]
 [e :U 472 ]
-"119
-[; ;SourceFiles/SunSensor/SHT25.c: 119:             break;
-[e $U 456  ]
-"120
-[; ;SourceFiles/SunSensor/SHT25.c: 120:         case SHT25_CALC_TEMP_0:
-[e :U 475 ]
 "121
-[; ;SourceFiles/SunSensor/SHT25.c: 121:             SensirionTemperature_UBP8 = SHT2x_CalcTemperatureC();
-[e = _SensirionTemperature_UBP8 ( _SHT2x_CalcTemperatureC ..  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 121:             break;
+[e $U 456  ]
 "122
-[; ;SourceFiles/SunSensor/SHT25.c: 122:             SHT25_State = SHT25_CALC_RH_0;
-[e = _SHT25_State . `E3987 6 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 122:         case SHT25_CALC_TEMP_0:
+[e :U 475 ]
 "123
-[; ;SourceFiles/SunSensor/SHT25.c: 123:             break;
-[e $U 456  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 123:             SensirionTemperature_UBP8 = SHT2x_CalcTemperatureC();
+[e = _SensirionTemperature_UBP8 ( _SHT2x_CalcTemperatureC ..  ]
 "124
-[; ;SourceFiles/SunSensor/SHT25.c: 124:         case SHT25_CALC_RH_0:
-[e :U 476 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 124:             SHT25_State = SHT25_CALC_RH_0;
+[e = _SHT25_State . `E3987 6 ]
 "125
-[; ;SourceFiles/SunSensor/SHT25.c: 125:             SHT25_State = SHT25_MEASURE_TEMP_0;
-[e = _SHT25_State . `E3987 1 ]
-"126
-[; ;SourceFiles/SunSensor/SHT25.c: 126:             SensirionRH_UBP8 = SHT2x_CalcRelativeHumidity();
-[e = _SensirionRH_UBP8 ( _SHT2x_CalcRelativeHumidity ..  ]
-"127
-[; ;SourceFiles/SunSensor/SHT25.c: 127:             break;
+[; ;SourceFiles/SunSensor/SHT25.c: 125:             break;
 [e $U 456  ]
+"126
+[; ;SourceFiles/SunSensor/SHT25.c: 126:         case SHT25_CALC_RH_0:
+[e :U 476 ]
+"127
+[; ;SourceFiles/SunSensor/SHT25.c: 127:             SHT25_State = SHT25_MEASURE_TEMP_0;
+[e = _SHT25_State . `E3987 1 ]
 "128
-[; ;SourceFiles/SunSensor/SHT25.c: 128:         default:
-[e :U 477 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 128:             SensirionRH_UBP8 = SHT2x_CalcRelativeHumidity();
+[e = _SensirionRH_UBP8 ( _SHT2x_CalcRelativeHumidity ..  ]
 "129
 [; ;SourceFiles/SunSensor/SHT25.c: 129:             break;
 [e $U 456  ]
 "130
-[; ;SourceFiles/SunSensor/SHT25.c: 130:     }
+[; ;SourceFiles/SunSensor/SHT25.c: 130:         default:
+[e :U 477 ]
+"131
+[; ;SourceFiles/SunSensor/SHT25.c: 131:             break;
+[e $U 456  ]
+"132
+[; ;SourceFiles/SunSensor/SHT25.c: 132:     }
 }
 [e $U 456  ]
 [e :U 457 ]
@@ -936,128 +942,128 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> . `E3987 6 `ui 476
  477 ]
 [e :U 456 ]
-"131
-[; ;SourceFiles/SunSensor/SHT25.c: 131: }
+"133
+[; ;SourceFiles/SunSensor/SHT25.c: 133: }
 [e :UE 455 ]
 }
-"133
-[; ;SourceFiles/SunSensor/SHT25.c: 133: void SHT25_FaultHand(void)
+"135
+[; ;SourceFiles/SunSensor/SHT25.c: 135: void SHT25_FaultHand(void)
 [v _SHT25_FaultHand `(v ~T0 @X0 1 ef ]
-"134
-[; ;SourceFiles/SunSensor/SHT25.c: 134: {
+"136
+[; ;SourceFiles/SunSensor/SHT25.c: 136: {
 {
 [e :U _SHT25_FaultHand ]
 [f ]
-"135
-[; ;SourceFiles/SunSensor/SHT25.c: 135:     TemperatureRaw = 0;
-[e = _TemperatureRaw -> -> 0 `i `us ]
-"136
-[; ;SourceFiles/SunSensor/SHT25.c: 136:     RelativeHumidityRaw = 0;
-[e = _RelativeHumidityRaw -> -> 0 `i `us ]
 "137
-[; ;SourceFiles/SunSensor/SHT25.c: 137:     SHT25_Fault = 1;
-[e = _SHT25_Fault -> -> 1 `i `uc ]
+[; ;SourceFiles/SunSensor/SHT25.c: 137:     TemperatureRaw = 0;
+[e = _TemperatureRaw -> -> 0 `i `us ]
 "138
-[; ;SourceFiles/SunSensor/SHT25.c: 138:     SHT25_State = SHT25_CALC_TEMP_0;
-[e = _SHT25_State . `E3987 5 ]
+[; ;SourceFiles/SunSensor/SHT25.c: 138:     RelativeHumidityRaw = 0;
+[e = _RelativeHumidityRaw -> -> 0 `i `us ]
 "139
-[; ;SourceFiles/SunSensor/SHT25.c: 139: }
+[; ;SourceFiles/SunSensor/SHT25.c: 139:     SHT25_Fault = 1;
+[e = _SHT25_Fault -> -> 1 `i `uc ]
+"140
+[; ;SourceFiles/SunSensor/SHT25.c: 140:     SHT25_State = SHT25_CALC_TEMP_0;
+[e = _SHT25_State . `E3987 5 ]
+"141
+[; ;SourceFiles/SunSensor/SHT25.c: 141: }
 [e :UE 478 ]
 }
-"142
-[; ;SourceFiles/SunSensor/SHT25.c: 142: UINT_16 SHT2x_CalcTemperatureC(void)
+"144
+[; ;SourceFiles/SunSensor/SHT25.c: 144: UINT_16 SHT2x_CalcTemperatureC(void)
 [v _SHT2x_CalcTemperatureC `(us ~T0 @X0 1 ef ]
-"143
-[; ;SourceFiles/SunSensor/SHT25.c: 143: {
+"145
+[; ;SourceFiles/SunSensor/SHT25.c: 145: {
 {
 [e :U _SHT2x_CalcTemperatureC ]
 [f ]
-"144
-[; ;SourceFiles/SunSensor/SHT25.c: 144:     SINT_32 TemperatureTemp;
+"146
+[; ;SourceFiles/SunSensor/SHT25.c: 146:     SINT_32 TemperatureTemp;
 [v _TemperatureTemp `l ~T0 @X0 1 a ]
-"145
-[; ;SourceFiles/SunSensor/SHT25.c: 145:     UINT_16 Temperature_UBP8;
+"147
+[; ;SourceFiles/SunSensor/SHT25.c: 147:     UINT_16 Temperature_UBP8;
 [v _Temperature_UBP8 `us ~T0 @X0 1 a ]
-"149
-[; ;SourceFiles/SunSensor/SHT25.c: 149:     TemperatureTemp = (SINT_32)TemperatureRaw * (SINT_32)(175.72 * 256);
-[e = _TemperatureTemp * -> _TemperatureRaw `l -> * .175.72 -> -> 256 `i `d `l ]
-"150
-[; ;SourceFiles/SunSensor/SHT25.c: 150:     TemperatureTemp -= (SINT_32)(6.85 * 65536 * 256);
-[e =- _TemperatureTemp -> * * .6.85 -> -> 65536 `l `d -> -> 256 `i `d `l ]
 "151
-[; ;SourceFiles/SunSensor/SHT25.c: 151:     if(TemperatureTemp < 0)TemperatureTemp = 0;
+[; ;SourceFiles/SunSensor/SHT25.c: 151:     TemperatureTemp = (SINT_32)TemperatureRaw * (SINT_32)(175.72 * 256);
+[e = _TemperatureTemp * -> _TemperatureRaw `l -> * .175.72 -> -> 256 `i `d `l ]
+"152
+[; ;SourceFiles/SunSensor/SHT25.c: 152:     TemperatureTemp -= (SINT_32)(6.85 * 65536 * 256);
+[e =- _TemperatureTemp -> * * .6.85 -> -> 65536 `l `d -> -> 256 `i `d `l ]
+"153
+[; ;SourceFiles/SunSensor/SHT25.c: 153:     if(TemperatureTemp < 0)TemperatureTemp = 0;
 [e $ ! < _TemperatureTemp -> -> 0 `i `l 480  ]
 [e = _TemperatureTemp -> -> 0 `i `l ]
 [e :U 480 ]
-"152
-[; ;SourceFiles/SunSensor/SHT25.c: 152:     TemperatureTemp >>= 8;
-[e =>> _TemperatureTemp -> -> 8 `i `l ]
-"153
-[; ;SourceFiles/SunSensor/SHT25.c: 153:     TemperatureTemp >>= 8;
-[e =>> _TemperatureTemp -> -> 8 `i `l ]
 "154
-[; ;SourceFiles/SunSensor/SHT25.c: 154:     Temperature_UBP8 = (UINT_16)TemperatureTemp;
-[e = _Temperature_UBP8 -> _TemperatureTemp `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 154:     TemperatureTemp >>= 8;
+[e =>> _TemperatureTemp -> -> 8 `i `l ]
 "155
-[; ;SourceFiles/SunSensor/SHT25.c: 155:     return(Temperature_UBP8);
+[; ;SourceFiles/SunSensor/SHT25.c: 155:     TemperatureTemp >>= 8;
+[e =>> _TemperatureTemp -> -> 8 `i `l ]
+"156
+[; ;SourceFiles/SunSensor/SHT25.c: 156:     Temperature_UBP8 = (UINT_16)TemperatureTemp;
+[e = _Temperature_UBP8 -> _TemperatureTemp `us ]
+"157
+[; ;SourceFiles/SunSensor/SHT25.c: 157:     return(Temperature_UBP8);
 [e ) _Temperature_UBP8 ]
 [e $UE 479  ]
-"156
-[; ;SourceFiles/SunSensor/SHT25.c: 156: }
+"158
+[; ;SourceFiles/SunSensor/SHT25.c: 158: }
 [e :UE 479 ]
 }
-"158
-[; ;SourceFiles/SunSensor/SHT25.c: 158: UINT_16 SHT2x_CalcRelativeHumidity(void)
+"160
+[; ;SourceFiles/SunSensor/SHT25.c: 160: UINT_16 SHT2x_CalcRelativeHumidity(void)
 [v _SHT2x_CalcRelativeHumidity `(us ~T0 @X0 1 ef ]
-"159
-[; ;SourceFiles/SunSensor/SHT25.c: 159: {
+"161
+[; ;SourceFiles/SunSensor/SHT25.c: 161: {
 {
 [e :U _SHT2x_CalcRelativeHumidity ]
 [f ]
-"160
-[; ;SourceFiles/SunSensor/SHT25.c: 160:     SINT_32 RelativeHumidityTemp;
+"162
+[; ;SourceFiles/SunSensor/SHT25.c: 162:     SINT_32 RelativeHumidityTemp;
 [v _RelativeHumidityTemp `l ~T0 @X0 1 a ]
-"161
-[; ;SourceFiles/SunSensor/SHT25.c: 161:     UINT_16 RelativeHumidity_UBP8;
+"163
+[; ;SourceFiles/SunSensor/SHT25.c: 163:     UINT_16 RelativeHumidity_UBP8;
 [v _RelativeHumidity_UBP8 `us ~T0 @X0 1 a ]
-"165
-[; ;SourceFiles/SunSensor/SHT25.c: 165:     RelativeHumidityTemp = (SINT_32)RelativeHumidityRaw * (SINT_32)(125 * 256);
-[e = _RelativeHumidityTemp * -> _RelativeHumidityRaw `l -> * -> 125 `i -> 256 `i `l ]
-"166
-[; ;SourceFiles/SunSensor/SHT25.c: 166:     RelativeHumidityTemp -= (SINT_32)(6 * 65536 * 256);
-[e =- _RelativeHumidityTemp * * -> -> 6 `i `l -> 65536 `l -> -> 256 `i `l ]
 "167
-[; ;SourceFiles/SunSensor/SHT25.c: 167:     if(RelativeHumidityTemp < 0)RelativeHumidityTemp = 0;
+[; ;SourceFiles/SunSensor/SHT25.c: 167:     RelativeHumidityTemp = (SINT_32)RelativeHumidityRaw * (SINT_32)(125 * 256);
+[e = _RelativeHumidityTemp * -> _RelativeHumidityRaw `l -> * -> 125 `i -> 256 `i `l ]
+"168
+[; ;SourceFiles/SunSensor/SHT25.c: 168:     RelativeHumidityTemp -= (SINT_32)(6 * 65536 * 256);
+[e =- _RelativeHumidityTemp * * -> -> 6 `i `l -> 65536 `l -> -> 256 `i `l ]
+"169
+[; ;SourceFiles/SunSensor/SHT25.c: 169:     if(RelativeHumidityTemp < 0)RelativeHumidityTemp = 0;
 [e $ ! < _RelativeHumidityTemp -> -> 0 `i `l 482  ]
 [e = _RelativeHumidityTemp -> -> 0 `i `l ]
 [e :U 482 ]
-"168
-[; ;SourceFiles/SunSensor/SHT25.c: 168:     RelativeHumidityTemp >>= 8;
-[e =>> _RelativeHumidityTemp -> -> 8 `i `l ]
-"169
-[; ;SourceFiles/SunSensor/SHT25.c: 169:     RelativeHumidityTemp >>= 8;
-[e =>> _RelativeHumidityTemp -> -> 8 `i `l ]
 "170
-[; ;SourceFiles/SunSensor/SHT25.c: 170:     RelativeHumidity_UBP8 = (UINT_16)RelativeHumidityTemp;
-[e = _RelativeHumidity_UBP8 -> _RelativeHumidityTemp `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 170:     RelativeHumidityTemp >>= 8;
+[e =>> _RelativeHumidityTemp -> -> 8 `i `l ]
 "171
-[; ;SourceFiles/SunSensor/SHT25.c: 171:     if(RelativeHumidity_UBP8 >(UINT_16)(100.0 * 256))
-[e $ ! > -> _RelativeHumidity_UBP8 `ui -> -> * .100.0 -> -> 256 `i `d `us `ui 483  ]
+[; ;SourceFiles/SunSensor/SHT25.c: 171:     RelativeHumidityTemp >>= 8;
+[e =>> _RelativeHumidityTemp -> -> 8 `i `l ]
 "172
-[; ;SourceFiles/SunSensor/SHT25.c: 172:     {
-{
+[; ;SourceFiles/SunSensor/SHT25.c: 172:     RelativeHumidity_UBP8 = (UINT_16)RelativeHumidityTemp;
+[e = _RelativeHumidity_UBP8 -> _RelativeHumidityTemp `us ]
 "173
-[; ;SourceFiles/SunSensor/SHT25.c: 173:         RelativeHumidity_UBP8 = (UINT_16)(100.0 * 256);
-[e = _RelativeHumidity_UBP8 -> * .100.0 -> -> 256 `i `d `us ]
+[; ;SourceFiles/SunSensor/SHT25.c: 173:     if(RelativeHumidity_UBP8 >(UINT_16)(100.0 * 256))
+[e $ ! > -> _RelativeHumidity_UBP8 `ui -> -> * .100.0 -> -> 256 `i `d `us `ui 483  ]
 "174
-[; ;SourceFiles/SunSensor/SHT25.c: 174:     }
+[; ;SourceFiles/SunSensor/SHT25.c: 174:     {
+{
+"175
+[; ;SourceFiles/SunSensor/SHT25.c: 175:         RelativeHumidity_UBP8 = (UINT_16)(100.0 * 256);
+[e = _RelativeHumidity_UBP8 -> * .100.0 -> -> 256 `i `d `us ]
+"176
+[; ;SourceFiles/SunSensor/SHT25.c: 176:     }
 }
 [e :U 483 ]
-"175
-[; ;SourceFiles/SunSensor/SHT25.c: 175:     return(RelativeHumidity_UBP8);
+"177
+[; ;SourceFiles/SunSensor/SHT25.c: 177:     return(RelativeHumidity_UBP8);
 [e ) _RelativeHumidity_UBP8 ]
 [e $UE 481  ]
-"176
-[; ;SourceFiles/SunSensor/SHT25.c: 176: }
+"178
+[; ;SourceFiles/SunSensor/SHT25.c: 178: }
 [e :UE 481 ]
 }

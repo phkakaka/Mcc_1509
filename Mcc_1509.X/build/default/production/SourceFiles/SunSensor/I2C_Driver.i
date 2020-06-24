@@ -6005,7 +6005,14 @@ extern void I2C_MasterSendAck(void);
 extern void I2C_MasterSendNack(void);
 extern UINT_8 I2C_WriteByte (UINT_8 txByte);
 extern UINT_8 I2C_ReadByte (UINT_8 ack);
+
+extern void I2C_Init_IO(void);
+extern void I2C_StartCondition_IO(void);
+extern UINT_8 I2C_WriteByte_IO (UINT_8 txByte);
 # 1 "SourceFiles/SunSensor/I2C_Driver.c" 2
+
+
+
 
 
 
@@ -6015,9 +6022,59 @@ void I2C_Init(void)
     SSP1CON1 = 0x08;
     SSP1CON2 = 0x00;
     SSP1ADD = 0x27;
-    SSP1CON1bits.SSPEN = 1;
+    SSPEN = 1;
     SSP1IF = 0;
-    PIE1bits.SSP1IE = 1;
+    SSP1IE = 1;
+}
+
+void I2C_Init_IO(void)
+{
+   LATBbits.LATB4 = 0;
+   LATBbits.LATB6 = 0;
+
+   LATBbits.LATB4 = 1;
+   LATBbits.LATB6 = 1;
+}
+
+void I2C_StartCondition_IO(void)
+{
+   LATBbits.LATB4 = 1;
+   LATBbits.LATB6 = 1;
+
+   LATBbits.LATB4 = 0;
+   _delay((unsigned long)((10)*(16000000/4000000.0)));
+   LATBbits.LATB6 = 0;
+   _delay((unsigned long)((10)*(16000000/4000000.0)));
+}
+
+UINT_8 I2C_WriteByte_IO (UINT_8 txByte)
+{
+  UINT_8 mask,error=0;
+
+  for (mask=0x80; mask>0; mask>>=1)
+  {
+    if ((mask & txByte) == 0)
+    {
+        LATBbits.LATB4=0;
+    }
+    else
+    {
+        LATBbits.LATB4=1;
+    }
+
+    _delay((unsigned long)((1)*(16000000/4000000.0)));
+    LATBbits.LATB6=1;
+    _delay((unsigned long)((10)*(16000000/4000000.0)));
+    LATBbits.LATB6=0;
+    _delay((unsigned long)((1)*(16000000/4000000.0)));
+  }
+  LATBbits.LATB4=1;
+  LATBbits.LATB6=1;
+  _delay((unsigned long)((1)*(16000000/4000000.0)));
+  if(SSP1CON2&0x40 == 1) error=1;
+  LATBbits.LATB6=0;
+  _delay((unsigned long)((20)*(16000000/4000000.0)));
+  return error;
 }
 
 void I2C_StartCondition(void)

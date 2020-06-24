@@ -6499,6 +6499,10 @@ extern void I2C_MasterSendAck(void);
 extern void I2C_MasterSendNack(void);
 extern UINT_8 I2C_WriteByte (UINT_8 txByte);
 extern UINT_8 I2C_ReadByte (UINT_8 ack);
+
+extern void I2C_Init_IO(void);
+extern void I2C_StartCondition_IO(void);
+extern UINT_8 I2C_WriteByte_IO (UINT_8 txByte);
 # 13 "SourceFiles/SunSensor/SHT25.c" 2
 
 # 1 "SourceFiles/SunSensor/../../mcc_generated_files/examples/i2c_master_example.h" 1
@@ -6530,6 +6534,7 @@ UINT_8 RelativeHumidityRaw_L;
 UINT_16 RelativeHumidityRaw;
 SHT25_State_tt SHT25_State = SHT25_MEASURE_INIT;
 UINT_8 Command = 0xF3;
+UINT_8 AddressW = 128;
 
 void SHT25_StateMachine(void)
 {
@@ -6542,6 +6547,7 @@ void SHT25_StateMachine(void)
             break;
         case SHT25_MEASURE_TEMP_0:
             I2C_StartCondition();
+
             ErrorStat |= I2C_WriteByte(128);
             ErrorStat |= I2C_WriteByte(0xF3);
             if (ErrorStat == 0)

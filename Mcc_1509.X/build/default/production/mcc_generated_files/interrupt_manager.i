@@ -6415,8 +6415,11 @@ void __attribute__((picinterrupt(("")))) INTERRUPT_InterruptManager (void)
 
     if(INTCONbits.PEIE == 1)
     {
-# 66 "mcc_generated_files/interrupt_manager.c"
-        if(PIE1bits.TMR2IE == 1 && PIR1bits.TMR2IF == 1)
+        if(PIE1bits.SSP1IE == 1 && PIR1bits.SSP1IF == 1)
+        {
+            ;
+        }
+        else if(PIE1bits.TMR2IE == 1 && PIR1bits.TMR2IF == 1)
         {
             TMR2_ISR();
         }
